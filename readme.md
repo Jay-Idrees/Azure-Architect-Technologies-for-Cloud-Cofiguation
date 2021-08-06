@@ -10,4 +10,24 @@ I have created this repository as my go-to self reference for Azure Architecht t
 
 - Check which default version is available for powershell in windows by opening it and typing `$PSVersionTable` in the terminal. This commands give a bunch of details. You can be even more specific with `$PSVersionTable.PSVersion`. Keep powershell up to date- current version is 5.1
 
-- You should also have the updated version of **.Netframework** - It is a webapp framework that is used to build online software
+- You should also have the updated version of **.Netframework** - It is a webapp framework that is used to build online software. You can use powershell to check the version with the following commnd:
+
+- `(Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -ge 394802`  where `-ge` is greater than or equal to. This is like going to the registry with `regedit` and then navigating to the path and locating the version. 394802 corresponds with .NET Framework version 4.6.2 or later and is the release key. Each version has its own release key, for example 528040 is the release key for .NET Framework 4.8
+
+- Below are the comparison operators in powershell
+
+- `-eq`	Equal
+- `-ne`	Not Equal
+- `-gt`	Greater than
+- `-ge`	Greater than or equal to
+- `-lt`	Less than
+- `-le`	Less than or equal to
+- `-like`	Checks if part of string matches (Wildcard comparison)
+- `-notlike`	Checks if part of a string doesn’t matches (Wildcard comparison)
+- `-match`	RegEx comparison
+- `-notmatch`	RegEx comparison
+- `-contains`	Containment Operator
+- `-notcontains`	Non-Containment Operator
+- `-In`	In Operator
+- `-notIn`	Non In Operator
+- `-Replace`	Replaces a string pattern
