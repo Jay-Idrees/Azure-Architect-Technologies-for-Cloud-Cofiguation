@@ -98,8 +98,11 @@ It can be grouped into the following components:
     - **Review+Create**
 - Once a storage account is created, you can access it under resources and locating it by its name and it will have options of Containers, file shares, tables and queues - each consistent with the 4 basic types of features
 
-- Working with **Blob Service** - This service gives the ability to upload objects- you can access this service by ***clicking the containers inside the storage account***
-    - Create a container
+**Services inside the storage account**
+
+- **Blob Service** : This service gives the ability to upload objects- you can access this service by ***clicking the containers inside the storage account***
+
+    - Create a container (typicaly this is how its done for a blob service)
     - Assign a name such as 'data' and select public level access as private(no anonymous access)- the latter is an additional security feature
     - Once you click a container named 'data', then you can upload an object to it such as a file which can be an image file or a text based file
     - You can also modify the file by clicking edit while inside the container
@@ -111,4 +114,7 @@ It can be grouped into the following components:
 
     - An example: A company can have an application that uploads videos, those videos can then be uploaded onto a container using the blob service. Each video will have its unique URL. The app can be linked to the storage account. This allows complete separation between the storage account and the application
 
-- Working with **File Share Service** This is when you want to share a file across multiple users or virtual machines- It gives you the ability to map a drive onto a container- this is not ideal with a blob service.  The difference with blob is that the file there is stored as an object and has a unique URL and the file cannot be maped across multipe users and VMs
+- **File Share Service** This is when you want to share a file across multiple users or virtual machines- It gives you the ability to map a drive onto a container- this is not ideal with a blob service.  The difference with blob is that the file there is stored as an object and has a unique URL and the file cannot be maped across multipe users and VMs. You can access the file share service by ***clicking the file share inside the storage account**
+
+    - Create a new file share inside the storage account
+    - 
