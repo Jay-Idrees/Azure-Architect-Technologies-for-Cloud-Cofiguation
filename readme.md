@@ -74,3 +74,6 @@ It can be grouped into the following components:
     - Log analytics - setting up queries and alerts
     - Diagnostics of virtual machines and storage accounts
 
+# Azure Storage Accounts
+
+- 4 basic types: Blob (sharing videos, images and objects), table (storing data), queue (for sending and receiving messages), file(creating file shares)
