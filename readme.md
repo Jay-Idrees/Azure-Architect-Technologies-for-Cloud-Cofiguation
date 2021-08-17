@@ -41,7 +41,7 @@ It can be grouped into the following components:
 - Azure infrastructure  
     - Storage accounts
     - Deploying virtual machines
-    - Building vrtual networks
+    - Building virtual networks
     - Security, using the network security groups
     - VPN connections
     - Multifactor authentication
@@ -84,7 +84,7 @@ It can be grouped into the following components:
     - Assign a new storage account name - ***This name must be unique and will be part of the URL linking to specific objects inside the container***
     - Select region
     - You can choose between standard or premium performance option. 
-                    - The standard is a general purpose account (blob, table, queue,file sharing)
+                    - The *standard is a general purpose account* (blob, table, queue,file sharing)
                     - Premium is more specific for each of the individual subtypes and has low latency
     - Choose redundancy- It relates to availability, for extra availability you have more options, but the basic option is (locally redundant storage)
     - **Advanced tab**
@@ -108,3 +108,7 @@ It can be grouped into the following components:
     - If you type in this URL into the browser, you will be able to access this object if the ***Public Access level for the 'data' container is NOT set to private***
     - The access level can be changed by clicking on the container and then clicking "change access" level - selecting Blob(anomymous read access for blobs only) will allow public read only access. This will be applied to blob only, while an alternative option can also be selected for changing access level to container level as well
     - You can create a folder inside the container by selecting the advanced option when uploading the file. Under "upload to folder" you can type in the folder name
+
+    - An example: A company can have an application that uploads videos, those videos can then be uploaded onto a container using the blob service. Each video will have its unique URL. The app can be linked to the storage account. This allows complete separation between the storage account and the application
+
+- Working with **File Share Service** This is when you want to share a file across multiple users or virtual machines- It gives you the ability to map a drive onto a container- this is not ideal with a blob service.  The difference with blob is that the file there is stored as an object and has a unique URL and the file cannot be maped across multipe users and VMs
