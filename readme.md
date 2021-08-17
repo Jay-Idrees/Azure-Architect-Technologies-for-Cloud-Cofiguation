@@ -38,7 +38,7 @@ I have created this repository as my go-to self reference for Azure Architecht t
 
 It can be grouped into the following components:
 
-- Azure infrastructure which consists of: 
+- Azure infrastructure  
     - Storage accounts
     - Deploying virtual machines
     - Building vrtual networks
@@ -56,10 +56,21 @@ It can be grouped into the following components:
     - Application manager
     - Firewall
     - Role based access
+    - Key Vault
+    - Encryption
 
 - Azure Webservices
     - Using the Web App Service
     - Deploying an application
     - Deployment from github
     - Azure Docker and Kubernetes
-    - 
+
+- Data Management
+    - MySQL
+    - CosmosDB
+
+- Azure Moniroting and Diagnostics
+    - Connecting machines to log analytics workspace
+    - Log analytics - setting up queries and alerts
+    - Diagnostics of virtual machines and storage accounts
+
