@@ -77,3 +77,15 @@ It can be grouped into the following components:
 # Azure Storage Accounts
 
 - 4 basic types: Blob (sharing videos, images and objects), table (storing data), queue (for sending and receiving messages), file(creating file shares)
+
+- select storage accounts from dashboard and create a new storage account
+    - **Basics tab**
+    - Assign a resource group
+    - Assign a new storage account name
+    - Select region
+    - You can choose between standard or premium performance option. 
+                    - The standard is a general purpose account (blob, table, queue,file sharing)
+                    - Premium is more specific for each of the individual subtypes and has low latency
+    - Choose redundancy- It relates to availability, for extra availability you have more options, but the basic option is (locally redundant storage)
+    - **Advanced tab**
+    - You can keep the default settings
