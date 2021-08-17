@@ -34,3 +34,6 @@ I have created this repository as my go-to self reference for Azure Architecht t
 - `-notIn`	Non In Operator
 - `-Replace`	Replaces a string pattern
 
+## Azure Architect technologies 
+
+It can be grouped into the following components:
