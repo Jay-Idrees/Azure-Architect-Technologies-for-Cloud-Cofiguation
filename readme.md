@@ -37,3 +37,22 @@ I have created this repository as my go-to self reference for Azure Architecht t
 ## Azure Architect technologies 
 
 It can be grouped into the following components:
+
+- Azure infrastructure which consists of: 
+    - Storage accounts
+    - Deploying virtual machines
+    - Building vrtual networks
+    - Security, using the network security groups
+    - VPN connections
+    - Multifactor authentication
+    - Using resource manager
+    - Active Directory
+
+- Implementing security solutions
+    - Using Azure Migrate
+    - Using Azure site recovery
+    - Load balancer
+    - Application gateway
+    - Application manager
+    - Firewall
+    - Role based access
