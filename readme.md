@@ -104,3 +104,5 @@ It can be grouped into the following components:
     - Once you click a container named 'data', then you can upload an object to it such as a file which can be an image file or a text based file
     - You can also modify the file by clicking edit while inside the container
     - The text files can also be viewed in various formats such as javascript etc
+    - A unique URL will be available for each of the objects uploaded inside the container
+    - If you type in this URL into the browser, you will be able to access this object if the ***Public Access level for the 'data' container is NOT set to private***
