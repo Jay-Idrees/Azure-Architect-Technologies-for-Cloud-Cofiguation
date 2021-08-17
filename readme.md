@@ -89,3 +89,7 @@ It can be grouped into the following components:
     - Choose redundancy- It relates to availability, for extra availability you have more options, but the basic option is (locally redundant storage)
     - **Advanced tab**
     - You can keep the default settings
+    - **Networking**
+    - Keep the default setting
+    - **Data Protection**
+    - Keep the soft delete blob checked - A deleted object will remain in place for 7 days untill when it can be recovered
