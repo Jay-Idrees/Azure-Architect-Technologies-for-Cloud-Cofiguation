@@ -56,3 +56,10 @@ It can be grouped into the following components:
     - Application manager
     - Firewall
     - Role based access
+
+- Azure Webservices
+    - Using the Web App Service
+    - Deploying an application
+    - Deployment from github
+    - Azure Docker and Kubernetes
+    - 
