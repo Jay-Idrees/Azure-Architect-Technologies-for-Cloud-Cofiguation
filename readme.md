@@ -78,7 +78,7 @@ It can be grouped into the following components:
 
 - 4 basic types of features: Blob (sharing videos, images and objects), table (storing data), queue (for sending and receiving messages), file(creating file shares)
 
-- select storage accounts from dashboard and create a new storage account
+- Select storage accounts from dashboard and create a new storage account
     - **Basics tab**
     - Assign a resource group
     - Assign a new storage account name
@@ -99,8 +99,8 @@ It can be grouped into the following components:
 - Once a storage account is created, you can access it under resources and locating it by its name and it will have options of Containers, file shares, tables and queues - each consistent with the 4 basic types of features
 
 - Working with **Blob Service** - This service gives the ability to upload objects- you can access this service by __***clicking the containers inside the storage account***__
-        - Create a container
-        - Assign a name such as 'data' and select public level access as private(no anonymous access)- the latter is an additional security feature
-        - Once you click a container named 'data', then you can upload an object to it such as a file which can be an image file or a text based file
-        - You can also modify the file by clicking edit while inside the container
-        - The text files can also be viewed in various formats such as javascript etc
+    - Create a container
+    - Assign a name such as 'data' and select public level access as private(no anonymous access)- the latter is an additional security feature
+    - Once you click a container named 'data', then you can upload an object to it such as a file which can be an image file or a text based file
+    - You can also modify the file by clicking edit while inside the container
+    - The text files can also be viewed in various formats such as javascript etc
