@@ -74,9 +74,9 @@ It can be grouped into the following components:
     - Log analytics - setting up queries and alerts
     - Diagnostics of virtual machines and storage accounts
 
-# Azure Storage Accounts
+## Azure Storage Accounts
 
-- 4 basic types: Blob (sharing videos, images and objects), table (storing data), queue (for sending and receiving messages), file(creating file shares)
+- 4 basic types of features: Blob (sharing videos, images and objects), table (storing data), queue (for sending and receiving messages), file(creating file shares)
 
 - select storage accounts from dashboard and create a new storage account
     - **Basics tab**
@@ -93,3 +93,7 @@ It can be grouped into the following components:
     - Keep the default setting
     - **Data Protection**
     - Keep the soft delete blob checked - A deleted object will remain in place for 7 days untill when it can be recovered
+    - **Tags**
+    - No changes
+    - **Review+Create**
+- Once a storage account is created, you can access it under resources and locating it by its name and it will have options of Containers, file shares, tables and queues - each consistent with the 4 basic types of features
