@@ -81,7 +81,7 @@ It can be grouped into the following components:
 - Select storage accounts from dashboard and create a new storage account
     - **Basics tab**
     - Assign a resource group
-    - Assign a new storage account name
+    - Assign a new storage account name - ***This name must be unique and will be part of the URL linking to specific objects inside the container***
     - Select region
     - You can choose between standard or premium performance option. 
                     - The standard is a general purpose account (blob, table, queue,file sharing)
@@ -106,4 +106,5 @@ It can be grouped into the following components:
     - The text files can also be viewed in various formats such as javascript etc
     - A unique URL will be available for each of the objects uploaded inside the container
     - If you type in this URL into the browser, you will be able to access this object if the ***Public Access level for the 'data' container is NOT set to private***
-    - The access level can be changed by clicking on the container and then clicking "change access" level - selecting Blob(anomymous read access for blobs only) will allow public read only access
+    - The access level can be changed by clicking on the container and then clicking "change access" level - selecting Blob(anomymous read access for blobs only) will allow public read only access. This will be applied to blob only, while an alternative option can also be selected for changing access level to container level as well
+    - You can create a folder inside the container by selecting the advanced option when uploading the file. Under "upload to folder" you can type in the folder name
