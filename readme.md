@@ -100,7 +100,7 @@ It can be grouped into the following components:
 
 **Services inside the storage account**
 
- **Blob Service** : This service gives the ability to upload objects- you can access this service by ***clicking the containers inside the storage account***
+ - **Blob Service** : This service gives the ability to upload objects- you can access this service by ***clicking the containers inside the storage account***
     - Create a container (typicaly this is how its done for a blob service)
     - Assign a name such as 'data' and select public level access as private(no anonymous access)- the latter is an additional security feature
     - Once you click a container named 'data', then you can upload an object to it such as a file which can be an image file or a text based file
@@ -110,10 +110,9 @@ It can be grouped into the following components:
     - If you type in this URL into the browser, you will be able to access this object if the ***Public Access level for the 'data' container is NOT set to private***
     - The access level can be changed by clicking on the container and then clicking "change access" level - selecting Blob(anomymous read access for blobs only) will allow public read only access. This will be applied to blob only, while an alternative option can also be selected for changing access level to container level as well
     - You can create a folder inside the container by selecting the advanced option when uploading the file. Under "upload to folder" you can type in the folder name
-
     - An example: A company can have an application that uploads videos, those videos can then be uploaded onto a container using the blob service. Each video will have its unique URL. The app can be linked to the storage account. This allows complete separation between the storage account and the application
 
- **File Share Service** This is when you want to share a file across multiple users or virtual machines- It gives you the ability to map a drive onto a container- this is not ideal with a blob service.  The difference with blob is that the file there is stored as an object and has a unique URL and the file cannot be maped across multipe users and VMs. You can access the file share service by ***clicking the file share inside the storage account**
+ - **File Share Service** This is when you want to share a file across multiple users or virtual machines- It gives you the ability to map a drive onto a container- this is not ideal with a blob service.  The difference with blob is that the file there is stored as an object and has a unique URL and the file cannot be maped across multipe users and VMs. You can access the file share service by ***clicking the file share inside the storage account**
     - Create a new file share inside the storage account
     - Assign a name such as 'data' and Set a quota- size limit, can select 1 Gib
     - Then you can open this file share named 'data' as it shows in the storage account
@@ -123,7 +122,7 @@ It can be grouped into the following components:
     - Instead you can connect to the fileshare. This can be done by selecting your OS e-g Windows and then copy the code for connection. The code contains a password. Then you can 1) Either use powershell and copy this code 2) Use windows mapping feature ('map a network drive' in windows folder) and manually paste the password. This will create a new drive in my computer
     - File shares usually occur on port 445
 
-**Table Service** 
+- **Table Service** 
     - 2 Types: SQL-Schema, or No SQL-No Schema
     - Data is usually stored in partitions and entities are then identified uniquely inside the partitions for quick retrival
     - Partition key, used to define the partition to store entities
