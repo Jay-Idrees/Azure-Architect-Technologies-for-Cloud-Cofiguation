@@ -133,4 +133,5 @@ It can be grouped into the following components:
     - When you click the table, you will have to assign a **partiion key** and a **row key** - This is essentially a key value pair, You can also add additional properties
     - **Azure Storage account** Links up your azure account and fetches the storage accounts to your local machine which you can then modify locally on your computer
 
-- Access wise you can access blobs by making the privacy settings public, you can use **Azure storage accounts**, you can also connect using **Access Keys**, **Shared Access Signatures** and **Azure Active Directories**
+- Access wise you can access blobs by making the privacy settings public, you can use **Azure storage explorer**, you can also connect using **Access Keys**, **Shared Access Signatures** and **Azure Active Directories**
+- You can Access the storage account by using the access keys. When inside Azure, click on access keys and then copy the access key one. Then you can open Azure storage explorer, click the storage account, then select account name and key, paste the key and the name-keep the display name the same as the account name
