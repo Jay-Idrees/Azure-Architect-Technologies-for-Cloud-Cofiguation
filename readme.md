@@ -130,4 +130,5 @@ It can be grouped into the following components:
     - The benifit of partition is the quick retrieval of data- the data is stored in partitions rather than a whole in millions
     - Click tables in the storage account
     - Create table, assign name "customer"
-    - When you click the table, you will have to assign a **partiion key** and a **row key**
+    - When you click the table, you will have to assign a **partiion key** and a **row key** - This is essentially a key value pair, You can also add additional properties
+    - **Azure Storage account** Links up your azure account and fetches the storage accounts to your local machine which you can then modify locally on your computer
