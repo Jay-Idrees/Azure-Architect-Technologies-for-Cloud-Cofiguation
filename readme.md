@@ -144,6 +144,6 @@ It can be grouped into the following components:
 - **Redundancy/ Availability Zones** Azure typically creates 3 copies of the data- these can be located at multiple data centers in the same or different availability zone in a region or in different regions to ensure that if there is an equipment malfunction or power failure in one area the data is still available
 
 - **Access Tiers** Hot cold and Archive. At the storage account level you can only select between hot or cool, archive is not available
-
+    - The access tier for a particular storage account can be changed under configuration
 
 
