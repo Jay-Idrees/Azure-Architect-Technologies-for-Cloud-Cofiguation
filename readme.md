@@ -117,4 +117,9 @@ It can be grouped into the following components:
 - **File Share Service** This is when you want to share a file across multiple users or virtual machines- It gives you the ability to map a drive onto a container- this is not ideal with a blob service.  The difference with blob is that the file there is stored as an object and has a unique URL and the file cannot be maped across multipe users and VMs. You can access the file share service by ***clicking the file share inside the storage account**
 
     - Create a new file share inside the storage account
-    - 
+    - Assign a name such as 'data' and Set a quota- size limit, can select 1 Gib
+    - Then you can open this file share named 'data' as it shows in the storage account
+    - You can then create a directory inside this fileshare
+    - You can also upload a file into fileshare or inside the directory you have created
+    - When you upload a file, a unique file URL will also be created - but the link will not work for public access- This URL is a link to the fileshare which will only work after successful mapping
+    - Instead you can connect to the fileshare. This can be done by selecting your OS e-g Windows and then copy the code for connection. The code contains a password. Then you can 1) Either use powershell and copy this code 2) Use windows mapping feature and manually paste the password. This will create a new drive in my computer
