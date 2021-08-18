@@ -135,4 +135,15 @@ It can be grouped into the following components:
 
 - **Methods to Access Azure Storage Accounts** you can access blobs by **making the privacy settings public**, you can use **Azure storage explorer**, you can also connect Azure storage explorer using **Access Keys**, **Shared Access Signatures** and **Azure Active Directories**
     - **Using Access Keys**: You can Access the storage account by using the access keys. When inside Azure, click on access keys and then copy the access key one. Then you can open Azure storage explorer, click the storage account, then select account name and key, paste the key and the name-keep the display name the same as the account name
-    - **Using Shared Access Signatures: Blob Level**
+    - **Using Shared Access Signatures (SAS): Blob Level**
+    - **Using shared Access signatures- Account Level**
+    - **Using Stored Access Policy** to modify shared access account signatures, especially in the event of hacking/unauthorized access - you can thus modify the access level (read, write, delete or remove all of them)
+    - **Using Active Directory** - Active directory allows you to create a user then then give access to a particular storage account
+
+    
+- **Redundancy/ Availability Zones** Azure typically creates 3 copies of the data- these can be located at multiple data centers in the same or different availability zone in a region or in different regions to ensure that if there is an equipment malfunction or power failure in one area the data is still available
+
+- **Access Tiers** Hot cold and Archive. At the storage account level you can only select between hot or cool, archive is not available
+
+
+
