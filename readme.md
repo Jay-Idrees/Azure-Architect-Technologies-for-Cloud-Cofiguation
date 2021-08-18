@@ -143,8 +143,9 @@ It can be grouped into the following components:
     
 - **Redundancy/ Availability Zones** Azure typically creates 3 copies of the data- these can be located at multiple data centers in the same or different availability zone in a region or in different regions to ensure that if there is an equipment malfunction or power failure in one area the data is still available
 
-- **Access Tiers** Hot cold and Archive. At the storage account level you can only select between hot or cool, archive is not available
+- **Access Tiers** Hot cold (data needs to be stored for at least 30 days) and Archive (slower, least costly, data needs to be stored for atleast 180 days). At the storage account level you can only select between hot or cool, archive is not available. The Archive option is only available at the individual blob level
     - The access tier for a particular storage account can be changed under configuration
     - Beyond the storage level. There is also an option of changing the tier at the level of blob item e-g sample.text inside the container
+    - The limitation of Archive tier is that you cannot directly access the object itself- You first have to rehydrate it before you can access it. - Rehydration is changing the object from archive to hot or cool - this can take up to 15 hours, but there is an option of "high priority" that can complete rehydration in under 1 hr if < 1GB
 
 
