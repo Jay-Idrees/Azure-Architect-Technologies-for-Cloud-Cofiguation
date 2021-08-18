@@ -126,7 +126,12 @@ It can be grouped into the following components:
     - File shares usually occur on port 445
 
 **Table Service** 
-- 2 Types: SQL-Schema, or No SQL-No Schema
-- Partition key, used to define the partition to store entities
-- Row key, uniquely identifies an entity in a partition
-- The benifit of partition is the quick retrieval of data- the data is stored in partitions rather than a whole in millions
+    - 2 Types: SQL-Schema, or No SQL-No Schema
+    - Data is usually stored in partitions and entities are then identified uniquely inside the partitions for quick retrival
+    - Partition key, used to define the partition to store entities
+    - Row key, uniquely identifies an entity in a partition
+    - The benifit of partition is the quick retrieval of data- the data is stored in partitions rather than a whole in millions
+
+    - Click tables in the storage account
+    - Create table, assign name "customer"
+    - When you click the table, you will have to assign a **partiion key** and a **row key**
