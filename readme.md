@@ -145,5 +145,6 @@ It can be grouped into the following components:
 
 - **Access Tiers** Hot cold and Archive. At the storage account level you can only select between hot or cool, archive is not available
     - The access tier for a particular storage account can be changed under configuration
+    - Beyond the storage level. There is also an option of changing the tier at the level of blob item e-g sample.text inside the container
 
 
