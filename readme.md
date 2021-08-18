@@ -158,6 +158,8 @@ It can be grouped into the following components:
     - The rules can also be disabled and deleted
 
 - **Migrating Storage account from locally redundant storage(LRS) to Zone redundant Storage (ZRS) - Also called Change Replication**
-    -options: **Manual** (You create a new storage account in ZRS and copy data from LRS - This will lead to a small downtime) or **live migration** (You request that to Microsoft, there is no downtime for a live migration)
+    - options: **Manual** (You create a new storage account in ZRS and copy data from LRS - This will lead to a small downtime) or **live migration** (You request that to Microsoft, there is no downtime for a live migration)
+    - You can change the migration settings for a storage account by clicking the configuration of storage account and then modifying "replication"
+    - Note that the acccess tier cannot be "Archive" for a blob in the storage account when you are updating the replication
 
 
