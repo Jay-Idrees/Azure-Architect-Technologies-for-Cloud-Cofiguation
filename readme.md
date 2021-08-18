@@ -152,4 +152,9 @@ It can be grouped into the following components:
     - The limitation of Archive tier is that you cannot directly access the object itself- You first have to rehydrate it before you can access it. - Rehydration is changing the object from archive to hot or cool - this can take up to 15 hours, but there is an option of "high priority" that can complete rehydration in under 1 hr if < 1GB
     - In the archived state the blob cannot be edited, you will have to rehydrate it first
 
+- **Life cycle Management Rules**: 
+    - You can add a rule to a storage account. The rule facilitates automation. It wil be very demanding to manually change access tier for every blob item from cool to archive or hot to cool. For example you can set a rule that if a base blob has not been modified for the past 30 days you can change its tier from hot to cool automatically
+    - Likewise you can also create a rule to move a Blob from cool to archive after 180 days
+    - The rules can also be disabled and deleted
+
 
