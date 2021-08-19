@@ -173,4 +173,8 @@ It can be grouped into the following components:
         - select subscription - note that every resource must have a subscription and a resource group
         - Name the machine, select availabilty zoon where the latency is likely to be the least
         - Availability options - no redundancy required
+        - Select the OS image- Win/Linux etc
+        - With size you can specify the Ram
+        - You can assign Username and password
+        - You can specify inbound port rules - which allows RDP to the virtual machine using a remote computer
 
