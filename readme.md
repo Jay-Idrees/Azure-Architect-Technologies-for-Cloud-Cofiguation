@@ -168,7 +168,7 @@ It can be grouped into the following components:
 
 - The general concept is that you deploy virtual machines into a virtual network - The network has an interface with a private and public IP and is protected by firewall in the form of a network security group
 
-- **Virtual Machines**
+- **Creating Virtual Machines**
     - **Bsics tab** 
         - select subscription - note that every resource must have a subscription and a resource group
         - Name the machine, select availabilty zoon where the latency is likely to be the least
@@ -177,4 +177,13 @@ It can be grouped into the following components:
         - With size you can specify the Ram
         - You can assign Username and password
         - You can specify inbound port rules - which allows RDP to the virtual machine using a remote computer
+    - **Disk tab**
+        - Assign disk type- SSD
+    - **Networking Tab**
+        - Assign a virtual network (A virtual machine has to be a part of a virtual network) if created from before or create new - It will also automatically create a new one if one does not exist already and a public IP as well as a subnet. 
+        - A public IP allows the machine to be connected to over the internet
+        - Select a NSG (Network security group)
+        - Allow selected ports for the public inbound ports
+    - Leave **Management, Advanced and Tags** tabs as is
+    - Once you hit review and create the virtual machine is created and you will know how much you will be charged per hr. 
 
