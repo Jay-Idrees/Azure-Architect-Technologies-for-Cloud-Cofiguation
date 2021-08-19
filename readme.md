@@ -85,7 +85,7 @@ It can be grouped into the following components:
     - Select region
     - You can choose between standard or premium performance option. 
                     - The *standard is a general purpose account* (blob, table, queue,file sharing)
-                    - Premium is more specific for each of the individual subtypes and has low latency
+                    - Premium is more specific for each of the individual subtypes and has low latency - better suited if you want high performing VM hard disks
     - Choose redundancy- It relates to availability, for extra availability you have more options, but the basic option is (locally redundant storage)
     - **Advanced tab**
     - You can keep the default settings
@@ -151,6 +151,7 @@ It can be grouped into the following components:
     - Beyond the storage level. There is also an option of changing the tier at the level of blob item e-g sample.text inside the container - Note that this individual item inside the storage account can be archived, but not the storage account itself
     - The limitation of Archive tier is that you cannot directly access the object itself- You first have to rehydrate it before you can access it. - Rehydration is changing the object from archive to hot or cool - this can take up to 15 hours, but there is an option of "high priority" that can complete rehydration in under 1 hr if < 1GB
     - In the archived state the blob cannot be edited, you will have to rehydrate it first
+    - Only the Blob service allows you to archive data
 
 - **Life cycle Management Rules**: 
     - You can add a rule to a storage account. The rule facilitates automation. It wil be very demanding to manually change access tier for every blob item from cool to archive or hot to cool. For example you can set a rule that if a base blob has not been modified for the past 30 days you can change its tier from hot to cool automatically
@@ -161,5 +162,15 @@ It can be grouped into the following components:
     - options: **Manual** (You create a new storage account in ZRS and copy data from LRS - This will lead to a small downtime) or **live migration** (You request that to Microsoft, there is no downtime for a live migration)
     - You can change the migration settings for a storage account by clicking the configuration of storage account and then modifying "replication"
     - Note that the acccess tier cannot be "Archive" for a blob in the storage account when you are updating the replication
+    - Live replication can only be performed with LRS or GRS replication
 
+## Azure Virtual Machine Service
+
+- The general concept is that you deploy virtual machines into a virtual network - The network has an interface with a private and public IP and is protected by firewall in the form of a network security group
+
+- **Virtual Machines**
+    - **Bsics tab** 
+        - select subscription - note that every resource must have a subscription and a resource group
+        - Name the machine, select availabilty zoon where the latency is likely to be the least
+        - Availability options - no redundancy required
 
