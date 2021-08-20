@@ -187,7 +187,10 @@ It can be grouped into the following components:
     - Leave **Management, Advanced and Tags** tabs as is
     - Once you hit review and create the virtual machine is created and you will know how much you will be charged per hr. 
     - Once a machine has been created, you can look at its information (status-running or not, subscription, OS etc) and then the top row of tabs give you options to connect, restart, stop, delete etc options
+    - Note that when you created a virtual machine, a number of things associated with it were automatically created: Virtual network, Network Security group, Network interface, disk and public IP - these can be looked at but going to 'all resources' and then filtering for the resoure group. Network interface is like having a network card - All data and traffic passes from this card
+    - Note that a public IP is important because thats the typical way to connect to the virtual machine from an internet
 
 - **Connecting to a Virtual Machine**
+    - There are 3 options: 1) **RDP**- uaually for windows VM, 2) **SSH** - Usually for Linux machines and 3) **Bastion** (Another way to connect- does not require agent, client or other software)
     
 
