@@ -192,5 +192,9 @@ It can be grouped into the following components:
 
 - **Connecting to a Virtual Machine**
     - There are 3 options: 1) **RDP**- uaually for windows VM, 2) **SSH** - Usually for Linux machines and 3) **Bastion** (Another way to connect- does not require agent, client or other software)
-    
+
+    - With the RDP option, you simply have to specify the IP address and then specify the connectivity option as RDP. It will download a file which you can then run and it will open a portal to enter credentials
+
+- **Installing a webserver on a VM e-g Installing Internet Information Services which is a server based application**
+    - Once you RDP into a virtual machine you can open Server Manager Dashboard
 
