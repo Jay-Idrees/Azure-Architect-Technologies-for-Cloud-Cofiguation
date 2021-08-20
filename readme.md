@@ -186,4 +186,8 @@ It can be grouped into the following components:
         - Allow selected ports for the public inbound ports
     - Leave **Management, Advanced and Tags** tabs as is
     - Once you hit review and create the virtual machine is created and you will know how much you will be charged per hr. 
+    - Once a machine has been created, you can look at its information (status-running or not, subscription, OS etc) and then the top row of tabs give you options to connect, restart, stop, delete etc options
+
+- **Connecting to a Virtual Machine**
+    
 
