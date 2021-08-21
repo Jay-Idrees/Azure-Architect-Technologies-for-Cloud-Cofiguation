@@ -185,10 +185,10 @@ It can be grouped into the following components:
         - A public IP allows the machine to be connected to over the internet
         - Select a NSG (Network security group)
         - Allow selected ports for the public inbound ports
-    - Leave **Management, Advanced and Tags** tabs as is
+    - Leave **Management, Advanced and Tags** tabs as is - you can select turn of boot diagnostics unser management (Boot diagnostic option is a debugging feature that help diagnose boot faliures of VM)
     - Once you hit review and create the virtual machine is created and you will know how much you will be charged per hr. 
     - Once a machine has been created, you can look at its information (status-running or not, subscription, OS etc) and then the top row of tabs give you options to connect, restart, stop, delete etc options
-    - Note that when you created a virtual machine, a number of things associated with it were automatically created: Virtual network, Network Security group, Network interface, disk and public IP - these can be looked at but going to 'all resources' and then filtering for the resoure group. Network interface is like having a network card - All data and traffic passes from this card
+    - Note that when you created a virtual machine, a number of things associated with it were automatically created: **Virtual network, Network Security group, Network interface, disk and public IP** - these can be looked at but going to 'all resources' and then filtering for the resoure group. Network interface is like having a network card - All data and traffic passes from this card
     - Note that a public IP is important because thats the typical way to connect to the virtual machine from an internet
 
 - **Connecting to a Virtual Machine**
@@ -205,7 +205,7 @@ It can be grouped into the following components:
     - What this does is allows the virtual machine to listen incoming connections on its port `80` 
     - Now if you run the explorer and type `http://localhost/` the Internet infromation services page will run
 
-- **Accessing the VM from a normal internet**
+- **Accessing the VM from regular internet**
     - You can access the virtual machine on the internet by typing its public Ip address in the browser- you can get that from the information page of the virtual machine in Azure Portal
     - Then you can change the settings of the VM in the NSG by clicking **Add inbound port rule** to select **TCP** portal and **enabling connections to port 80**. Any other port selection wont work, because the internet information services enables the VM to listen for connections at port 80 and the VM firewall must also likewise allow that, if anyother port is allowed at VM NSG then the internet infromation webservices will still see that port 80 is closed and the outside traffic wont be able to access it as this service is only available at port 80 and per NSG port 80 would be closed
     - This rule is telling the firewall to please allow connectivity to port 80 on the VM
