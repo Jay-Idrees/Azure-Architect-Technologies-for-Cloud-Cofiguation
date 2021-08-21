@@ -219,4 +219,9 @@ It can be grouped into the following components:
 
 - When **deleting** a virtual machine you avoid doing it from the virtual machine infomation page, but rather do it from all resources- that way you can also get rid of all the resources associated with that particular VM such as NSG, Vetwork interface, IP, disk etc
 
+- **Virtual Machine Disks** 
+    - Managed or Unmanaged disk - prefer managed disks beause they have near 100% availability and they are managed by Azure
+    - Unmanaged disks will require a storage account with premium settings general purpose 1 or 2
+    - Information about disks can be seen at [the microsoft disk link](https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types)
+
 
