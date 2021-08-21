@@ -258,6 +258,20 @@ It can be grouped into the following components:
     - When you add an availability set to a VM, it gets added to a **fault domain** as well as an **Update domain**
     - Each fault domain is an independent server in a data center and has its own independent powersupply and network
     - The update domains handle updating the server - typically when an availability set is assigned it ensures that the distribution of VMs is such that not all VMs are out during maitainance with updates or power or networking issues - this ensures availability
+    - Manged disks should be used instead of unmanaged disks when an availability set is assigned
+    - Most regions have a maximum of 2 or 3 fault domains
+    - If your application has a web tier (where User interacts with the app) and an application tier - the part of the app where the servers are hosted. Each of the two tiers should have separate availability sets - They should not be combined together
+
+    - **Creating an availability set**
+        - **Basic Tab**
+            - create a new availability set from a dashboard
+            - Select subscription, resource group, region
+            - Select the number of update and fault domains 2:2 is ok. The fault domains cannot be more than 3 usually, the update domains can by up to 20
+            - Use Managed disk
+        - **Advanced Tab**
+            - You can select a proximity placement group which ensures that the VMs are closer together
+    - Then when you create a virtual machine, you can assign an availability set to it. There is also an option of creating a new availability set at the time of creatig a new virtual machine
+
 
 
 
