@@ -297,6 +297,12 @@ It can be grouped into the following components:
                 - Rest as is
             - **Health, Advanced and Tags tabs**
                 - Leave as is
+        - Once this is done you can go to the scale set recource and look at inststances - you will see 1 Vm running
+        - Then access the virtual machine - get the public IP when you copy it, it will let you run the linux VM after you paste the Ip address. Then 
+        - Upon logging into a linux machine you can update packages: `sudo apt-get update`
+        - Then you can test the scale set in action by installing a package called  **stress**: `sudo apt-get install -y stress`
+        - Then you can run the stress app on the linux VM by running `sudo stress --cpu 90`
+        - This after it lasts for 10 min, it will atutomatically scale out VMs from 1 to 3 as you selected
           
 
 
