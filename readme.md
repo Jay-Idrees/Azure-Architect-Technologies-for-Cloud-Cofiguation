@@ -167,6 +167,7 @@ It can be grouped into the following components:
 ## Azure Virtual Machine Service
 
 - The general concept is that you deploy virtual machines into a virtual network - The network has an interface with a private and public IP and is protected by firewall in the form of a network security group
+- The service level agreements for VM. Single VM=99.9%, Availability Set VM=99.95%, Availability Zone in the same Azure region VM=99.99%
 
 - **Creating Virtual Machines**
     - **Bsics tab** 
@@ -248,7 +249,7 @@ It can be grouped into the following components:
     - The Sysprep tool will create the image rendering the original non-usable
     - Then you stop the VM `Stop-AzVM -ResourceGroupName azuredemo -Name demovm -Force` from azure cloud shell. This will deallocate the Vm
     - Once the VM has been deallocated, you can go to the azure portal and select **capture** from the VM tab to create an image
-    - Once the image has been created, you can create new VMs using that image. It will have all the default configurations
+    - Once the image has been created, you can create new VMs using that image. It will have all the default configurations- thats the benifit
 
 
 
