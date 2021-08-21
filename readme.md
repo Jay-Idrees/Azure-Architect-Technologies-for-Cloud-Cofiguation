@@ -226,6 +226,12 @@ It can be grouped into the following components:
     - You can attach a new disk for storing application data by going to the VM, selecting disks and then adding a disk
     - You can add name, select storage type (ultra and premium are expensive), size
     - Then log onto the virtual machine and inside the Server Manager, select File and Storage Services->Server->disks, you will now see the new disk you that you attached to the VM from the portal. Then right click it and initialize it.
+    - Once initialized, again right click and select new volume, slect a drive letter and create. 
+    
+- **Adding a virtual network Interface to and existing Virtual Network**
+    - You can have a situation where you have two subnets of which one is public and the other is completely private
+    - The rationale for adding another network interface would be to have the "public" subnet privately communicate with the second subnet
+    
 
 
 
