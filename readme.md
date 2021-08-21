@@ -262,15 +262,21 @@ It can be grouped into the following components:
     - Most regions have a maximum of 2 or 3 fault domains
     - If your application has a web tier (where User interacts with the app) and an application tier - the part of the app where the servers are hosted. Each of the two tiers should have separate availability sets - They should not be combined together
 
-    - **Creating an availability set**
-        - **Basic Tab**
-            - create a new availability set from a dashboard
-            - Select subscription, resource group, region
-            - Select the number of update and fault domains 2:2 is ok. The fault domains cannot be more than 3 usually, the update domains can by up to 20
-            - Use Managed disk
-        - **Advanced Tab**
+- **Creating an availability set**
+    - **Basic Tab**
+        - create a new availability set from a dashboard
+        - Select subscription, resource group, region
+        - Select the number of update and fault domains 2:2 is ok. The fault domains cannot be more than 3 usually, the update domains can by up to 20
+        - Use Managed disk
+    - **Advanced Tab**
             - You can select a proximity placement group which ensures that the VMs are closer together
     - Then when you create a virtual machine, you can assign an availability set to it. There is also an option of creating a new availability set at the time of creatig a new virtual machine
+    - Scenario: if a company wants to transfer to cloud and you want to ensure that at least 4 VMs are running during the planned maintainance period- then the total number of VMs you should design is 5
+
+- **Virtual Machine Scale Set**
+    - It is an automation tool based on CPU load. A better strategy to deal with overload is to distribute the request load over multiple VMs rather than increasing power of a single VM
+    - What a scale set does is that for instance if a CPU work load increases say to 75% it will add an additional VM to the set automatically, in order to distribute the workload.
+    - Likewise the scale set also has the ability to decrease the number of virtual machines in the set if the CPU usage drops to say 25% - you only pay for what you use so it is economical
 
 
 
