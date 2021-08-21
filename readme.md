@@ -231,7 +231,10 @@ It can be grouped into the following components:
 - **Adding a virtual network Interface to and existing Virtual Network**
     - You can have a situation where you have two subnets of which one is public and the other is completely private
     - The rationale for adding another network interface would be to have the "public" subnet privately communicate with the second subnet
-    
+    - You can first create a virtual machine and while you create it create 2 subnets wiht the network
+    - Then Stop the VM from running before adding another network interface card - The VM must be in a stopped(deallocated) state before it can be added to the VM
+    - Then in the VM resource select networking and click `Attach network interface`
+
 
 
 
