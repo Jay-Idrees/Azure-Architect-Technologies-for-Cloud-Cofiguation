@@ -228,12 +228,28 @@ It can be grouped into the following components:
     - Then log onto the virtual machine and inside the Server Manager, select File and Storage Services->Server->disks, you will now see the new disk you that you attached to the VM from the portal. Then right click it and initialize it.
     - Once initialized, again right click and select new volume, slect a drive letter and create. 
     
-- **Adding a virtual network Interface to and existing Virtual Network**
+- **Adding a virtual network Interface/Secondary network interface to and existing Virtual Network**
     - You can have a situation where you have two subnets of which one is public and the other is completely private
     - The rationale for adding another network interface would be to have the "public" subnet privately communicate with the second subnet
     - You can first create a virtual machine and while you create it create 2 subnets wiht the network
     - Then Stop the VM from running before adding another network interface card - The VM must be in a stopped(deallocated) state before it can be added to the VM
     - Then in the VM resource select networking and click `Attach network interface`
+        - Give a name to this new network interface 'secondary', select subnetB (the second private network). Then hit create
+        - Note that for communication between 2 network interfaces there should be correct software and routing
+
+- **Updating a VM size**
+    - Select the VM and then select size
+    - When you change the size of the VM, the VM will be restarted
+    - Sizing availability may be variable- check with your subscription and the quotas to see whats available
+
+- **Creating an image from an existing virtual machine**
+    - Note that once a virtual machine is imaged, the original can no longer be used - so it is a destructive process
+    - First connect to the VM and inside the Vm navigate to Windows drive->Windows->System32->Sysprep
+    - The Sysprep tool will create the image rendering the original non-usable
+    - Then you stop the VM `Stop-AzVM -ResourceGroupName azuredemo -Name demovm -Force` from azure cloud shell. This will deallocate the Vm
+    - Once the VM has been deallocated, you can go to the azure portal and select **capture** from the VM tab to create an image
+    - Once the image has been created, you can create new VMs using that image. It will have all the default configurations
+
 
 
 
