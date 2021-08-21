@@ -215,6 +215,6 @@ It can be grouped into the following components:
     - Note that **Restarting or Shutting down** from inside the VM does not erase data in the temporary disk, this also retains the public IP address of the VM. If you shut down the VM status changes to "stopped" from running. Even if it says stopped, it does not mean that there would be no charge- infact there will be a small computing charge
     - Alternatively, if you hit the "Stop" button from the VM details page, it will erase all data in the temporary disk and will also deallocate the IP address unless you check "Do you want to reserve the Public IP address?"
 
-
+- `circle back to setting up a linux virtual machine`
 
 
