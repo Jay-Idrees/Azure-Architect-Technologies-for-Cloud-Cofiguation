@@ -277,6 +277,21 @@ It can be grouped into the following components:
     - It is an automation tool based on CPU load. A better strategy to deal with overload is to distribute the request load over multiple VMs rather than increasing power of a single VM
     - What a scale set does is that for instance if a CPU work load increases say to 75% it will add an additional VM to the set automatically, in order to distribute the workload.
     - Likewise the scale set also has the ability to decrease the number of virtual machines in the set if the CPU usage drops to say 25% - you only pay for what you use so it is economical
+    - **Using a virtual machine scale set**
+        - Add a resource and select `virtual machine scaleset`
+            - **Basics tab**
+                - Select resoure group, assign name, select region as well as VM specifications (image, spot instance-no, disk size, authentication type as user/pw). You can leave the availability zone to none 
+            - **Disks tab**
+                - Leave as is/Premium SSD
+            - **Networking tab**
+                - VN configuration will automatically create a new newtwork
+                - Edit network interface: Allow selected ports for example port 22 for SSH for Linux VM
+                - Enable public IP address
+            - **Scaling**
+                - Initial instance you can select as 1
+                - You can select the scaling policy to be custom: selecting the min or max VMs to be 1-3
+                - Then you can select the **scale out** option set at 75% CPU usage for 10 min - increase VM by 1
+                - Then likewise you can select the **scale in** option set at 25% to decrease VM by 1
 
 
 
