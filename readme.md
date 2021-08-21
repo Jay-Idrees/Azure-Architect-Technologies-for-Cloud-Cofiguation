@@ -287,11 +287,17 @@ It can be grouped into the following components:
                 - VN configuration will automatically create a new newtwork
                 - Edit network interface: Allow selected ports for example port 22 for SSH for Linux VM
                 - Enable public IP address
-            - **Scaling**
+            - **Scaling tab**
                 - Initial instance you can select as 1
                 - You can select the scaling policy to be custom: selecting the min or max VMs to be 1-3
                 - Then you can select the **scale out** option set at 75% CPU usage for 10 min - increase VM by 1
                 - Then likewise you can select the **scale in** option set at 25% to decrease VM by 1
+            - **Management tab**
+                - Leave boot diagnostics off
+                - Rest as is
+            - **Health, Advanced and Tags tabs**
+                - Leave as is
+          
 
 
 
