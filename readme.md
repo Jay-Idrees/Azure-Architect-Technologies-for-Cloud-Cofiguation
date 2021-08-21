@@ -255,7 +255,7 @@ It can be grouped into the following components:
     - Assiginig availability set to VMs ensures that the VMs are distributed across multiple fault domain
     - Spreading a large application over multiple virtual machines increases efficiency
     - A virtual machine is typically hosted on rack on a physical Azure data center and each rack has its own power and network. If there is an issue with the power or network of a rack then the virtual machines as well as the apps can go down
-    - When you add an availability set to a VM, it gets added to a **fault domain** as well as an **Update domain**
+    - When you add an availability set to a VM, it gets added to a **fault domain** (Deals with faults in hardware) as well as an **Update domain** (Deales with software)
     - Each fault domain is an independent server in a data center and has its own independent powersupply and network
     - The update domains handle updating the server - typically when an availability set is assigned it ensures that the distribution of VMs is such that not all VMs are out during maitainance with updates or power or networking issues - this ensures availability
     - Manged disks should be used instead of unmanaged disks when an availability set is assigned
