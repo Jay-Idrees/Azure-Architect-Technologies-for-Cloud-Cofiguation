@@ -257,7 +257,7 @@ It can be grouped into the following components:
     - A virtual machine is typically hosted on rack on a physical Azure data center and each rack has its own power and network. If there is an issue with the power or network of a rack then the virtual machines as well as the apps can go down
     - When you add an availability set to a VM, it gets added to a **fault domain** as well as an **Update domain**
     - Each fault domain is an independent server in a data center and has its own independent powersupply and network
-    - If portions of the app are distributed over multiple fault domain
+    - The update domains handle updating the server - typically when an availability set is assigned it ensures that the distribution of VMs is such that not all VMs are out during maitainance with updates or power or networking issues - this ensures availability
 
 
 
