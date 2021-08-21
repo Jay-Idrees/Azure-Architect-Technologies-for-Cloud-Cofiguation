@@ -209,6 +209,8 @@ It can be grouped into the following components:
     - Then you can change the settings of the VM in the NSG by clicking **Add inbound port rule** to select **TCP** portal and **enabling connections to port 80**. Any other port selection wont work, because the internet information services enables the VM to listen for connections at port 80 and the VM firewall must also likewise allow that, if anyother port is allowed at VM NSG then the internet infromation webservices will still see that port 80 is closed and the outside traffic wont be able to access it as this service is only available at port 80 and per NSG port 80 would be closed
     - This rule is telling the firewall to please allow connectivity to port 80 on the VM
 
+- The VMs have two types of disks : 1) OS disk or Manged disk- it has high availability and is managed by Azure 2) Temporary disk - this is an extra disk drive added to VM for use
+
 
 
 
