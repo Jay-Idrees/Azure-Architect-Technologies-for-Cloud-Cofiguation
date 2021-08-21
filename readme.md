@@ -197,4 +197,17 @@ It can be grouped into the following components:
 
 - **Installing a webserver on a VM e-g Installing Internet Information Services which is a server based application**
     - Once you RDP into a virtual machine you can open Server Manager Dashboard
+    - Click add roles and features
+    - Select role-based or feature-based installation
+    - Next leave default settings and when you reach "server roles" check Web Server (IIS) - click add features
+    - Then next all the way to install. This is a simple webserver installation
+    - What this does is allows the virtual machine to listen incoming connections on its port `80` 
+    - Now if you run the explorer and type `http://localhost/` the Internet infromation services page will run
+
+- **Accessing the VM from a normal internet**
+    - You can access the virtual machine on the internet by typing its public Ip address in the browser- you can get that from the information page of the virtual machine in Azure Portal
+    - Then you can change the settings of the VM in the NSG by clicking **Add inbound port rule** to select **TCP** portal and **enabling connections to port 80**. Any other port selection wont work, because the internet information services enables the VM to listen for connections at port 80 and the VM firewall must also likewise allow that, if anyother port is allowed at VM NSG then the internet infromation webservices will still see that port 80 is closed and the outside traffic wont be able to access it as this service is only available at port 80 and per NSG port 80 would be closed
+
+
+
 
