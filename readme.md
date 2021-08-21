@@ -223,5 +223,10 @@ It can be grouped into the following components:
     - Managed or Unmanaged disk - prefer managed disks beause they have near 100% availability and they are managed by Azure
     - Unmanaged disks will require a storage account with premium settings general purpose 1 or 2
     - Information about disks can be seen at [the microsoft disk link](https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types)
+    - You can attach a new disk for storing application data by going to the VM, selecting disks and then adding a disk
+    - You can add name, select storage type (ultra and premium are expensive), size
+    - Then log onto the virtual machine and inside the Server Manager, select File and Storage Services->Server->disks, you will now see the new disk you that you attached to the VM from the portal. Then right click it and initialize it.
+
+
 
 
