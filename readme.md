@@ -207,6 +207,7 @@ It can be grouped into the following components:
 - **Accessing the VM from a normal internet**
     - You can access the virtual machine on the internet by typing its public Ip address in the browser- you can get that from the information page of the virtual machine in Azure Portal
     - Then you can change the settings of the VM in the NSG by clicking **Add inbound port rule** to select **TCP** portal and **enabling connections to port 80**. Any other port selection wont work, because the internet information services enables the VM to listen for connections at port 80 and the VM firewall must also likewise allow that, if anyother port is allowed at VM NSG then the internet infromation webservices will still see that port 80 is closed and the outside traffic wont be able to access it as this service is only available at port 80 and per NSG port 80 would be closed
+    - This rule is telling the firewall to please allow connectivity to port 80 on the VM
 
 
 
