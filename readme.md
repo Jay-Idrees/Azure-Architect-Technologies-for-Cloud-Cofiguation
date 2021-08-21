@@ -251,6 +251,10 @@ It can be grouped into the following components:
     - Once the VM has been deallocated, you can go to the azure portal and select **capture** from the VM tab to create an image
     - Once the image has been created, you can create new VMs using that image. It will have all the default configurations- thats the benifit
 
+- **Availability Set**
+    - Spreading a large application over multiple virtual machines increases efficiency
+    - A virtual machine is typically hosted on rack on a physical Azure data center and each rack has its own power and network. If there is an issue with the power or network of a rack then the virtual machines as well as the apps can go down
+
 
 
 
