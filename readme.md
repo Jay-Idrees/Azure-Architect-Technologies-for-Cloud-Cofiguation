@@ -209,7 +209,7 @@ It can be grouped into the following components:
     - Then you can change the settings of the VM in the NSG by clicking **Add inbound port rule** to select **TCP** portal and **enabling connections to port 80**. Any other port selection wont work, because the internet information services enables the VM to listen for connections at port 80 and the VM firewall must also likewise allow that, if anyother port is allowed at VM NSG then the internet infromation webservices will still see that port 80 is closed and the outside traffic wont be able to access it as this service is only available at port 80 and per NSG port 80 would be closed
     - This rule is telling the firewall to please allow connectivity to port 80 on the VM
 
-- **Managing VM States** - Generally there are two states Running or Stopped. Then there is also a 'stop' tab on the details page - this is different from the stopped status
+- **Managing VM States** - Generally there are two states Running or Stopped. Then there is also a 'stop' tab on the details page - this is different from the stopped status- it is stopped(deallocated) - When this status is in place there are no computing charges and publicIP Maybe lost-see below
     - The VM has **OS or Managed disk** - this disk has high availability and is managed by Azure
     - Another disk is **Temporary disk** - this disk has low availability
     - Note that **Restarting or Shutting down** from inside the VM does not erase data in the temporary disk, this also retains the public IP address of the VM. If you shut down the VM status changes to "stopped" from running. Even if it says stopped, it does not mean that there would be no charge- infact there will be a small computing charge
