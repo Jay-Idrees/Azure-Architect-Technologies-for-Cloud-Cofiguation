@@ -331,6 +331,9 @@ It can be grouped into the following components:
 
 ## Azure Virtual Networks
 
+- A virtual network should have a broad Address space, typically: `10.1.0.0/16`
+- Within a virtual network you can have two or more subnets - each subnet with its own address space (10.1.1.0/24 each)
+- Network interface - All data packets pass from a network interface to or from a VM - a network interface has a public and a private IP address
 
 
 
