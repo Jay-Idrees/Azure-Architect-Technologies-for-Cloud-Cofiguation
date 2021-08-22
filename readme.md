@@ -340,7 +340,9 @@ It can be grouped into the following components:
 - **Creating a Virtual Network**
     - **Basics tab**
         - Select a subscription, resource group and name of virtual network
-        - 
+    - **IP Address**
+        - Assigining the IP address name 10.0.0.0/16
+        - Note that a default subnet will be created for 10.0.0.0/24 - You can change its name from default
 
 
 
