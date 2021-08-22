@@ -309,7 +309,7 @@ It can be grouped into the following components:
 
      - **Availability Zones inside the Region**
         - Availability zone guards at the level of individual data center failure, while an availability set is still inside a data center but has different fault and update domains to improve availability
-        - An Availability zone is a collection of data centers
+        - An Availability zone is a collection of data centers (Multiple data centers per zone)
         - There are multiple availability zones in one region
         - There is no additional cost for creating an availability set and there is no additional cost for creating an availability zone
         - However, there can be additional brandwith costs with regards to the communication between two VMs in different zone but there are no costs associated with commnication between two VMs within the same availability set
@@ -318,8 +318,18 @@ It can be grouped into the following components:
         - Note that if you have an application that will be distributed over multiple VMs then its good to have the VMs over an availability zone
         - You can also select for availability zone while creating a virtual machine scale set - But be sure to have the starting instances for VMs to be 3 regardless of scaling options and then check for Zone 1,2,3 under the availability zone. In the scaling leave the initial instance count as 3. 
 
+    - **Using Azure dedicated host**
+        - Large companies can also have their own dedicated host -that way then can control the timeframe of when the maintainance events can take place on a physical host
+        - On a dedicated host, only the company's VMs will be place, no other VMs
+            - You can select **Create a dedicated host** from resources to create a dedicated host
+                - **Basics tab**
+                    - Add name and a host group name
+                    - Select the number of availability zones (1) and fault domain count (2)
+                    - The subscription will dictate whether you can have a dedicatd host - typically it requires 96 vCPUs
 
 
+
+## Azure Virtual Networks
 
 
 
