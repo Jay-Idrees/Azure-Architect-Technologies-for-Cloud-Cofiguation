@@ -355,7 +355,7 @@ It can be grouped into the following components:
     - You can assign a network security group or leave the default settings for now
     - Now you will have 2 subnets
     - You can change the range of the subnet CIDR block until no VM has been created in the subnet- This is important, because once a VM is created, an IP address will be assigned from the subnet range and then you cannot change the subnet range in the virtual network for that particular subnet in question
-    - 
+    - You can also modify the network mask (the broader CIDR of 10.0.0.0/16) by selecting address space under settings of the virtual network
 
 
     
