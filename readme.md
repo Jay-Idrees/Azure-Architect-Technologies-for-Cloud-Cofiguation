@@ -313,7 +313,9 @@ It can be grouped into the following components:
         - There is no additional cost for creating an availability set and there is no additional cost for creating an availability zone
         - However, there can be additional brandwith costs with regards to the communication between two VMs in different zone but there are no costs associated with commnication between two VMs within the same availability set
         - So Creating Availability set is less costly than creating an availability zone indirectly due to the brand width
-        - Note that you choose for the availability set vs availability zone under the `availability options` in the availability zone
+        - Note that you choose for the availability set vs availability zone under the `availability options` When creating a VM
+        - Note that if you have an application that will be distributed over multiple VMs then its good to have the VMs over an availability zone
+        - You can also select for availability zone while creating a virtual machine scale set
 
 
 
