@@ -312,6 +312,8 @@ It can be grouped into the following components:
         - There are multiple availability zones in one region
         - There is no additional cost for creating an availability set and there is no additional cost for creating an availability zone
         - However, there can be additional brandwith costs with regards to the communication between two VMs in different zone but there are no costs associated with commnication between two VMs within the same availability set
+        - So Creating Availability set is less costly than creating an availability zone indirectly due to the brand width
+        - Note that you choose for the availability set vs availability zone under the `availability options` in the availability zone
 
 
 
