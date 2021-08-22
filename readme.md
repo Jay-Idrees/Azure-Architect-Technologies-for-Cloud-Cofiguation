@@ -307,6 +307,13 @@ It can be grouped into the following components:
         - Another option is to create a custom VM image with a pre-installed applcation and use the additional VMs during the scale out process which will then have pre-installed application in them
         - You should also use Azure load balancer to uniformly distribute the user load across the new VMs. The user traffic will go to a load balancer and it will then distribute it across the VMs
 
+     - **Availability Zones inside the Region**
+        - An Availability zone is a collection of data centers
+        - There are multiple availability zones in one region
+        - There is no additional cost for creating an availability set and there is no additional cost for creating an availability zone
+        - However, there can be additional brandwith costs with regards to the communication between two VMs in different zone but there are no costs associated with commnication between two VMs within the same availability set
+
+
 
 
 
