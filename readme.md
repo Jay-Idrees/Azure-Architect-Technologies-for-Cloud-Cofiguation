@@ -363,6 +363,12 @@ It can be grouped into the following components:
 - Note that you can always change the IP address of the VM from dynamic to static
 - You can also disable the public IP address of a network interface card by going to the network interface, select IP configurations, selecting ip condfig and then selecting disable under public IP
 
+## Network Security Groups
+
+- It is like a firewall for a traffic that comes in and out of the network
+- It can be assigned to a network interface card or an entire subnet. If it is tied to a subnet - it will affect all VMs in it
+- There are **Inbound** and **Outbound** security rules that control traffic comming in and out of the network respectively
+
     
 
 
