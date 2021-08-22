@@ -191,6 +191,8 @@ It can be grouped into the following components:
     - Note that when you created a virtual machine, a number of things associated with it were automatically created: **Virtual network, Network Security group, Network interface, disk and public IP** - these can be looked at but going to 'all resources' and then filtering for the resoure group. Network interface is like having a network card - All data and traffic passes from this card
     - Note that a public IP is important because thats the typical way to connect to the virtual machine from an internet
 
+- Note that you can also change the public ip address of the virtual machine from dynamic to static by selecting configuration under settings of the virtual machine
+
 - **Connecting to a Virtual Machine**
     - There are 3 options: 1) **RDP**- uaually for windows VM, 2) **SSH** - Usually for Linux machines and 3) **Bastion** (Another way to connect- does not require agent, client or other software)
 
@@ -356,6 +358,7 @@ It can be grouped into the following components:
     - Now you will have 2 subnets
     - You can change the range of the subnet CIDR block until no VM has been created in the subnet- This is important, because once a VM is created, an IP address will be assigned from the subnet range and then you cannot change the subnet range in the virtual network for that particular subnet in question
     - You can also modify the network mask (the broader CIDR of 10.0.0.0/16) by selecting address space under settings of the virtual network and/or add a new mask such as `20.0.0.0/16`
+    - The ip address ranges of the subnets must be a subset of the broader netmask
 
 
     
