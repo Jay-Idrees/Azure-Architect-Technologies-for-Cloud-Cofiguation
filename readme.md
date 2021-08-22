@@ -341,8 +341,8 @@ It can be grouped into the following components:
     - **Basics tab**
         - Select a subscription, resource group and name of virtual network
     - **IP Address**
-        - Assigining the IP address name 10.0.0.0/16
-        - Note that a default subnet will be created for 10.0.0.0/24 - You can change its name from default
+        - Assigining the IP address name `10.0.0.0/16`
+        - Note that a default subnet will be created for `10.0.0.0/24 `- You can change its name from default
     - **Security**
         - Leave as is
     - **Tags**
@@ -351,8 +351,13 @@ It can be grouped into the following components:
 - **Adding a new subnet**
     - When you select the Vnet that you just created, under setting you can select subnets and this will display the current subnets in the network
     - Then you can add a new subnet by clicking the + subnet tab
-    - The wizard will automatically select an IP range that is different from the previous subnet - in this case 10.0.1.0/24
+    - The wizard will automatically select an IP range that is different from the previous subnet - in this case `10.0.1.0/24`
+    - You can assign a network security group or leave the default settings for now
+    - Now you will have 2 subnets
+    - You can change the range of the subnet CIDR block until no VM has been created in the subnet- This is important, because once a VM is created, an IP address will be assigned from the subnet range and then you cannot change the subnet range in the virtual network for that particular subnet in question
     - 
+
+
     
 
 
