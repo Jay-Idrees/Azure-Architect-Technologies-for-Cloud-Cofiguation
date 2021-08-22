@@ -305,7 +305,7 @@ It can be grouped into the following components:
         - This after it lasts for 10 min, it will atutomatically scale out VMs from 1 to 3 as you selected
         - During the scale out process, when a new VM is automatically added, it does not automatically also install the web app - It will have to be done manually by using custom script extensions which are basically commands that install the application
         - Another option is to create a custom VM image with a pre-installed applcation and use the additional VMs during the scale out process which will then have pre-installed application in them
-          
+        - You should also use Azure load balancer to uniformly distribute the user load across the new VMs. The user traffic will go to a load balancer and it will then distribute it across the VMs
 
 
 
