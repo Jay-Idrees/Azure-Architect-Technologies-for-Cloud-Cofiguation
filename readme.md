@@ -369,6 +369,12 @@ It can be grouped into the following components:
 - It can be assigned to a network interface card or an entire subnet. If it is tied to a subnet - it will affect all VMs in it
 - There are **Inbound** and **Outbound** security rules that control traffic comming in and out of the network respectively
 
+- **Elements of a network Security Group**
+    - Priority about which rule should run first
+    - Port e-g `80`
+    - Protocol - RCP or UDP
+    - Source and Destination (e-g source can be a public computer's ip and the destination can be the company's network)
+
     
 
 
