@@ -303,6 +303,7 @@ It can be grouped into the following components:
         - Then you can test the scale set in action by installing a package called  **stress**: `sudo apt-get install -y stress`
         - Then you can run the stress app on the linux VM by running `sudo stress --cpu 90`
         - This after it lasts for 10 min, it will atutomatically scale out VMs from 1 to 3 as you selected
+        - During the scale out process, when a new VM is automatically added, it does not automatically also install the web app - It will have to be done manually by using custom script extensions which are basically commands that install the application
           
 
 
