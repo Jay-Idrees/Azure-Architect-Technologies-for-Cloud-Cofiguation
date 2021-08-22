@@ -343,6 +343,17 @@ It can be grouped into the following components:
     - **IP Address**
         - Assigining the IP address name 10.0.0.0/16
         - Note that a default subnet will be created for 10.0.0.0/24 - You can change its name from default
+    - **Security**
+        - Leave as is
+    - **Tags**
+        - Leave as is
+
+- **Adding a new subnet**
+    - When you select the Vnet that you just created, under setting you can select subnets and this will display the current subnets in the network
+    - Then you can add a new subnet by clicking the + subnet tab
+    - The wizard will automatically select an IP range that is different from the previous subnet - in this case 10.0.1.0/24
+    - 
+    
 
 
 
