@@ -308,6 +308,7 @@ It can be grouped into the following components:
         - You should also use Azure load balancer to uniformly distribute the user load across the new VMs. The user traffic will go to a load balancer and it will then distribute it across the VMs
 
      - **Availability Zones inside the Region**
+        - Availability zone guards at the level of individual data center failure, while an availability set is still inside a data center but has different fault and update domains to improve availability
         - An Availability zone is a collection of data centers
         - There are multiple availability zones in one region
         - There is no additional cost for creating an availability set and there is no additional cost for creating an availability zone
@@ -315,7 +316,7 @@ It can be grouped into the following components:
         - So Creating Availability set is less costly than creating an availability zone indirectly due to the brand width
         - Note that you choose for the availability set vs availability zone under the `availability options` When creating a VM
         - Note that if you have an application that will be distributed over multiple VMs then its good to have the VMs over an availability zone
-        - You can also select for availability zone while creating a virtual machine scale set - But be sure to have the starting instances for VMs to be 3 regardless of scaling options and then check for Zone 1,2,3 under the availability zone
+        - You can also select for availability zone while creating a virtual machine scale set - But be sure to have the starting instances for VMs to be 3 regardless of scaling options and then check for Zone 1,2,3 under the availability zone. In the scaling leave the initial instance count as 3. 
 
 
 
