@@ -335,7 +335,12 @@ It can be grouped into the following components:
 - Within a virtual network you can have two or more subnets - each subnet with its own address space (10.1.1.0/24 each)
 - Network interface - All data packets pass from a network interface to or from a VM - a network interface has a public and a private IP address
 - The private IPs are usually for communication between to subnets or between two Vnets via peering
-- There are 2 SKUs (Uses dynamic IP addresses, no availability zone available), Basic and standard (uses static IP addresses, availability zone available)
+- There are 2 SKUs (Stock Keeping Unit) Basic (Uses dynamic IP addresses, no availability zone available)  and standard (uses static IP addresses, availability zone available)
+
+- **Creating a Virtual Network**
+    - **Basics tab**
+        - Select a subscription, resource group and name of virtual network
+        - 
 
 
 
