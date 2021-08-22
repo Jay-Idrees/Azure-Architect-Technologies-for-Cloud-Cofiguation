@@ -360,6 +360,8 @@ It can be grouped into the following components:
     - You can also modify the network mask (the broader CIDR of 10.0.0.0/16) by selecting address space under settings of the virtual network and/or add a new mask such as `20.0.0.0/16`
     - The ip address ranges of the subnets must be a subset of the broader netmask
 
+- Note that you can always change the IP address of the VM from dynamic to static
+- You can also disable the public IP address of a network interface card by going to the network interface, select IP configurations, selecting ip condfig and then selecting disable under public IP
 
     
 
