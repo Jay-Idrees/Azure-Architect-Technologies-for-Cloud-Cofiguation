@@ -315,7 +315,7 @@ It can be grouped into the following components:
         - So Creating Availability set is less costly than creating an availability zone indirectly due to the brand width
         - Note that you choose for the availability set vs availability zone under the `availability options` When creating a VM
         - Note that if you have an application that will be distributed over multiple VMs then its good to have the VMs over an availability zone
-        - You can also select for availability zone while creating a virtual machine scale set
+        - You can also select for availability zone while creating a virtual machine scale set - But be sure to have the starting instances for VMs to be 3 regardless of scaling options and then check for Zone 1,2,3 under the availability zone
 
 
 
