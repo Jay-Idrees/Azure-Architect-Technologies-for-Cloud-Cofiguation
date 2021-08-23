@@ -390,6 +390,26 @@ It can be grouped into the following components:
 
 - After creating a VM when you look at the network interface, under the networking tab you will see Inbound port rules. Note that there are a set of default rules (65000,65001,65500) that cannot be changed, then there are a set of custom rules that you create (Such as permitting RDP access on port 3389) which can be modified
 
+- You can also check how these rules are in effect from inside the VM - select Local Server in the Serve Manager dashboard and then click on enhanced security configuration
+
+- **Creating security rules in NSG**
+
+- You can type `(Invoke-WebRequest ifconfig.me/ip).content.Trim()` in powershell to obtain the public IP address of your computer
+- Then you can go to the network interface | Networking again and modify the inbound RDP rule and under the `source` paste your computer IP - this will now only allow this particular IP to connect to the VM
+    - **Creating a security rule to access VM from internet**
+        - In order to do that port 80 must be open on the VM - which hosts Http
+        - In contrast the opening port at the remote internet workstation can be any port (*), as when the connection is established with the port 80 on the VM a port on the connecting workstation is usually randomly assigned
+        - So, go to VM, select the networking tab and then select the network interface, from there select the inbound port rules
+            - **Inbound rule**
+                - You can add a service tag as internet
+                - For source port ranges type `*`
+                - For destination select any
+                - For Service select HTTP
+                - This will automatically select the destination port ranges to be 80 and the protocol to be TCP
+                - Action: Allow
+                - Name: port_80
+
+
     
 
 
