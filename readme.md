@@ -385,6 +385,8 @@ It can be grouped into the following components:
 - You can view the network security access rules by logging into the VM via RDP and then from the dashboard clicking Add roles and features
 - Then select webserver roles
 
+**Levels of 
+
 
 - **Creating a Network Security Rule**
     - Create a Virtual machine as usual, while creating it create a virtual network under networking -select its subnet
@@ -416,7 +418,7 @@ It can be grouped into the following components:
     
 - **Creating a NSG group separately and then associating it with a virtual network**
     - Go to all resources and search for a network security group 
-    - Create a network security group with basic information
+    - Create a network security group with basic information - Subscription, resource group, name, region
     - Then go to that NSG resource that you just created and then under settings select subnets
     - Click `+ Associate` tab in the subnet
     - This will allow you to select a pre-existing virtual network from a list
