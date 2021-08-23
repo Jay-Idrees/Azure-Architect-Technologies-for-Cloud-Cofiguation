@@ -438,7 +438,7 @@ It can be grouped into the following components:
         - **Security and other tabs**
             - Leave as is
     - Now Add virtual machines to the network
-        - To create a virtual machine
+        - To create a virtual machine you can select to create a virtual machine from resources independently and then from the basics tab select the subnet in which you want this virtual machine to be a part of
 
 
 
