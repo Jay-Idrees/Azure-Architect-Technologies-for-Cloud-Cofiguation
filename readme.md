@@ -426,8 +426,19 @@ It can be grouped into the following components:
     - You can also disassociate a particular NSG from a network by going to the NSG and selecting subets under settings
 
 
-    
+    `circle back at installing the MySQL server and using application security groups`
 
+- **Using a Jump-Box Server to connect with virtual machines**
+    - Create a virtual network
+        - **Basics tab**
+            - add information about the network - name, subscription, etc
+        - **IP Addresses**
+            - select the net mask 10.0.0.0/16
+            - This will also automatically add a subnet to your virtual network
+        - **Security and other tabs**
+            - Leave as is
+    - Now Add virtual machines to the network
+        - To create a virtual machine
 
 
 
