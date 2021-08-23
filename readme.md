@@ -419,9 +419,10 @@ It can be grouped into the following components:
 - **Creating a NSG group separately and then associating it with a virtual network**
     - Go to all resources and search for a network security group 
     - Create a network security group with basic information - Subscription, resource group, name, region
+    - Note that the default creation of this NSG will not allow any traffic on port 80 - for that to happen, an inbound exception rule must be created - the default setting for an NSG is deny all traffic
     - Then go to that NSG resource that you just created and then under settings select subnets
     - Click `+ Associate` tab in the subnet
-    - This will allow you to select a pre-existing virtual network from a list
+    - This will allow you to select a pre-existing virtual network from a list, along with the subnet you are trying to apply the NSG to
     - 
 
 
