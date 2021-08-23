@@ -372,12 +372,15 @@ It can be grouped into the following components:
 - There are **Inbound** and **Outbound** security rules that control traffic comming in and out of the network respectively
 
 - **Elements of a network Security Group**
-    - Priority about which rule should run first - The lower the number the higher the priority
+    - Priority about which rule should run first - The lower the number the higher the priority (The minimum priority nuber is 100) - Note that if the request matches the priority rule, no further rules will be evaluated
     - Port e-g `80`
     - Protocol - RCP or UDP
     - Source and Destination (e-g source can be a public computer's ip and the destination can be the company's network)
 
     `circle back to find when a new VM is created and why it cannot be connected until RDP is enabled and what does RDP do`
+
+
+- For a virtual network, two layers of network security / firewalls can be applied. The first NSG maybe applied at the level of the virtual network - this is the first pass. The second one is at the level of of subnet. The traffic must be allowed at the first NSG at the network level before it can reach the second network at the subnet level. Likwise request maybe allowed at the VNet level NSG but deined by the rules set at the subnet level  
 
 - You can view the network security access rules by logging into the VM via RDP and then from the dashboard clicking Add roles and features
 - Then select webserver roles
@@ -410,6 +413,14 @@ It can be grouped into the following components:
                 - This will automatically select the destination port ranges to be 80 and the protocol to be TCP
                 - Action: Allow
                 - Name: port_80
+    
+- **Creating a NSG group separately and then associating it with a virtual network**
+    - Go to all resources and search for a network security group 
+    - Create a network security group with basic information
+    - Then go to that NSG resource that you just created and then under settings select subnets
+    - Click `+ Associate` tab in the subnet
+    - This will allow you to select a pre-existing virtual network from a list
+    - 
 
 
     
