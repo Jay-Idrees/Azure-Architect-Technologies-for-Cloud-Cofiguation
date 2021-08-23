@@ -429,7 +429,10 @@ It can be grouped into the following components:
     `circle back at installing the MySQL server and using application security groups`
 
 - **Using a Jump-Box Server to connect with virtual machines**
-    - Create a virtual network
+
+- The goal is to create a network that has a subnet which contains a VM for a webserver. Then create another Jump-Box server that will be used to configure the webserver VM
+
+    - **Create a virtual network**
         - **Basics tab**
             - add information about the network - name, subscription, etc
         - **IP Addresses**
@@ -437,8 +440,12 @@ It can be grouped into the following components:
             - This will also automatically add a subnet to your virtual network
         - **Security and other tabs**
             - Leave as is
-    - Now Add virtual machines to the network
-        - To create a virtual machine you can select to create a virtual machine from resources independently and then from the basics tab select the subnet in which you want this virtual machine to be a part of
+    - **Creating a virtual machine inside the virtual network**
+        - To create a virtual machine you can select to create a virtual machine from resources independently and then during configuration select the virtual network and the subnet of which you want this virtual machine to be a part of
+        - Allow RDP inbound port as you are going to connect the jump-box to the virtual network
+    - **Add another subnet to the virtual network**
+        - 
+
 
 
 
