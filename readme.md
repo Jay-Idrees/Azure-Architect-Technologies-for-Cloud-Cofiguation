@@ -432,7 +432,7 @@ It can be grouped into the following components:
 
 - The goal is to create a network that has a subnet which contains a VM for a webserver. Then create another Jump-Box server that will be used to configure the webserver VM
 
-    - **Create a virtual network**
+    - **Create a Virtual Network**
         - **Basics tab**
             - add information about the network - name, subscription, etc
         - **IP Addresses**
@@ -440,14 +440,27 @@ It can be grouped into the following components:
             - This will also automatically add a subnet to your virtual network
         - **Security and other tabs**
             - Leave as is
-    - **Creating a virtual machine inside the virtual network**
+
+    - **Create a virtual machine inside the virtual network for a Webserver**
         - To create a virtual machine you can select to create a virtual machine from resources independently and then during configuration select the virtual network and the subnet of which you want this virtual machine to be a part of
         - Allow RDP inbound port as you are going to connect the jump-box to the virtual network
-        
+        - It should not have a public IP
+        - This can be done under the networking tab while creating the VM
+
     - **Add another subnet to the virtual network for the Jump-Box VM**
         - Select the virtual network that you previously created from resources
         - Then under setting, select subnet
-        - Click `+ subnet` to add another subet to the network - You can name this as `Jump-box-subnet`
+        - Click `+ subnet` to add another subet to the network - You can name this as `Jump-box-subnet` 
+        
+    
+    - **Create a virtual machine inside the Jump-box-Subnet for a Jump-Box-Server**
+        - Create a new virtual machine like before and during configuration select the Jump-box-subnet
+        - You will allow the inbound RDP port because at least you will be publically connecting to this VM from you workstation
+        - Thus it should also have a public IP - This can be done under the networking tab 
+    
+    With these steps you will not have a virtual network and 2 subnets onc containing a webserver VM and the other containing the Jump-box-Server VM
+
+    
     
 
 
