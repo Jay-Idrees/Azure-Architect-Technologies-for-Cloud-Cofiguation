@@ -177,7 +177,9 @@ It can be grouped into the following components:
         - Select the OS image- Win/Linux etc
         - With size you can specify the Ram
         - You can assign Username and password
-        - You can specify inbound port rules - which allows RDP to the virtual machine using a remote computer
+        - You can specify inbound port rules - which allows RDP to the virtual machine using a remote computer - This is important, you can also check HTTP(`80`), HTTPS(`443`), SSH(`22`) and RDP(`3389`) - what this does is add a new security rule to the network
+
+
     - **Disk tab**
         - Assign disk type- SSD
     - **Networking Tab**
@@ -374,6 +376,19 @@ It can be grouped into the following components:
     - Port e-g `80`
     - Protocol - RCP or UDP
     - Source and Destination (e-g source can be a public computer's ip and the destination can be the company's network)
+
+    `circle back to find when a new VM is created and why it cannot be connected until RDP is enabled and what does RDP do`
+
+- You can view the network security access rules by logging into the VM via RDP and then from the dashboard clicking Add roles and features
+- Then select webserver roles
+
+
+- **Creating a Network Security Rule**
+    - Create a Virtual machine as usual, while creating it create a virtual network under networking -select its subnet
+    - While creating the VM select Network security group as basic and allow selected ports - This is the basic version
+    - You can select the advanced option to create your own security rule
+
+- After creating a VM when you look at the network interface, under the networking tab you will see Inbound port rules. Note that there are a set of default rules (65000,65001,65500) that cannot be changed, then there are a set of custom rules that you create (Such as permitting RDP access on port 3389) which can be modified
 
     
 
