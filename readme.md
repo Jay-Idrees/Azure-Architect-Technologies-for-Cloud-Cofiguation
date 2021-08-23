@@ -372,7 +372,7 @@ It can be grouped into the following components:
 - There are **Inbound** and **Outbound** security rules that control traffic comming in and out of the network respectively
 
 - **Elements of a network Security Group**
-    - Priority about which rule should run first
+    - Priority about which rule should run first - The lower the number the higher the priority
     - Port e-g `80`
     - Protocol - RCP or UDP
     - Source and Destination (e-g source can be a public computer's ip and the destination can be the company's network)
@@ -396,6 +396,8 @@ It can be grouped into the following components:
 
 - You can type `(Invoke-WebRequest ifconfig.me/ip).content.Trim()` in powershell to obtain the public IP address of your computer
 - Then you can go to the network interface | Networking again and modify the inbound RDP rule and under the `source` paste your computer IP - this will now only allow this particular IP to connect to the VM
+- Note that this rule is related to RDP not connection to the internet - it controls which IP is allowed to RDP to a VM (i-e running the RDP file and then logging into the VM) - It is a different port- port `3389` - this rule is not letting you connet to the VM over the internet
+
     - **Creating a security rule to access VM from internet**
         - In order to do that port 80 must be open on the VM - which hosts Http
         - In contrast the opening port at the remote internet workstation can be any port (*), as when the connection is established with the port 80 on the VM a port on the connecting workstation is usually randomly assigned
