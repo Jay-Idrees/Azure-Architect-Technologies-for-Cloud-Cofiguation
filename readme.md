@@ -458,7 +458,7 @@ It can be grouped into the following components:
         - You will allow the inbound RDP port because at least you will be publically connecting to this VM from you workstation
         - Thus it should also have a public IP - This can be done under the networking tab 
     
-    With these steps you will not have a virtual network and 2 subnets onc containing a webserver VM and the other containing the Jump-box-Server VM
+- With these steps you will not have a virtual network and 2 subnets onc containing a webserver VM and the other containing the Jump-box-Server VM
 
     
     
