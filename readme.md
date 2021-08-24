@@ -481,6 +481,8 @@ It can be grouped into the following components:
         - Under the **Next hop type** select virtual appliance
         - Under the **Next hop address** past the PRIVATE IP address of the 'inspecting VM or the intermediary VM' b/w the webserver and the databse server VMs
     - Once you have created the route, next you associate the route with the subnets (Webserver subnet, database subnet)
+    - You can associate by selecting the custom route you just created and then under setting select subnets and then click `+ Associate` tab
+        - Select the virtual network and the subnet (The one containing the webserver VM)
 
 - Create a route so that all trafic must pass through a particular VM for inspection before it can go to the other VM, in other words no direct communication between the 2 VMs unless they pass through the inspecting VM. By establishing a custom routing table you are instructing the next "hop" for traffic to be the inspecting VM
 - Then you can associate the Custom route with the VMs
