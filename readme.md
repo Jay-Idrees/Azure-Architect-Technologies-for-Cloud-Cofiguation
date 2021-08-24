@@ -509,3 +509,8 @@ It can be grouped into the following components:
         - leave rest of the setting as is
     - **Step2: Create another new virtual machine with another VNet**
         - Same as above, different names
+
+    - Then RDP into one of the VMs - go to roles and services
+        - Select server selection
+        - Install Web Server IIS
+    - Then RDP into the second VM
