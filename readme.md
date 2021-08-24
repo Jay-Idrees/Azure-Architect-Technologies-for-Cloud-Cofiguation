@@ -510,7 +510,16 @@ It can be grouped into the following components:
     - **Step2: Create another new virtual machine with another VNet**
         - Same as above, different names
 
-    - Then RDP into one of the VMs - go to roles and services
+    - Then RDP into first - go to roles and features
         - Select server selection
         - Install Web Server IIS
+        - Note that if you type in the public IP of this VM in the browser from your workstation (outside VMs), it wont show the internet services page, because you have not set up any inbound rule to listn on port 80
+
     - Then RDP into the second VM
+        - Once you RDP into the machine - go onto the local server
+        - Turn off Enhanced Security Configuration
+        - Now if you paste the private ip address of the first VM into the browser, you will not be able to see the internet services page as there is peer to peer connection established yet
+
+- Select one of the virtual networks and under settings select peerings to add a new Virtual network peering connection
+    - give it a name
+    - It will be a two way connection
