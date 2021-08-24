@@ -458,8 +458,10 @@ It can be grouped into the following components:
         - You will allow the inbound RDP port because at least you will be publically connecting to this VM from you workstation
         - Thus it should also have a public IP - This can be done under the networking tab 
         - Also important to the Jump-Box-Server Vm and select networking under settings, then select the RDP rule, under that rule specity the source as Ip address and then paste you workstation IP address - This will limit the accessibility of the Jumb-box to only your workstation Ip address and is more secure
+        - Also note the PRIVATE IP address of the Jump-box server - This is the only IP address the Webserver VM should be allowed to accept
+        - `Next go to the Webserver VM, check that there is no public IP. Select Networking under settings. Go to the inbound rule for RDP and under source select IP address and then paste the private ip address of the Jump-Box-Server VM`
     
-- With these steps you will not have a virtual network and 2 subnets onc containing a webserver VM and the other containing the Jump-box-Server VM
+- With these steps you will not have a virtual network and 2 subnets one containing a webserver VM and the other containing the Jump-box-Server VM
 
     
     
