@@ -471,6 +471,13 @@ It can be grouped into the following components:
 - `Circle back and review the service endpoints in association with virtual network, storage accounts and storage explorer`
 
 
+## Using a Custom Route in a Virtual Network as an extra security feature
 
 - **Creating a Custom Route table**
+    - Go to all recources and search for route table
+    - Click create route table
+    - Add a Route by clicking `+ Route`
+
 - Create a route so that all trafic must pass through a particular VM for inspection before it can go to the other VM, in other words no direct communication between the 2 VMs unless they pass through the inspecting VM. By establishing a custom routing table you are instructing the next "hop" for traffic to be the inspecting VM
+- Then you can associate the Custom route with the VMs
+- Enable IP forwading
