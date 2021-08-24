@@ -478,6 +478,8 @@ It can be grouped into the following components:
     - Click create route table
     - Add a Route by clicking `+ Route`
         - Add route name, Address prefix (this is the netmask of the entire Vnet-this is because we want to cover all IP addresses on which this route should be applicable for)
+        - Under the **Next hop type** select virtual appliance
+        - Under the **Next hop address** past the PRIVATE IP address of the 'inspecting VM or the intermediary VM' b/w the webserver and the databse server VMs
 
 - Create a route so that all trafic must pass through a particular VM for inspection before it can go to the other VM, in other words no direct communication between the 2 VMs unless they pass through the inspecting VM. By establishing a custom routing table you are instructing the next "hop" for traffic to be the inspecting VM
 - Then you can associate the Custom route with the VMs
