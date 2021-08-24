@@ -462,10 +462,15 @@ It can be grouped into the following components:
         - `Next go to the Webserver VM, check that there is no public IP. Select Networking under settings. Go to the inbound rule for RDP and under source select IP address and then paste the private ip address of the Jump-Box-Server VM e-g 10.0.1.4/32` Note that here by adding /32 you are specifying that there is only one IP address
     
 - With these steps you will not have a virtual network and 2 subnets one containing a webserver VM and the other containing the Jump-box-Server VM
+- Once you have logged into the Jump-box-Server by RDP in azure, then click on the RDP connection from start and paste the private ip address of the webserver VM
+
+## Azure Bastion Service as an Alternative to Traditional Jump-Box
 
     
     
+- `Circle back and review the service endpoints in association with virtual network, storage accounts and storage explorer`
 
 
 
-
+- **Creating a Custom Route table**
+- Create a route so that all trafic must pass through a particular VM for inspection before it can go to the other VM, in other words no direct communication between the 2 VMs unless they pass through the inspecting VM. By establishing a custom routing table you are instructing the next "hop" for traffic to be the inspecting VM
