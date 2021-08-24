@@ -482,8 +482,30 @@ It can be grouped into the following components:
         - Under the **Next hop address** past the PRIVATE IP address of the 'inspecting VM or the intermediary VM' b/w the webserver and the databse server VMs
     - Once you have created the route, next you associate the route with the subnets (Webserver subnet, database subnet)
     - You can associate by selecting the custom route you just created and then under setting select subnets and then click `+ Associate` tab
-        - Select the virtual network and the subnet (The one containing the webserver VM)
+        - Select the virtual network and the subnet (The one containing the webserver VM) - Note that this step will fw the traffic from the webserver to the inspecting VM subnet- you are not done yet. You now have to configure routing from the inspecting VM to the database VM
+        - Go to the inspecting VM, under settings select networking and then network interface
+        - Once in the network interface, under settings select IP configurations and then **_Enable_** `IP forwarding`
+    - Once the Custom routing is configured on Azure, in the inspecting VM, you have to install a software
+        - After RDP into the inspecting VM, select roles and features, then select server roles, select remote access, then under role services select routing- leave the rest of the settings as default and then install
+        - After installing the software for remote access, you have to configure the remote access so select configure remote access from the flags
+        - Select the inspectig VM and right click to select `configure and enable routing and remote access`
+            - select custom configuration
+            - select LAN routing
 
-- Create a route so that all trafic must pass through a particular VM for inspection before it can go to the other VM, in other words no direct communication between the 2 VMs unless they pass through the inspecting VM. By establishing a custom routing table you are instructing the next "hop" for traffic to be the inspecting VM
-- Then you can associate the Custom route with the VMs
-- Enable IP forwading
+
+## Virtual network peering
+
+- Connecting 2 networks. One VM from one network, communicating with one VM from another network
+- In Azure, when two Vnets communicate via linked VMs, the traffic is on the Azure network only - it does not happen on the internet
+- Networks can be connected across regions, and across different subscriptions
+- It is important that the Virtual Network IP addresses do not overlap - otherwise you can not establish peering
+- VNets both in the classic deployment models cannot be connected
+
+    - **Step 1: Create a new virtual machine**
+        - Fill in the basics as usual, allow RDP
+        - Lave disks as is
+        - Under networking, create a new network (16 bit CDIR)
+        - Add a subnet /24
+        - leave rest of the setting as is
+    - **Step2: Create another new virtual machine with another VNet**
+        - Same as above, different names
