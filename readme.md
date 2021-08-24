@@ -473,7 +473,7 @@ It can be grouped into the following components:
 
 ## Using a Custom Route in a Virtual Network as an extra security feature
 
-- **Creating a Custom Route table**
+- **Creating a Custom Route Table**
     - Go to all recources and search for route table
     - Click create route table
     - Add a Route by clicking `+ Route`
