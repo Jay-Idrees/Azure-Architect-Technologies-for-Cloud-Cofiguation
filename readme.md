@@ -507,7 +507,7 @@ It can be grouped into the following components:
         - Under networking, create a new network (16 bit CDIR)
         - Add a subnet /24
         - leave rest of the setting as is
-    - **Step2: Create another new virtual machine with another VNet**
+    - **Step 2: Create another new virtual machine with another VNet**
         - Same as above, different names
 
     - Then RDP into first - go to roles and features
@@ -520,6 +520,16 @@ It can be grouped into the following components:
         - Turn off Enhanced Security Configuration
         - Now if you paste the private ip address of the first VM into the browser, you will not be able to see the internet services page as there is peer to peer connection established yet
 
-- Select one of the virtual networks and under settings select peerings to add a new Virtual network peering connection
-    - give it a name
-    - It will be a two way connection
+    - **Step 3: Establishing the peering connection b/w the two virtual networks**
+        - Select one of the virtual networks and under settings select **peerings** to add a new Virtual network peering connection
+        - give it a name (This is the name of connection from V1->V2)
+        - It will be a two way connection VM1 to VM2 and VM2 to VM1
+        - Select allow traffic
+        - Select virtual gateway or route Server as none
+        - Give the name of the second peering connection (V2->V1)
+        - Then choose the second VNet's name
+        - This establishes the second connection
+
+- Note that after the peering is established and then when you log into VM2 and type in the private IP address of VM1, you should be able to see the internet information services page
+
+
