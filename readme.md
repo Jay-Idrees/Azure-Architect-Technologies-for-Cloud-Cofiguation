@@ -187,7 +187,7 @@ It can be grouped into the following components:
         - A public IP allows the machine to be connected to over the internet
         - Select a NSG (Network security group)
         - Allow selected ports for the public inbound ports
-    - Leave **Management, Advanced and Tags** tabs as is - you can select turn of boot diagnostics unser management (Boot diagnostic option is a debugging feature that help diagnose boot faliures of VM)
+    - Leave **Management, Advanced and Tags tabs** tabs as is - you can select turn of boot diagnostics unser management (Boot diagnostic option is a debugging feature that help diagnose boot faliures of VM)
     - Once you hit review and create the virtual machine is created and you will know how much you will be charged per hr. 
     - Once a machine has been created, you can look at its information (status-running or not, subscription, OS etc) and then the top row of tabs give you options to connect, restart, stop, delete etc options
     - Note that when you created a virtual machine, a number of things associated with it were automatically created: **Virtual network, Network Security group, Network interface, disk and public IP** - these can be looked at but going to 'all resources' and then filtering for the resoure group. Network interface is like having a network card - All data and traffic passes from this card
