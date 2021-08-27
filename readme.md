@@ -242,7 +242,7 @@ It can be grouped into the following components:
         - Give a name to this new network interface 'secondary', select subnetB (the second private network). Then hit create
         - Note that for communication between 2 network interfaces there should be correct software and routing
 
-- **Updating a VM size**
+- **Updating a VM Size**
     - Select the VM and then select size
     - When you change the size of the VM, the VM will be restarted
     - Sizing availability may be variable- check with your subscription and the quotas to see whats available
