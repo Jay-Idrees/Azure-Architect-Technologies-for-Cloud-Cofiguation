@@ -266,7 +266,7 @@ It can be grouped into the following components:
     - Most regions have a maximum of 2 or 3 fault domains
     - If your application has a web tier (where User interacts with the app) and an application tier - the part of the app where the servers are hosted. Each of the two tiers should have separate availability sets - They should not be combined together
 
-- **Creating an availability set**
+- **Creating an availability Set**
     - **Basic Tab**
         - create a new availability set from a dashboard
         - Select subscription, resource group, region
