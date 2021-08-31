@@ -233,7 +233,7 @@ It can be grouped into the following components:
     - Then log onto the virtual machine and inside the Server Manager, select File and Storage Services->Server->disks, you will now see the new disk you that you attached to the VM from the portal. Then right click it and initialize it.
     - Once initialized, again right click and select new volume, slect a drive letter and create. 
     
-- **Adding a Virtual Network Interface/Secondary network interface to and existing Virtual Network**
+- **Adding a Virtual Network Interface/Secondary Network interface to and existing Virtual Network**
     - You can have a situation where you have two subnets of which one is public and the other is completely private
     - The rationale for adding another network interface would be to have the "public" subnet privately communicate with the second subnet
     - You can first create a virtual machine and while you create it create 2 subnets wiht the network
