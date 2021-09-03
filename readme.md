@@ -247,7 +247,7 @@ It can be grouped into the following components:
     - When you change the size of the VM, the VM will be restarted
     - Sizing availability may be variable- check with your subscription and the quotas to see whats available
 
-- **Creating an image from an existing Virtual machine**
+- **Creating an image from an existing Virtual Machine**
     - Note that once a virtual machine is imaged, the original can no longer be used - so it is a destructive process
     - First connect to the VM and inside the Vm navigate to Windows drive->Windows->System32->Sysprep
     - The Sysprep tool will create the image rendering the original non-usable
