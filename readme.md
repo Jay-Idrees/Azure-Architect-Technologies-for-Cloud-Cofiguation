@@ -222,7 +222,7 @@ It can be grouped into the following components:
 
 - `circle back to setting up a linux virtual machine`
 
-- When **deleting** a virtual machine you avoid doing it from the virtual machine infomation page, but rather do it from all resources- that way you can also get rid of all the resources associated with that particular VM such as NSG, Vetwork interface, IP, disk etc
+- When **Deleting** a virtual machine you avoid doing it from the virtual machine infomation page, but rather do it from all resources- that way you can also get rid of all the resources associated with that particular VM such as NSG, Vetwork interface, IP, disk etc
 
 - **Virtual Machine Disks** 
     - Managed or Unmanaged disk - prefer managed disks beause they have near 100% availability and they are managed by Azure
