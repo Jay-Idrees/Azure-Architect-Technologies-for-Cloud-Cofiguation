@@ -520,7 +520,7 @@ It can be grouped into the following components:
         - Turn off Enhanced Security Configuration
         - Now if you paste the private ip address of the first VM into the browser, you will not be able to see the internet services page as there is peer to peer connection established yet
 
-    - **Step 3: Establishing the Peering Connection b/w the two virtual networks**
+    - **Step 3: Establishing the Peering Connection b/w the two Virtual networks**
         - Select one of the virtual networks and under settings select **peerings** to add a new Virtual network peering connection
         - give it a name (This is the name of connection from V1->V2)
         - It will be a two way connection VM1 to VM2 and VM2 to VM1
