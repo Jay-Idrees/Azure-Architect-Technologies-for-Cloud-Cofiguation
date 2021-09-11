@@ -544,9 +544,16 @@ It can be grouped into the following components:
 - Then a VPN client can be downloaded and installed from Azure to the user workstation, which will make a point to site connection by doing these certificate activities behind the scenes
 - If there are multiple user workstations, they will all share the same user certificate with a private key
 
-
+- Now You can create 2 networks 1) Azure Company Remote Network -This will have subnet gatewaay and Vnet gateway, 2) User workstation on premesis Network 
      - **Step 1: Creating the Azure Company remote network**
         - Start with creating a **Virtual Machine** and while creating it also create a network and in that network create a subnet
-            - This can be done
+            - This can be done finding virtual machine from resources and create a new VM
+            - create a new resource group
+            - select location, no infrastructre, select size, create administrator account
+            - Keep the default settings for disks, advanced, tags
+            - Under Networking tab be sure to select **No public IP**
+            - **Create a new network** using the networking tab
+                - Assign name and address range such as 10.1.0.0/16 (Bigger range here as the VM and subnet will be contained inside it)
+                
 
 
