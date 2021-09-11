@@ -534,7 +534,7 @@ It can be grouped into the following components:
 
 - **Establishing a point to site VPN connection**
 - The goal of a point to site VPN connection is to allow an on premise machine to connet with the remote azure network
-    - Create a virtual network
+    - Create a Target virtual network - Note that the VM in this network should only have a private ip address
     - Create a gateway subnet inside the virtual network (the gatway between the virtual network and the premisis workstations)
     - Create a **virtual network gateway** separately and then attach it to the virtual network - Note that the virtual network gateway is essential to establish a point to site connection and can only be used if there is a pre-existing - Takes 45 minutes to create a virtual network gateway
 
