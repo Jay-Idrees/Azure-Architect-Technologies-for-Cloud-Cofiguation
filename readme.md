@@ -540,6 +540,7 @@ It can be grouped into the following components:
 
 - For the outside computers to connect to this network your company must have its own signed certificates (called root certificate) or a certificate provider. Only the certificates will allow you to connect to the network
 - For a secure connection over the internet, the machine on premisis should only be allowed to connect to a private IP address of the VM in the subnet
+- Once the Root certificate is issued it can generate a user certificate with a private key (premesis) and export a network certificate with a public key (Vnet gateway), the root certificate must be exported with a **public key** - to connect with **Virtual Network Gateway**, simultaneously the certificate's **private key** is with the user workstation on premesis
 
 
 
