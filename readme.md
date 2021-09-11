@@ -564,8 +564,10 @@ It can be grouped into the following components:
             - Click Add a script file - You will have to create a storage account - create a new storage account as prompted
                 - Create a storage account, give name, select general purpose V2, standard performance
                 - Then create a container within the storage account
-                - Then go into the container and upload the powershell script which contains the script to install internet information services
+                - Then go into the container and upload the powershell script which contains the script to install internet information services (see the code below)
+                - Then select the file click ok for it to run
 
+**Powershell extension script for installing internet information services on a VM with a private ip address only**
 ```
 import-module servermanager
 add-windowsfeature web-server -includeallsubfeature
