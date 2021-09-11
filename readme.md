@@ -545,4 +545,8 @@ It can be grouped into the following components:
 - If there are multiple user workstations, they will all share the same user certificate with a private key
 
 
+     - **Step 1: Creating the Azure Company remote network**
+        - Start with creating a **Virtual Machine** and while creating it also create a network and in that network create a subnet
+            - This can be done
+
 
