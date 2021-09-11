@@ -553,7 +553,26 @@ It can be grouped into the following components:
             - Keep the default settings for disks, advanced, tags
             - Under Networking tab be sure to select **No public IP**
             - **Create a new network** using the networking tab
-                - Assign name and address range such as 10.1.0.0/16 (Bigger range here as the VM and subnet will be contained inside it)
-                
+                - Assign name and address range such as `10.1.0.0/16` (Bigger range here as the VM and subnet will be contained inside it)
+                - Withing the same form create a subnetA with address range `10.1.0.0/24` - The SubnetA will contain the 
+                - Also select no public ip address for subnetA
+                - Leave the rest as default
+        - Now that the **VM** is created. It has no public address so you cannot connect to it from you laptop
+        - With private ip address, you can use **Custom Scripts Extensions** to install **Internet Information Services**
+            - You can do this by selecting **extensions** from the left pannel while the particular VM is selected and click add
+            - Select custom script extension and click create
+            - Click Add a script file - You will have to create a storage account - create a new storage account as prompted
+                - Create a storage account, give name, select general purpose V2, standard performance
+                - Then create a container within the storage account
+                - Then go into the container and upload the powershell script which contains the script to install internet information services
+
+```
+import-module servermanager
+add-windowsfeature web-server -includeallsubfeature
+add-windowsfeature Web-Asp-Net45
+add-windowsfeature NET-Framework-Features 
+```
+
+
 
 
