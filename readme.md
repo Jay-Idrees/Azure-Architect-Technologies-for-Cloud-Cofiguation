@@ -543,6 +543,7 @@ It can be grouped into the following components:
 - Once the Root certificate is issued it can generate a user certificate with a private key (premesis) and export a network certificate with a public key (Vnet gateway), the root certificate must be exported with a **public key** - to connect with **Virtual Network Gateway**, simultaneously the certificate's **private key** is with the user workstation on premesis
 - Then a VPN client can be downloaded and installed from Azure to the user workstation, which will make a point to site connection by doing these certificate activities behind the scenes
 - If there are multiple user workstations, they will all share the same user certificate with a private key
+- The Virtual network gateway also has a public ip address.
 
 - Now You can create 2 networks 1) Azure Company Remote Network -This will have subnet gatewaay and Vnet gateway, 2) User workstation on premesis Network 
      - **Step 1: Creating the Azure Company remote network**
@@ -574,6 +575,17 @@ add-windowsfeature web-server -includeallsubfeature
 add-windowsfeature Web-Asp-Net45
 add-windowsfeature NET-Framework-Features 
 ```
+
+ - **Step 2: Create Local premesis network**
+    - Start with creating a VM
+        - Select region, no infrastructure redundancy, standard D2, V2 memory, select windows machine, select username and pw
+        - check multi-tenant rights for wondows 10, you need to have abaser version of a license as well s the enterprise version license. Most big corporations have a contract with microsoft where they have enterprise licenses - This is an imp point
+        - Create a new virtual network
+        - Keep the public ip address
+
+- Once the VM and the second user Vnet are created, you can RDP to it with the user details
+- Now we have 2 networks in place 
+
 
 
 
