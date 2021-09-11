@@ -533,6 +533,7 @@ It can be grouped into the following components:
 - Note that after the peering is established and then when you log into VM2 and type in the private IP address of VM1, you should be able to see the internet information services page
 
 - **Establishing a point to site VPN connection**
+- The goal of a point to site VPN connection is to allow an on premise machine to connet with the remote azure network
     - Create a virtual network
     - Create a gateway subnet inside the virtual network
     - Create a **virtual network gateway** separately and then attach it to the virtual network - Note that the virtual network gateway is essential to establish a point to site connection
