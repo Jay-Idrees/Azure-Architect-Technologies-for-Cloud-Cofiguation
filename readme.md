@@ -503,10 +503,10 @@ It can be grouped into the following components:
 
     - **Step 1: Create a new virtual machine**
         - Fill in the basics as usual, allow RDP
-        - Lave disks as is
+        - Leave disks as is
         - Under networking, create a new network (16 bit CDIR)
         - Add a subnet /24
-        - leave rest of the setting as is
+        - leave rest of the settings as is
     - **Step 2: Create another new virtual machine with another VNet**
         - Same as above, different names
 
@@ -518,7 +518,7 @@ It can be grouped into the following components:
     - Then RDP into the second VM
         - Once you RDP into the machine - go onto the local server
         - Turn off Enhanced Security Configuration
-        - Now if you paste the private ip address of the first VM into the browser, you will not be able to see the internet services page as there is peer to peer connection established yet
+        - Now if you paste the private ip address of the first VM into the browser, you will not be able to see the internet services because no peer to peer connection is established yet. If peer to peer connection was established then 
 
     - **Step 3: Establishing the Peering Connection b/w the two Virtual networks**
         - Select one of the virtual networks and under settings select **peerings** to add a new Virtual network peering connection
@@ -531,5 +531,11 @@ It can be grouped into the following components:
         - This establishes the second connection
 
 - Note that after the peering is established and then when you log into VM2 and type in the private IP address of VM1, you should be able to see the internet information services page
+
+- **Establishing a point to site VPN connection**
+    - Create a virtual network
+    - Create a gateway subnet inside the virtual network
+    - Create a **virtual network gateway** separately and then attach it to the virtual network - Note that the virtual network gateway is essential to establish a point to site connection
+
 
 
