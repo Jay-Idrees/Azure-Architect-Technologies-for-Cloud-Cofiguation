@@ -593,6 +593,12 @@ add-windowsfeature NET-Framework-Features
         - Under the subnets you will see and option to create a **Gateway subnet**
         - Slect Ip range: 10.1.1.0/24, rest leave as is
     - **Virtual Network gateway**
+        - Once the gateway subnet is created, you can search in the general dashboard for **Virtual Network Gateway**
+        - Next go to the main dashboard and search for **Virtual Network Gateway**
+            - Give it a name
+            - Gatway tpe: VPN
+            - VPN type: Route based
+            - SKU: Basic - select other options based on the cost
 
 
 
