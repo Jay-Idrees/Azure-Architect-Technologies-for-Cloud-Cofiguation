@@ -590,7 +590,8 @@ add-windowsfeature NET-Framework-Features
 - **Step 3: Creating a gateway subnet setup in Azure network and virtual netwok gateway**
     - **Gateway subnet**
 - You can select the VM, then click the network from the main page, select subnets under settings in the left pannel of the network
-- Under the subnets you will see 
+- Under the subnets you will see and option to create a **Gateway subnet**
+    - Slect Ip range: 10.1.1.0/24, rest leave as is
 
 
 
