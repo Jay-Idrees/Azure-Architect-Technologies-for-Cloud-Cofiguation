@@ -541,7 +541,7 @@ It can be grouped into the following components:
 
 - For the outside computers to connect to this network your company must have its own signed certificates (called root certificate) or a certificate provider. Only the certificates will allow you to connect to the network
 - For a secure connection over the internet, the machine on premisis should only be allowed to connect to a private IP address of the VM in the subnet
-- Once the Root certificate is issued it can generate a user certificate with a private key (premesis) and export a network certificate with a public key (Vnet gateway), the root certificate must be exported with a **public key** - to connect with **Virtual Network Gateway**, simultaneously the certificate's **private key** is with the user workstation on premesis
+- Once the**Root certificate** is issued it can generate a user certificate with a private key (premesis) and export a network certificate with a public key (Vnet gateway), the root certificate must be exported with a **public key** - to connect with **Virtual Network Gateway**, simultaneously the certificate's **private key** is with the user workstation on premesis
 - Then a VPN client can be downloaded and installed from Azure to the user workstation, which will make a point to site connection by doing these certificate activities behind the scenes
 - If there are multiple user workstations, they will all share the same user certificate with a private key
 - The **Virtual network gateway** also has a public ip address 
@@ -604,6 +604,9 @@ add-windowsfeature NET-Framework-Features
         - The process takes about 30-45 min as creating the Virtual Network Gateway includes launching VMs for routing in the gateway subnet of the Azure Company Network
         - Once the Virtual Network Gateway is created you can then select the gateway and from the settings pannel select **point to site configuration**
             - **Point to site congifuration**
+                - Address pool:
+                - Root certificates:
+                - Revoked certificates:
 
 
 
