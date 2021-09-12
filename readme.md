@@ -613,10 +613,10 @@ add-windowsfeature NET-Framework-Features
                 - Then in windows search, go to manage user certificates, go to personal folder, you will be able to see the generation of the root and the client certificate
                 - **Exporting the root certificate**: Then click the root certificate and right click > all tasks > Export
                     - Follow the steps, you can choose not to export the private key, choose base-64 encoded, then save the file on the desktop
-                    - Then locate the exported
+                    - Then locate the exported certificate on the desktop and then right click to open with notepad to see the contents of the certificate
             - **Point to site congifuration**
                 - Address pool:
-                - Root certificates:
+                - Root certificates: `Name`-rootcertificate, `public certificate data`- copy the contents of the root certificate in the notepad bw "begin certificate" and "end certificate"
                 - Revoked certificates:
 
 
