@@ -537,7 +537,7 @@ It can be grouped into the following components:
     - Create a Target virtual network - Note that the VM in this network should only have a private ip address
     - Create a gateway subnet inside the virtual network (the gatway between the virtual network and the premisis workstations)
     - Create a **virtual network gateway** separately and then attach it to the virtual network - Note that the virtual network gateway is essential to establish a point to site connection and can only be used if there is a pre-existing gateway subnet - Takes 45 minutes to create a virtual network gateway. The virtual network gateway controls the routing from the user workstations on premesis to the Azure remote company network by creating virtual machines inside the gateway subnet of the Vnet which facilitates this routing
-    - The virtual network gateway has a **public ip** address
+    - The virtual network gateway has a **public ip** address. This ip address is accessible to the user network via the internet. Once the user network VM connects with the virtual network gateway via the gateway's public ip address. 
 
 - For the outside computers to connect to this network your company must have its own signed certificates (called root certificate) or a certificate provider. Only the certificates will allow you to connect to the network
 - For a secure connection over the internet, the machine on premisis should only be allowed to connect to a private IP address of the VM in the subnet
@@ -587,7 +587,10 @@ add-windowsfeature NET-Framework-Features
 - Once the VM and the second user Vnet are created, you can RDP to it with the user details
 - Now we have 2 networks in place 
 
-- **Step 3: Creating a gateway setup in Azure network and virtual netwok gateway**
+- **Step 3: Creating a gateway subnet setup in Azure network and virtual netwok gateway**
+    - **Gateway subnet**
+- You can select the VM, then click the network from the main page, select subnets under settings in the left pannel of the network
+- Under the subnets you will see 
 
 
 
