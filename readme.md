@@ -615,7 +615,7 @@ add-windowsfeature NET-Framework-Features
                     - Follow the steps, you can choose not to export the private key, choose base-64 encoded, then save the file on the desktop
                     - Then locate the exported certificate on the desktop and then right click to open with notepad to see the contents of the certificate
             - **Point to site congifuration**
-                - Address pool:
+                - Address pool: This should specify the range of ip addresses of the client e-g `172.16.0.0/24`
                 - Root certificates: `Name`-rootcertificate, `public certificate data`- copy the contents of the root certificate in the notepad bw "begin certificate" and "end certificate"
                 - Revoked certificates:
 
