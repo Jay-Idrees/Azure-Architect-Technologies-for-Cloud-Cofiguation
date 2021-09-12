@@ -600,6 +600,7 @@ add-windowsfeature NET-Framework-Features
             - VPN type: Route based
             - SKU: Basic - select other options based on the cost
             - Virtual network: Select the Azure Company network - Note that if the gateway subnet is not created in the network, Azure would not allow you to select the network
+            - Public Ip address: Create new, assign a name and leave rest of the settings as is
 
 
 
