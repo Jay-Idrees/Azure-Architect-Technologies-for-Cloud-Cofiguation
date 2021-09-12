@@ -537,13 +537,14 @@ It can be grouped into the following components:
     - Create a Target virtual network - Note that the VM in this network should only have a private ip address
     - Create a gateway subnet inside the virtual network (the gatway between the virtual network and the premisis workstations)
     - Create a **virtual network gateway** separately and then attach it to the virtual network - Note that the virtual network gateway is essential to establish a point to site connection and can only be used if there is a pre-existing gateway subnet - Takes 45 minutes to create a virtual network gateway. The virtual network gateway controls the routing from the user workstations on premesis to the Azure remote company network by creating virtual machines inside the gateway subnet of the Vnet which facilitates this routing
+    - The virtual network gateway has a **public ip** address
 
 - For the outside computers to connect to this network your company must have its own signed certificates (called root certificate) or a certificate provider. Only the certificates will allow you to connect to the network
 - For a secure connection over the internet, the machine on premisis should only be allowed to connect to a private IP address of the VM in the subnet
 - Once the Root certificate is issued it can generate a user certificate with a private key (premesis) and export a network certificate with a public key (Vnet gateway), the root certificate must be exported with a **public key** - to connect with **Virtual Network Gateway**, simultaneously the certificate's **private key** is with the user workstation on premesis
 - Then a VPN client can be downloaded and installed from Azure to the user workstation, which will make a point to site connection by doing these certificate activities behind the scenes
 - If there are multiple user workstations, they will all share the same user certificate with a private key
-- The Virtual network gateway also has a public ip address.
+- The **Virtual network gateway** also has a public ip address 
 
 - Now You can create 2 networks 1) Azure Company Remote Network -This will have subnet gatewaay and Vnet gateway, 2) User workstation on premesis Network 
      - **Step 1: Creating the Azure Company remote network**
@@ -585,6 +586,8 @@ add-windowsfeature NET-Framework-Features
 
 - Once the VM and the second user Vnet are created, you can RDP to it with the user details
 - Now we have 2 networks in place 
+
+- **Step 3: Creating a gateway setup in Azure network and virtual netwok gateway**
 
 
 
