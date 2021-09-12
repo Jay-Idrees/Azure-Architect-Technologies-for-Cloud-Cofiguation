@@ -598,10 +598,12 @@ add-windowsfeature NET-Framework-Features
             - Give it a name
             - Gatway tpe: VPN
             - VPN type: Route based
-            - SKU: Basic - select other options based on the cost
+            - SKU: Basic - select other options based on the cost, the price is influnced by the amound of **brandwidth** (basic has 100MPs- can go up in Gbps)
             - Virtual network: Select the Azure Company network - Note that if the gateway subnet is not created in the network, Azure would not allow you to select the network
-            - Public Ip address: Create new, assign a name and leave rest of the settings as is
+            - **Public Ip address:** Create new, assign a name and leave rest of the settings as is
         - The process takes about 30-45 min as creating the Virtual Network Gateway includes launching VMs for routing in the gateway subnet of the Azure Company Network
+        - Once the Virtual Network Gateway is created you can then select the gateway and from the settings pannel select **point to site configuration**
+
 
 
 
