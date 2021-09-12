@@ -603,6 +603,7 @@ add-windowsfeature NET-Framework-Features
             - **Public Ip address:** Create new, assign a name and leave rest of the settings as is
         - The process takes about 30-45 min as creating the Virtual Network Gateway includes launching VMs for routing in the gateway subnet of the Azure Company Network
         - Once the Virtual Network Gateway is created you can then select the gateway and from the settings pannel select **point to site configuration**
+        - For establishing point to site configuration, the first thing is to generate **Certificates**
             - **Point to site congifuration**
                 - Address pool:
                 - Root certificates:
