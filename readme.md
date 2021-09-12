@@ -609,15 +609,43 @@ add-windowsfeature NET-Framework-Features
                 - The public key of the root certificate must be uploaded in the Virtual network gateway - This will allow the virtual network gateway to trust the virtual network gateway
                 - Then generate a client certificate from the root certificate, the client certificate then must be installed on the individual user workstations on premesis
                 - Large organizations usually have a certificate authority alternatively on a lower scale you can generate a self signed certificate
-                - You can do this by RDP into the user workstation VM and then using power shell commands to first generate a root certificate and then generating a client certificate with another command after the root certificate is generated
+                - You can do this by RDP into the user workstation VM and then using power shell commands to first generate a root certificate and then generating a client certificate with another command after the root certificate is generated. See below
                 - Then in windows search, go to manage user certificates, go to personal folder, you will be able to see the generation of the root and the client certificate
+
                 - **Exporting the root certificate**: Then click the root certificate and right click > all tasks > Export
                     - Follow the steps, you can choose not to export the private key, choose base-64 encoded, then save the file on the desktop
                     - Then locate the exported certificate on the desktop and then right click to open with notepad to see the contents of the certificate
             - **Point to site congifuration of the Virtual Network Gateway**
                 - Address pool: This should specify the range of ip addresses of the client e-g `172.16.0.0/24`
                 - Root certificates: `Name`-rootcertificate, `public certificate data`- copy the contents of the root certificate in the notepad bw "begin certificate" and "end certificate"
-                - Revoked certificates:
+                - Revoked certificates: leave blank
+                - Specifying the configurations above will generate a VPN client which will have the root certificate data
+                - the next step is to **install the VPN client on the user workstation** that should be allowed to access the Azure company network
+
+
+```
+ // To generate the root certificate
+
+$cert = New-SelfSignedCertificate -Type Custom -KeySpec Signature `
+
+-Subject "CN=RootCertificate" -KeyExportPolicy Exportable `
+
+-HashAlgorithm sha256 -KeyLength 2048 `
+
+-CertStoreLocation "Cert:\CurrentUser\My" -KeyUsageProperty Sign -KeyUsage CertSign
+
+// To generate the client certificate
+
+New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature `
+
+-Subject "CN=ClientCertificate" -KeyExportPolicy Exportable `
+
+-HashAlgorithm sha256 -KeyLength 2048 `
+
+-CertStoreLocation "Cert:\CurrentUser\My" `
+
+-Signer $cert -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.2")
+```
 
 
 
