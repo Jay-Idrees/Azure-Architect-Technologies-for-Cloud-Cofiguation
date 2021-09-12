@@ -610,6 +610,7 @@ add-windowsfeature NET-Framework-Features
                 - Then generate a client certificate from the root certificate, the client certificate then must be installed on the individual user workstations on premesis
                 - Large organizations usually have a certificate authority alternatively on a lower scale you can generate a self signed certificate
                 - You can do this by RDP into the user workstation VM and then using power shell commands to first generate a root certificate and then generating a client certificate with another command after the root certificate is generated
+                - Then in windows search, go to manage user certificates, go to personal folder, you will be able to see the generation of the root and the client certificate
             - **Point to site congifuration**
                 - Address pool:
                 - Root certificates:
