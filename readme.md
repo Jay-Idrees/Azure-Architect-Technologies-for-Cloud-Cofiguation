@@ -622,10 +622,12 @@ add-windowsfeature NET-Framework-Features
                 - Specifying the configurations above will generate a VPN client which will have the root certificate data
                 - the next step is to **install the VPN client on the user workstation** that should be allowed to access the Azure company network
 
+                `circle back to the process of installing client/root certificates on user VMs`
 
-```
+**Power shell commands for generating the root certificates**
+
  // To generate the root certificate
-
+```
 $cert = New-SelfSignedCertificate -Type Custom -KeySpec Signature `
 
 -Subject "CN=RootCertificate" -KeyExportPolicy Exportable `
@@ -633,9 +635,10 @@ $cert = New-SelfSignedCertificate -Type Custom -KeySpec Signature `
 -HashAlgorithm sha256 -KeyLength 2048 `
 
 -CertStoreLocation "Cert:\CurrentUser\My" -KeyUsageProperty Sign -KeyUsage CertSign
-
+```
 // To generate the client certificate
 
+```
 New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature `
 
 -Subject "CN=ClientCertificate" -KeyExportPolicy Exportable `
@@ -648,6 +651,10 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 ```
 
 
+- **Establishing a site to site connection**
+- You can use Site to Site connection for connecting your entire on premesis data center with the Azure company virtual network. This will establish a secure tunnel b/w the local data ceneter and the azure company network
+- You should have a router at your local data center which can be a software or a physical device. 
+- To simulate a local data center you can create an independent VNet in Azure and install **Routing and Remote Services**
 
 
 
