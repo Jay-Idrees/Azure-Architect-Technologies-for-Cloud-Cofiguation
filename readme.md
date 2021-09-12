@@ -605,6 +605,10 @@ add-windowsfeature NET-Framework-Features
         - Once the Virtual Network Gateway is created you can then select the gateway and from the settings pannel select **point to site configuration**
         - For establishing point to site configuration, the first thing is to generate **Certificates**
         - **Generating Certificates**
+            - First you generate a **Root certificate** and then from the root certificate you can generate a **client certificate**
+                - The public key of the root certificate must be uploaded in the Virtual network gateway - This will allow the virtual network gateway to trust the virtual network gateway
+                - Then generate a client certificate from the root certificate, the client certificate then must be installed on the individual user workstations on premesis
+                - Large organizations usually have a certificate authority
             - **Point to site congifuration**
                 - Address pool:
                 - Root certificates:
