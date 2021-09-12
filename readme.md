@@ -608,7 +608,8 @@ add-windowsfeature NET-Framework-Features
             - First you generate a **Root certificate** and then from the root certificate you can generate a **client certificate**
                 - The public key of the root certificate must be uploaded in the Virtual network gateway - This will allow the virtual network gateway to trust the virtual network gateway
                 - Then generate a client certificate from the root certificate, the client certificate then must be installed on the individual user workstations on premesis
-                - Large organizations usually have a certificate authority
+                - Large organizations usually have a certificate authority alternatively on a lower scale you can generate a self signed certificate
+                - You can do this by RDP into the user workstation VM and then using power shell commands to first generate a root certificate and then generating a client certificate with another command after the root certificate is generated
             - **Point to site congifuration**
                 - Address pool:
                 - Root certificates:
