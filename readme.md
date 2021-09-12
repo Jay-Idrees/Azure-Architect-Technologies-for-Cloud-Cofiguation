@@ -611,7 +611,9 @@ add-windowsfeature NET-Framework-Features
                 - Large organizations usually have a certificate authority alternatively on a lower scale you can generate a self signed certificate
                 - You can do this by RDP into the user workstation VM and then using power shell commands to first generate a root certificate and then generating a client certificate with another command after the root certificate is generated
                 - Then in windows search, go to manage user certificates, go to personal folder, you will be able to see the generation of the root and the client certificate
-                - Then click the root certificate and right click > all tasks > Export
+                - **Exporting the root certificate**: Then click the root certificate and right click > all tasks > Export
+                    - Follow the steps, you can choose not to export the private key, choose base-64 encoded, then save the file on the desktop
+                    - Then locate the exported
             - **Point to site congifuration**
                 - Address pool:
                 - Root certificates:
