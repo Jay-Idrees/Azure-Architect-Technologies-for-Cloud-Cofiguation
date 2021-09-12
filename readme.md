@@ -604,18 +604,18 @@ add-windowsfeature NET-Framework-Features
         - The process takes about 30-45 min as creating the Virtual Network Gateway includes launching VMs for routing in the gateway subnet of the Azure Company Network
         - Once the Virtual Network Gateway is created you can then select the gateway and from the settings pannel select **point to site configuration**
         - For establishing point to site configuration, the first thing is to generate **Certificates**
-        - **Generating Certificates**
+- **Step 4: Generating Certificates**
             - First you generate a **Root certificate** and then from the root certificate you can generate a **client certificate**
-                - The public key of the root certificate must be uploaded in the Virtual network gateway - This will allow the virtual network gateway to trust the virtual network gateway
+                - The public key of the root certificate must be uploaded in the Virtual network gateway - This will allow the virtual network gateway to trust the traffic with this certificate
                 - Then generate a client certificate from the root certificate, the client certificate then must be installed on the individual user workstations on premesis
                 - Large organizations usually have a certificate authority alternatively on a lower scale you can generate a self signed certificate
                 - You can do this by RDP into the user workstation VM and then using power shell commands to first generate a root certificate and then generating a client certificate with another command after the root certificate is generated. See below
                 - Then in windows search, go to manage user certificates, go to personal folder, you will be able to see the generation of the root and the client certificate
 
-                - **Exporting the root certificate**: Then click the root certificate and right click > all tasks > Export
+    - **Exporting the root certificate**: Then click the root certificate and right click > all tasks > Export
                     - Follow the steps, you can choose not to export the private key, choose base-64 encoded, then save the file on the desktop
                     - Then locate the exported certificate on the desktop and then right click to open with notepad to see the contents of the certificate
-            - **Point to site congifuration of the Virtual Network Gateway**
+    - **Point to site congifuration of the Virtual Network Gateway**
                 - Address pool: This should specify the range of ip addresses of the client e-g `172.16.0.0/24`
                 - Root certificates: `Name`-rootcertificate, `public certificate data`- copy the contents of the root certificate in the notepad bw "begin certificate" and "end certificate"
                 - Revoked certificates: leave blank
@@ -654,7 +654,14 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - **Establishing a site to site connection**
 - You can use Site to Site connection for connecting your entire on premesis data center with the Azure company virtual network. This will establish a secure tunnel b/w the local data ceneter and the azure company network
 - You should have a router at your local data center which can be a software or a physical device. 
-- To simulate a local data center you can create an independent VNet in Azure and install **Routing and Remote Services**
+- To simulate a local data center you can create an independent VNet in Azure and install **Routing and Remote Services** on a windows server machine to perform routing tasks
+
+    - **Step 1: Create a Virtual network with Vnet Gateway+Subnet gateway+VM usig the Steps 1,3 & 4 from Point to site connection above**
+        - This should give you a Virtual network whose Vnet gateway has been setup and the network contains a subnet and a VM. The Vnet Gateway is configured with root certificates
+
+    - **Step 2: Designing a Vnet to simulate a local datacenter**
+        - 
+
 
 
 
