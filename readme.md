@@ -696,7 +696,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Go to the general dashboard and search for the local network gateway and click create
             - Give name
             - Paste the PUBLIC IP address of the local data center VM (not of the vnet/subnet)
-            - Address space: Vnet ip range of the local data center
+            - Address space: Vnet ip range of the local data center e-g 10.3.0.0/16 in this case
+            - 
 
 
 
