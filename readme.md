@@ -697,7 +697,11 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Give name
             - Paste the PUBLIC IP address of the local data center VM (not of the vnet/subnet)
             - Address space: Vnet ip range of the local data center e-g 10.3.0.0/16 in this case
-            - 
+            - Then select resource group and the location
+    - Once the local network gateway is created, you can search for it in the main dashboard under all resources and typing in gateway to shortlist
+        - At this point you should be able to see 2 gateways when you type gateway in the search box: 1) the local network gateway for local data center 2) The virtual network gateway for the
+    
+    - **Step 4: Establishing a site to site VPN collection once the local data center Vnet and the Azure Vnet along with their gateways have been established**
 
 
 
