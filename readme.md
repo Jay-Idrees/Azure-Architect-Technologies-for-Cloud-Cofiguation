@@ -684,6 +684,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - From the server manager dashboard click add roles and features
                 - Under server roles check `Remote Access`
                     - Under role services check `routing`, this will automatically check "DirectAccess and VPN". Then install
+                - Once the installation of remote access/routing services is complete, click the notification that confirms this and click `open the getting started wizard`
 
 
 
