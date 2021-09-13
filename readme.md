@@ -676,6 +676,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Create a Virtual network while creating the virtual machine
             - name it: local-datacenter, ip range 10.3.0.0/16
             - Create 2 subnets: SubnetA 10.3.0.0/24, subnetB 10.3.1.0/24, note that the ip ranges for the two subnets withing the Vnet must have different ranges
+            - Public Ip address is needed
+            - RDP
+            - Maagement, advanced, tags as is
 
 
 
