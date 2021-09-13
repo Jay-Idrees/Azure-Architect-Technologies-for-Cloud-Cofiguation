@@ -674,6 +674,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Search for virtal machine from the main dashboard
             - Create a name, assign the common resource group, select region, availability(no redundancy required), OS image: windows server 2016 datacenter-gen1 size as usual
             - Use administrator credentials
+            - Unlike the VMs in the Azure Vnet, the VMs in the local data center must have public Ip addresses, because these will be connecting to the Azure network over the internet via a secure tunnel that will let you connect with the private ip address of the VMs in the Azure Vnet
         - Create a Virtual network while creating the virtual machine
             - name it: local-datacenter, ip range 10.3.0.0/16
             - Create 2 subnets: SubnetA 10.3.0.0/24, subnetB 10.3.1.0/24, note that the ip ranges for the two subnets withing the Vnet must have different ranges
@@ -691,6 +692,11 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     
     - **Step 3: Building a local network gateway for the local datacenter network**
         - The public ip address of the local data center must be specified in the local network gateway
+        - **Creating local network gateway**
+            - Go to the general dashboard and search for the local network gateway and click create
+            - Give name
+            - Paste the PUBLIC IP address of the local data center VM (not of the vnet/subnet)
+            - Address space: Vnet ip range of the local data center
 
 
 
