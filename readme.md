@@ -672,7 +672,10 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Create a Virtual machine along with its Vnet
             - Search for virtal machine from the main dashboard
             - Create a name, assign the common resource group, select region, availability(no redundancy required), OS image: windows server 2016 datacenter-gen1 size as usual
-            - 
+            - Use administrator credentials
+        - Create a Virtual network while creating the virtual machine
+            - name it: local-datacenter, ip range 10.3.0.0/16
+            - Create 2 subnets
 
 
 
