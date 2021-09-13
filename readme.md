@@ -682,7 +682,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Once the VM with network is created, select the VM and click connect to RDP, this means download and run the RDP file
             - From the server manager dashboard click add roles and features
                 - Under server roles check `Remote Access`
-                    - Under role services check `routing`
+                    - Under role services check `routing`, this will automatically check "DirectAccess and VPN"
 
 
 
