@@ -702,6 +702,35 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - At this point you should be able to see 2 gateways when you type gateway in the search box: 1) the local network gateway for local data center 2) The virtual network gateway for the
     
     - **Step 4: Establishing a site to site VPN collection once the local data center Vnet and the Azure Vnet along with their gateways have been established**
+        - Select the Azure Vnet gateway and select point to site cofiguration under settings (to create a site to site the same avenue can be used)
+            - Click configure now
+            - Note that if you used a gateway of a higher SKU, it will give additional functions and security features - but will be more expensive
+        - Go to connections under settings from the left pannel of Azure Vnet | Connections
+            - Under **connection type** select `site to site`, and give a name to the connection
+            - Select the Virtual network gateway (of Azure Vnet) and the local network gateway (of local datacenter Vnet)
+            - You will have to assign a **Shared key (PSK)**. This key is important and must be incorporated with the settings iside the local datacenter VM. In otherwords the key b/w the local data center VM must match with the key in the Vnet gateway connection
+        Once the connection is created, go to its main page, you will find some information regarding traffic status I/O
+
+    - **Step 5: Configuring the Routing and Remote Services on local data center VM to route traffic to the Azure Vnet gateway using the Azure Vnet gateway's public IP**
+        - Open routing and remote access on the local-datacenter VM
+        - select the "network Interfaces" under the VM nme from the left pannel of categories
+            - right click and select `new demand-dial interface`
+            - give a name - preferable to remind that you are configuring for routing to the Azure Vnet gateway
+            - Select `connect using virtual private netowrking`
+            - VPN connection type: IKEv2
+            - Destination IP: The public IP address of the Azure Vnet gateway
+            - Check `Route IP packets on this interface`
+            - Next you have to add a destination under Static Routes for Remote networks -click add
+            - Destination: The address range of the Azure Vnet (not the Azure Vnet gateway) : type in the ip of the Azure Vnet range excluding the 16/24 portion and then specify the corresponding network mask
+            - Allocate metric - its like setting priority/weightage
+            - No need to setup dial-out credentials so leave blank >finish
+            - Once done, right click the connection by selecting it from the list by its name under Network interfaces
+                - right click properties
+                    - Go to securities tab
+                    - select `use preshared key for authentication`
+                        - paste the **preshared key** we created earlier
+
+
 
 
 
