@@ -662,7 +662,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - This should give you a Virtual network whose Vnet gateway has been setup and the network contains a subnet and a VM. 
         - Install Internet information services
         - Note that in this network only the Vnet gateway has a public ip, the VM in the network only has a private ip address
-        - Create a new virtual network gateway
+        - Create a new **virtual network gateway**
             - Choose VPN, route based VPN
             - SKU: VpnGw2, generation2
             - Create a public ip addresss
@@ -687,7 +687,10 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                 - Once the installation of remote access/routing services is complete, click the notification that confirms this and click `open the getting started wizard`
                     - Select `deploy VPN only` - this will open up a routing and remote access configuration window
                         - right click and select: `configure and enable routing and remote access`
-                            -select `custom configuration`
+                            -select `custom configuration` and then `LAN routing` and `Demand-dial connections` then head to finish and start service
+    
+    - **Step 3: Building a local network gateway for the local datacenter network**
+        - The public ip address of the local data center must be specified in the local network gateway
 
 
 
