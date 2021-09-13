@@ -656,12 +656,14 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - You should have a router at your local data center which can be a software or a physical device. 
 - To simulate a local data center you can create an independent VNet in Azure and install **Routing and Remote Services** on a windows server machine to perform routing tasks
 
-    - **Step 1: Create a Virtual network with Vnet Gateway+Subnet gateway+VM usig the Steps 1,3 & 4 from Point to site connection above**
+    - **Step 1: Create a Virtual network with Vnet Gateway+Subnet gateway+VM  similar to the Steps 1,3 & 4 from Point to site connection above**
         - This should give you a Virtual network whose Vnet gateway has been setup and the network contains a subnet and a VM. 
         - Note that in this network only the Vnet gateway has a public ip, the VM in the network only has a private ip address
         - Create a new virtual network gateway
             - Choose VPN, route based VPN
-            - 
+            - SKU: VpnGw2, generation2
+            - Create a public ip addresss
+            - name: sitegateway
 
     - **Step 2: Designing a Vnet to simulate a local datacenter**
         - Go to the main dashboard and select virtual network gateway for a new gateway
