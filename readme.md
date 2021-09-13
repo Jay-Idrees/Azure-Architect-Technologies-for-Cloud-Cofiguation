@@ -729,6 +729,25 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                     - Go to securities tab
                     - select `use preshared key for authentication`
                         - paste the **preshared key** we created earlier
+    
+    - Once the configuration is done you can test it by copying the private Ip of the VM in the Azure Vnet and then pasting it in the webrowser after RDP into the local datacenter VM
+        - If the internet services page is displayed that means that you are now able to access the Azure Vnet VM from the local data-center VM by using the Azure Vnet Vm's private Ip address
+
+    - **Trouble shooting : checks**
+        - make sure that the public Ip address specified under properties of the site to site connection is the public Ip of the Azure Vnet gateway
+        - Under the properties again make sure that in the security tab the preshared key is correct
+        - Then in the Routing and remote access window, the left pannel > IPv4 >static routes, make sure that the Ip here is the ip address of the Azure Vnet along with correct subnet masking
+            - What this is doing is telling the local datacenter VM's network interface card that if an ip address is typed and it falls in the range specified then forward it to the Azure Vnet gateway
+
+    - **If Azure Vnet is peered with another Vnet and letting Local-datacenter Vnet to connect to that additional peering Vnet**
+        - Create another Vnet (the 3rd Vnet) - enable port 80 when creating the VM, install internet information services
+        - Establish peering with the Azure company Vnet
+        - Once created, go to that network 
+            - Select peerings from the under the settings > click Add
+            - Leave the settings as is, but under the network select the Azure Company Vnet
+            - Give peering link names
+            - Under "Virtual network gateway or route Server
+                - select `use remote virtual network's gateway or route server
 
 
 
