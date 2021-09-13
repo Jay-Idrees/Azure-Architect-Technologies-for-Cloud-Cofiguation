@@ -679,6 +679,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Public Ip address is needed
             - RDP
             - Maagement, advanced, tags as is
+        - Once the VM with network is created, select the VM and click connect to RDP, this means download and run the RDP file
 
 
 
