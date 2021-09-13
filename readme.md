@@ -669,6 +669,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - name: sitegateway
 
     - **Step 2: Build Vnet  to simulate a local datacenter**
+        - The goal is to route local traffic from a local datacenter to the Azure company Network on the cloud via a secure tunnel
         - Create a Virtual machine along with its Vnet
             - Search for virtal machine from the main dashboard
             - Create a name, assign the common resource group, select region, availability(no redundancy required), OS image: windows server 2016 datacenter-gen1 size as usual
@@ -682,7 +683,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Once the VM with network is created, select the VM and click connect to RDP, this means download and run the RDP file
             - From the server manager dashboard click add roles and features
                 - Under server roles check `Remote Access`
-                    - Under role services check `routing`, this will automatically check "DirectAccess and VPN"
+                    - Under role services check `routing`, this will automatically check "DirectAccess and VPN". Then install
 
 
 
