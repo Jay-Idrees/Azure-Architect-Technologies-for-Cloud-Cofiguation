@@ -801,6 +801,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - Then you can select a user from a default directory, status: disabled, enabled, enforced
         - once enforced for a user. The user will have to undergo multi-user registeration
         - The user will be prompted for MFA registeration where ther user will be able to specify what mode of authentication the user prefers
+        - When a user logs in for the first time he/she will be prompted to update the password
 
 
 
