@@ -802,6 +802,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - once enforced for a user. The user will have to undergo multi-user registeration
         - The user will be prompted for MFA registeration where ther user will be able to specify what mode of authentication the user prefers
         - When a user logs in for the first time he/she will be prompted to update the password
+    **Trusted Devices**
+        - There is an option where you can check that the MFA can remember the device, and you can set time limit when to when the device must be authenticated
 
 
 
