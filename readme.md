@@ -784,6 +784,12 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - You can try out the Azure AD premium P2 for 30 days, 6-9$ per user per month. You have to specify the user's location before you can assign a license. You purchase the license based on the user assignment
 - In Azure acrive directory, you have a default directory and the you can also have a new directory. You may need to create a new directory for each of the individual companies in an organization
 - When it comes to subscriptions for active directory, you have have a separate subscription for staging and production environement
-
+- Creating a tenant is the same as creating a directory
+- Subscriptions:
+    - Staging 
+    - Production
+- One subscription can only trust one directory. Each department within a company can have its own subscription
+- For a given subscription, you can also change the directory. 
+- You can go to the dashboard and look at all the subscriptions- When you click a subscription you will be able to see what directory is assigned
 
 
