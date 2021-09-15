@@ -802,9 +802,20 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - once enforced for a user. The user will have to undergo multi-user registeration
         - The user will be prompted for MFA registeration where ther user will be able to specify what mode of authentication the user prefers
         - When a user logs in for the first time he/she will be prompted to update the password
-    **Trusted Devices**
+   - **Trusted Devices**
         - There is an option where you can check that the MFA can remember the device, and you can set time limit when to when the device must be authenticated
         - You can also specify the setting where you enlist a particular ip address or a subnet which wont be subject to MFA
+-   **Conditional Access policies** you can select this from the left pannel under settings of security in default directory and select conditional access
+        - All users, or selected users
+        - High sign in risk?
+        - Device platform (e-g windows device)
+        - Location (on premis location)
+        - Block or grant access based on the condition such as MFA
+    - **Azure Active Directory identity protection**
+        - Uses microsoft built in intelligence to detect identity based risks
+            - Catching anonymus ip address
+            - Location not typically used by the user- atypical trvel
+            - unfamiliar sign in propertis
 
 
 
