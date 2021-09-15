@@ -816,6 +816,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Catching anonymus ip address
             - Location not typically used by the user- atypical trvel
             - unfamiliar sign in propertis
+            - You can specify user risk policy, sign-in risk policy or MFA policy
 
 
 
