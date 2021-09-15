@@ -746,8 +746,21 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Select peerings from the under the settings > click Add
             - Leave the settings as is, but under the network select the Azure Company Vnet
             - Give peering link names
-            - Under "Virtual network gateway or route Server
-                - select `use remote virtual network's gateway or route server
+            - Under "Virtual network gateway or route Server for the 'new link` name
+                - select `use remote virtual network's gateway or route server`, note that this must be selected under both link names
+                - But under the virtual network gateway or toute server forthe 'new link' name for the 'azure link' name select `use this virtual network's gateway or Route server`
+                - See video 104 under infrastructure
+            - Once the peering connection is created. You also have to add a new static route in the local-datacenter VM
+                - In the routing and remote access window
+                    - select static routes from the left pannel
+                        - right click and select add a new static route
+                            - Destination: Enter the ip and the network mask of the 3rd network
+
+# Azure Backup service
+    - Separate resource Azure Recovery services vault- should be in the same region as the azure network
+    - subsequent backup is intellegent, only the changes are recovered after the first one
+    - Managed by backup policies and based on retention facilities
+    - A revovery point is also created every time a backup is created
 
 
 
