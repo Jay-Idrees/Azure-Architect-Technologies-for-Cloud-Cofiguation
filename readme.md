@@ -766,6 +766,11 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 
     - Backup is saved in recovery services vault
     - Backup policy, there is a default policy
+    - Enabling backup is not the same as the backup actually happening - it will only 
+    you can also backup now manually
+    - view all jobs to see progress on backup
+
+- **Azure Recovery Service Agent or MARS agent**
 
 
 
