@@ -782,7 +782,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - You can register a custom domain name in Azure to create users
 - Azure Active Directory licensing (there is free, office 365 apps , premium1 premium2) The premium has some extra features likes ability of password self pw reset
 - You can try out the Azure AD premium P2 for 30 days, 6-9$ per user per month. You have to specify the user's location before you can assign a license. You purchase the license based on the user assignment
-- In Azure acrive directory, you have a default directory and the you can also have a new directory
+- In Azure acrive directory, you have a default directory and the you can also have a new directory. You may need to create a new directory for each of the individual companies in an organization
 
 
 
