@@ -790,6 +790,6 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - Production
 - One subscription can only trust one directory. Each department within a company can have its own subscription
 - For a given subscription, you can also change the directory. 
-- You can go to the dashboard and look at all the subscriptions- When you click a subscription you will be able to see what directory is assigned
+- You can go to the dashboard and look at all the subscriptions- When you click a subscription you will be able to see what directory is assigned.
 
 
