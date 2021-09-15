@@ -780,7 +780,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - you can create usernames, you can attach users to groups and roles
 - You can also create groups- a group is a collection of groups
 - You can register a custom domain name in Azure to create users
-- Azure Active Directory licensing
+- Azure Active Directory licensing (there is free, office 365 apps , premium1 premium2) The premium has some extra features likes ability of password self pw reset
 
 
 
