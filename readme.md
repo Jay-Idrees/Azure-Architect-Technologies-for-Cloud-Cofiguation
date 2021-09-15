@@ -795,6 +795,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - You can create a tenant - which is the same as creating a new directory
 
 - **Multi-factor Authentication**
+    - MFA registeration
+    -SMS code, authenticator app, call are options
 
 
 
