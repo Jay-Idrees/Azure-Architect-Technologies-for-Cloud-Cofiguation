@@ -797,6 +797,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - **Multi-factor Authentication**
     - MFA registeration
     -SMS code, authenticator app, call are options
+    - To set it up select the default directory through the dash board and then go to security
 
 
 
