@@ -770,9 +770,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     you can also backup now manually
     - view all jobs to see progress on backup
 
-- **Azure Recovery Service Agent or MARS agent**
-    - It is a software that you can install on a VM that gives you more control over how and what to specifically backup
-
+- **Azure Recovery Service Agent or MARS (Microscoft Azure Recovery Service) agent**
+    - It is a software that you can install on a VM that gives you more control over how and what to specifically backup. You can specify retention policy
+    - MARS agent recovers the agent onto the recovery services vault. 
 
 
 
