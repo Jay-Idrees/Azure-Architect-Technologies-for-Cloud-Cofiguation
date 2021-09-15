@@ -804,6 +804,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - When a user logs in for the first time he/she will be prompted to update the password
     **Trusted Devices**
         - There is an option where you can check that the MFA can remember the device, and you can set time limit when to when the device must be authenticated
+        - You can also specify the setting where you enlist a particular ip address or a subnet which wont be subject to MFA
 
 
 
