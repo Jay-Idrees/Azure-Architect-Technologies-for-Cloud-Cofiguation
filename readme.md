@@ -781,6 +781,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - You can also create groups- a group is a collection of groups
 - You can register a custom domain name in Azure to create users
 - Azure Active Directory licensing (there is free, office 365 apps , premium1 premium2) The premium has some extra features likes ability of password self pw reset
+- You can try out the Azure AD premium P2 for 30 days, 6-9$ per user per month
 
 
 
