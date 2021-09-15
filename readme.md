@@ -779,7 +779,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - With every account you can create an active directory
 - you can create usernames, you can attach users to groups and roles
 - You can also create groups- a group is a collection of groups
-- You can register a custom domain name in Azure
+- You can register a custom domain name in Azure to create users
+- Azure Active Directory licensing
 
 
 
