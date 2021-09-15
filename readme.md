@@ -761,6 +761,11 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - subsequent backup is intellegent, only the changes are recovered after the first one
     - Managed by backup policies and based on retention facilities
     - A revovery point is also created every time a backup is created
+        - Options for revovery: File revovery, VM recovery, disk revovery
+    - Backup service: Application-consistent, filesystem consistent and crash consistent
+
+    - Backup is saved in recovery services vault
+    - Backup policy, there is a default policy
 
 
 
