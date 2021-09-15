@@ -817,6 +817,25 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Location not typically used by the user- atypical trvel
             - unfamiliar sign in propertis
             - You can specify user risk policy, sign-in risk policy or MFA policy
+    - **Access reviews**
+        - A user have various assignments. These can include Azure AD role, Azure resources, or a particular user group
+        - There needs to be periodic reviews to test that the users have the correct assignments
+        - If the user has shifted departments, the access my need to be modified
+        - Creating Access review
+            - **identity governance** from dashboard
+                - Access reviews
+                    - Create a new access review
+                        - you select an admin account where the access review will be delivered
+                        - you can specify frequency
+                        - you can specify end date
+                        - The report can have recommendations based on the activity
+                        - You can also stop the access review
+    
+    - When you create your Azure account, you have a default directory which is also known as a default tenant. you can also create a additional new tenant/directory in an account by clicking 'new tenant'
+    - Active directory is essentially a directory of users
+    - The subscriptions can be tagged to a particular directiry
+    - At a given time one subscription can only be tagged to one directory at a time
+    - you can also delete a tenant
 
 
 
