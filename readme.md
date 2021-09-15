@@ -798,6 +798,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - MFA registeration
     -SMS code, authenticator app, call are options
     - To set it up select the default directory through the dash board and then go to security and from there select multifactor authentication
+    - Then you can select a user from a default directory, status: disabled, enabled, enforced
+        - once enforced for a user. The user will have to undergo multi-user registeration
+        - The user will be prompted for MFA registeration where ther user will be able to specify what mode of authentication the user prefers
 
 
 
