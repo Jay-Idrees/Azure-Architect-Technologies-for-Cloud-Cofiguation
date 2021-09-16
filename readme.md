@@ -864,5 +864,6 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Log onto the VM on the local premisis, then on the local VM search for active directory- directory server- there you will find all the users. So for a particular user, if you double click it make suer that longon hrs are permissible 24/7
         - Select user sign-in and then enable single sign-on
         - It works with password hash synchronization and pass-through authentication
+        - Then go to azure portle via the explorer and login using the same user credentials of interest
 
 
