@@ -838,4 +838,16 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - you can also delete a tenant
 
 
+    **Azure AD Connect Service** Migrating local users to Azure AD directory (Syncronization only works in the direction of on premesis > Azure AD)
+        - Azure AD component
+            - Password hash synchronization  - transfer password hashes - synconization of hash of the hash
+            - Pass through authentication - Authenticated in the on premesis environement then the user can access Azure resources
+            - Password writeback - Synconization of password change
+        - IdFix- identifies errors in the on premesis environment before syncomization
+        Azure AD Global Administrator account
+        Enterprise Adminidtrator account
+
+    - You have to install active directory services on the virtual machine. Change the ip address from dynamic to static
+    - Once the syncronization is complete, the users are added from the active directory domain
+
 
