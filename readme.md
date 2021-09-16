@@ -822,7 +822,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - There needs to be periodic reviews to test that the users have the correct assignments
         - If the user has shifted departments, the access my need to be modified
         - Creating Access review
-            - **Identity governance** from dashboard
+            - **Identity Governance** from dashboard
                 - Access reviews
                     - Create a new access review
                         - you select an admin account where the access review will be delivered
