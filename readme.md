@@ -872,6 +872,6 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - **Password write back**
         - Note that the flow of synchronization is always from the local AD to Azure AD and never from Azure AD to local AD
         - If the password is changed in the Azure AD using the reset from the azure account, it will create a miss match as it wont be able to be updated in the local AD
-        - You can fix this by going to the Azure AD connect and then you can go to optional features and enable **password writeback**
+        - You can fix this by going to the Azure AD connect and then you can go to optional features and enable **password writeback** What this does is directly writes back the password into the AZ local directory when it is reset from the Azure Ad
 
 
