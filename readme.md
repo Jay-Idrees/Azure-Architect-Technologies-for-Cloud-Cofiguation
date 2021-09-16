@@ -857,5 +857,10 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - **Pass through authentication**
         - typically is the hash password syncornization
         - There is a VM on premesis that has active directory of users, in pass through the user credentials are first passed through the on premessis active directory and then it connect with the Azure active directory. The benifit is that there can be some extra services/processess such a multi-factor authentication on the local directory which you would prefer to run before syncronization with the Azure active directory
+        - The default is usually Password hash syncronization, you can select pass-through synchronization instead
+
+    - **Single Sign on**
+        - Log onto the VM on the local premisis
+        - Select user sign-in and then enable single sign-on
 
 
