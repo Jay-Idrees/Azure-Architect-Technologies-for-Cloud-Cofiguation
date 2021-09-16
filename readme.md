@@ -883,3 +883,14 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Checks how successful was the synchronization - whether there were errors - you can download it. You can get some graphs
         - AS DS services
 
+    - **Azure AD Scenarios**
+        - Corporate data center, microsoft active directory (not the same as Azure AD) - does not have all the features. Policies feature is not available on Azure AD
+            - Install azure active directory on an azure VM  and then have a site to site VPN connection
+            - Azure AD domain services - Host active directory in Azure network - this active directory is like the microsoft AD
+            - Azure AD DS or Self Managed AD DS
+    
+    - **Configuring Azure AD Dyamic groups**
+        - Create a group and manually assign members
+        - You can create dynamic groups for users as well as devices
+        - Note that you can not contain users and devices in one group
+
