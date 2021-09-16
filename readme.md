@@ -851,5 +851,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - Once the syncronization is complete, the users are added from the active directory domain
     - Main benifits are that you can avoid user duplicates. The Azure premesis can syncronize with Azure Active directory
     - Note that the flow of syncronization is always from the premesis AD to Azure AD and not from Azure AD to premesis
+    - In the virtual machine, you can start Azure AD configuration by searching. 
+    - You do not always need to configure for all the users in the active directory. For example, some large enterprize can have users in the testing/staging environment that may not need to be configured. You can uncheck staging mode in the case
 
 
