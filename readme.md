@@ -896,3 +896,10 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Azure AD premium license is required for creating dynamic groups
         - It allows you to create special rules for particular groups of users and groups of devices
 
+    - **Self Service Password reset**
+        - The forgot my password system. Bypasses the IT an manual reset. This is self service
+        - You can enable/turn on self service password reset for a particular account
+        - You can enable it for a particulr group or all users
+            - You can specify the authentication methods to allow the user to reset the password like
+                - Email, phone, app, security questions etc
+
