@@ -854,4 +854,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - In the virtual machine, you can start Azure AD configuration by searching. 
     - You do not always need to configure for all the users in the active directory. For example, some large enterprize can have users in the testing/staging environment that may not need to be configured. You can uncheck **staging mode** in the case
 
+    - **Pass through authentication**
+        - typically is the hash password syncornization
+        - There is a VM on premesis that has active directory of users, in pass through the user credentials are first passed through the on premessis active directory and then it connect with the Azure active directory. The benifit is that there can be some extra services/processess such a multi-factor authentication on the local directory which you would prefer to run before syncronization with the Azure active directory
+
 
