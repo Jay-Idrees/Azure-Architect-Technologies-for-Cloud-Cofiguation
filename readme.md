@@ -862,5 +862,6 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - **Single Sign on**
         - Log onto the VM on the local premisis
         - Select user sign-in and then enable single sign-on
+        - It works with password hash synchronization and pass-through authentication
 
 
