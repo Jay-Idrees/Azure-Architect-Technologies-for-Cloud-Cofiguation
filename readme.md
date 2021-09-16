@@ -860,10 +860,12 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - There is a VM on premesis that has active directory of users, in pass through the user credentials are first passed through the on premessis active directory and then it connect with the Azure active directory. The benifit is that there can be some extra services/processess such a multi-factor authentication on the local directory which you would prefer to run before syncronization with the Azure active directory
         - The default is usually Password hash syncronization, you can select pass-through synchronization instead
 
-    - **Single Sign on**
+    - **Single Sign on** Avoid the need for password if the user is defined in both the local AD as well as the Azure AD
         - Log onto the VM on the local premisis, then on the local VM search for active directory- directory server- there you will find all the users. So for a particular user, if you double click it make suer that longon hrs are permissible 24/7
         - Select user sign-in and then enable single sign-on
         - It works with password hash synchronization and pass-through authentication
         - Then go to azure portle via the explorer and login using the same user credentials of interest
+        - The user is already defined in the local active directory as well as the Azure Ad
+        - Then go to Azure AD connect > Change user sign in, login > Enable single sign on and check password hash synchronization
 
 
