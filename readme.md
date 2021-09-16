@@ -837,6 +837,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - At a given time one subscription can only be tagged to one directory at a time
     - you can also delete a tenant
 
+- Note that when you make configurations
 
     **Azure AD Connect Service** Migrating local users to Azure AD directory (Syncronization only works in the direction of on premesis > Azure AD)
         - Azure AD component
@@ -860,7 +861,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - The default is usually Password hash syncronization, you can select pass-through synchronization instead
 
     - **Single Sign on**
-        - Log onto the VM on the local premisis
+        - Log onto the VM on the local premisis, then on the local VM search for active directory- directory server- there you will find all the users. So for a particular user, if you double click it make suer that longon hrs are permissible 24/7
         - Select user sign-in and then enable single sign-on
         - It works with password hash synchronization and pass-through authentication
 
