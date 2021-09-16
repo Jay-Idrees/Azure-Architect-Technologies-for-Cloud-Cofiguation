@@ -866,6 +866,10 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - It works with password hash synchronization and pass-through authentication
         - Then go to azure portle via the explorer and login using the same user credentials of interest
         - The user is already defined in the local active directory as well as the Azure Ad
-        - Then go to Azure AD connect > Change user sign in, login > Enable single sign on and check password hash synchronization
+        - Then go to Azure AD connect > Change user sign in, login > Enable single sign on and check password hash synchronization >configure
+        - Once the configuration is complete, exit. Then go to client VM/local. IE settings, security>local intranet - be sure that there is no check on 'enable protected mode' - A few other settings as well
+
+    - **Password write back**
+        - Note that the flow of synchronization is always from the local AD to Azure AD and never from Azure AD to local AD
 
 
