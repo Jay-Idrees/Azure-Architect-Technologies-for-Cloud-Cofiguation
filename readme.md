@@ -877,5 +877,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - **Domain-UO Filtering**
         - With this you are specifying the domains only for which the local-azure AD synchronization should be performed
             - Customize synchronization options
-                - Select sync selected domains and OUs
+                - Select sync selected domains and OUs (OU=organization Unit)
+
+    - **Azure AD Connect health Agent**
+        - Checks how successful was the synchronization - whether there were errors - you can download it. You can get some graphs
+        - AS DS services
 
