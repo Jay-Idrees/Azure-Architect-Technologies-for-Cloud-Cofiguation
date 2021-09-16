@@ -891,6 +891,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     
     - **Configuring Azure AD Dyamic groups**
         - Create a group and manually assign members
-        - You can create dynamic groups for users as well as devices
+        - You can create **dynamic groups for users as well as devices**
         - Note that you can not contain users and devices in one group
+        - Azure AD premium license is required for creating dynamic groups
+        - It allows you to create special rules for particular groups of users and groups of devices
 
