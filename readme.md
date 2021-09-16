@@ -849,5 +849,6 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 
     - You have to install active directory services on the virtual machine. Change the ip address from dynamic to static
     - Once the syncronization is complete, the users are added from the active directory domain
+    - Main benifits are that you can avoid user duplicates. The Azure premesis can syncronize with Azure Active directory
 
 
