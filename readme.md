@@ -904,4 +904,5 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - You can specify the authentication methods to allow the user to reset the password like
               - You can get to it by selecting the default directory, selecting password reset and then selecting athentication methods
                 - Email, phone, app, security questions etc
+        - You need Azure P1 or P2 premium license for this
 
