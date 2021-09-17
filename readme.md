@@ -935,9 +935,21 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - The recovery point retention (how long the recover services keep the recovery points) is 24hrs, the App-consistent snapshot is every 4hours
 
     - The traditional way can be first by creating a backup and then restoring from the backup - this process is slow and time consuming
-    - **Continues replication** is different. All data is first sent to a cache storage account and then transferred to the target region disk storage (continues replication part), including disk storage for unmanaged disks in source. Once a retention point is established, you can conduct a fail point wich can then create a Vm in the destionation using the retention point
+    - **Continues replication** is different. All data is first sent to a **cache storage account** and then transferred to the target region disk storage (continues replication part), including disk storage for unmanaged disks in source. Once a retention point is established, you can conduct a fail point wich can then create a Vm in the destionation using the retention point
+    - The purpose of a cache storage account is to ensure that nothing adverse happens to the source
     - During the replication process multiple **Retention Points** are created
     - Steps:
         1) Install Site Recovery Mobility Service Extension on source virtual machine
         2) Continues replication via cache storage account
         3) Creation of crash consistent and application consistent snapshots
+
+    installing IAS on a VM, test VM
+    selecting disaster recovery
+    selecting a target region
+     Created things
+        - New VM, network, resource, cache storage account. The resource will be recovery service vault
+        - Steps this process automatically performs: Check for enabling protection, installing mobility service, enable replication etc
+    - You can conduct **test failover**. A new VM is created in the target region out of the replication VM usng a recovery point
+    - You can click **cleanup test failover** to delete the recovery test failover machine
+
+## Hyper V
