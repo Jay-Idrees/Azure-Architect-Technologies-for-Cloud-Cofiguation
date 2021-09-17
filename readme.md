@@ -953,3 +953,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - You can click **cleanup test failover** to delete the recovery test failover machine
 
 ## Hyper V
+- This relates more to on premesis network called Hyper V host- Switching from on premesis network to Azure
+- You can simulate local premisis by creating a VM and then installing hyper V
+- Azure assessment appliance, it is a VM that needs to be replicated
+- Azure migrate service
