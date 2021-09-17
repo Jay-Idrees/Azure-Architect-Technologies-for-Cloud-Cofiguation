@@ -921,4 +921,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
  - **Azure Site recovery service**
     - Within Azure, transfer from one region to another
     - It is a replication process (means 2 copies), the replication can be to physical servers or virtual machines
+    - Tool: **Azure site recovery Vault**
+
+- **Azure to Azure disaster recovery**
+    - Azure continuesly replicates data onto a different target region
+    - Source region: Create a storage account, which becomes the cache storage account, before transfer to the target region
 
