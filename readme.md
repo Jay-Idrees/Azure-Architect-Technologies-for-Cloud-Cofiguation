@@ -961,6 +961,23 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - creating VM wth nested virtulization inside the VM - Note that selecting the initial VM size here is important - the size must be large enough to support nested virtulization
 - Azure assessment appliance, it is a VM that needs to be replicated
 - Azure migrate service
+- The goal is learn how to migrate 
 
-- **Setting up Hyper V**
+- **Step 1:Setting up Hyper V to simulate local premesis**
     - Create VM and then RDP to it, launch powershell, install hyper V and then restart the machine after installation is complete. Note that here is the size of the VM where you are installing the hyper V is small then the hyper V installation command will not run
+    - Powershell command: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All`
+    - The next command will be to create a new VM switch which can be used by the VMs
+    - Then next configure gateway for the switch, you have to specify the ip address
+
+- **Step 2: Configuring Migrate in the Azure account**
+    - From the dashboard select Azure Migrate > Servers (from the left pannel migration goals)
+        - Slect Add tool
+            - Choose resource group and name
+            - This will create a project in Azure migrate
+        - Next go to Azure migrate server assessment
+            - click discover
+                - slect discover using an appliance
+                - select the technology you used for virtulization, in this case you will select the option `yes, with hyper-V`
+                - Download the VHD file with is a virtual machine called Azure migrate appliance 12GB - once downloaded with run it
+        - Next on the hyperV VM upload this VM - what this does is create an assessment VM
+
