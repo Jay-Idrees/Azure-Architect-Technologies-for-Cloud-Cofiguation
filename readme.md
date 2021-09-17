@@ -958,6 +958,6 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - Steps include creating a VM
     - Installing hyper V
     - Creating a network adapter
-    - creating VM wth nested virtulization inside the VM
+    - creating VM wth nested virtulization inside the VM - Note that selecting the initial VM size here is important - the size must be large enough to support nested virtulization
 - Azure assessment appliance, it is a VM that needs to be replicated
 - Azure migrate service
