@@ -756,7 +756,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                         - right click and select add a new static route
                             - Destination: Enter the ip and the network mask of the 3rd network
 
-# Azure Backup service
+## Azure Backup service
     - Separate resource Azure Recovery services vault- should be in the same region as the azure network
     - subsequent backup is intellegent, only the changes are recovered after the first one
     - Managed by backup policies and based on retention facilities
@@ -774,7 +774,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - It is a software that you can install on a VM that gives you more control over how and what to specifically backup. You can specify retention policy
     - MARS agent recovers the agent onto the recovery services vault. 
 
-# Azure Active Directory
+## Azure Active Directory
 
 - With every account you can create an active directory
 - you can create usernames, you can attach users to groups and roles
@@ -909,5 +909,16 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - You need Azure P1 or P2 premium license for this
         - You can manually assign P1/P2 license to a particular user
 
-    - 
+--
+
+
+# Management and Security Solutions
+
+## Azure Migrate Service
+    - Migration of on premesis of workload on to Azure (Involves replication and testing of final migration)
+    - Can work with Hyper-V or VMware or physical server
+    
+ - **Azure Site recovery service**
+    - Within Azure, transfer from one region to another
+    - It is a replication process (means 2 copies), the replication can be to physical servers or virtual machines
 
