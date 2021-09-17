@@ -954,6 +954,10 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 
 ## Hyper V
 - This relates more to on premesis network called Hyper V host- Switching from on premesis network to Azure
-- You can simulate local premisis by creating a VM and then installing hyper V
+- You can simulate local premisis by creating a VM and then installing hyper V. you can also create VMs inside the VM - **Nested virtulization** - restriction on sizes
+    - Steps include creating a VM
+    - Installing hyper V
+    - Creating a network adapter
+    - creating VM wth nested virtulization inside the VM
 - Azure assessment appliance, it is a VM that needs to be replicated
 - Azure migrate service
