@@ -888,7 +888,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Install azure active directory on an azure VM  and then have a site to site VPN connection
             - Azure AD domain services - Host active directory in Azure network - this active directory is like the microsoft AD
             - Azure AD DS or Self Managed AD DS
-            - The user on the active directory side must be a part of Enterprise Admins
+            - The user on the active directory side must be a part of Enterprise Admins and the user on the Azure AD side needs to have the global administrator role assigned
     
     - **Configuring Azure AD Dyamic groups**
         - Create a group and manually assign members
