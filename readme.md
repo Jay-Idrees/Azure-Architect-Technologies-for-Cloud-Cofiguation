@@ -961,3 +961,6 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - creating VM wth nested virtulization inside the VM - Note that selecting the initial VM size here is important - the size must be large enough to support nested virtulization
 - Azure assessment appliance, it is a VM that needs to be replicated
 - Azure migrate service
+
+- **Setting up Hyper V**
+    - Create VM and then RDP to it, launch powershell, install hyper V and then restart the machine after installation is complete. Note that here is the size of the VM where you are installing the hyper V is small then the hyper V installation command will not run
