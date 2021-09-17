@@ -926,4 +926,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - **Azure to Azure disaster recovery**
     - Azure continuesly replicates data onto a different target region
     - Source region: Create a storage account, which becomes the cache storage account, before transfer to the target region
+    - New target resources created as a result of replication
+        - Resource group
+        - Virtual network
+        - Storage account if there are unmanaged disks
+        - Avilability set, if the availability set is present for the source
 
