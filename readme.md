@@ -888,6 +888,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Install azure active directory on an azure VM  and then have a site to site VPN connection
             - Azure AD domain services - Host active directory in Azure network - this active directory is like the microsoft AD
             - Azure AD DS or Self Managed AD DS
+            - The user on the active directory side must be a part of Enterprise Admins
     
     - **Configuring Azure AD Dyamic groups**
         - Create a group and manually assign members
@@ -905,4 +906,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
               - You can get to it by selecting the default directory, selecting password reset and then selecting athentication methods
                 - Email, phone, app, security questions etc
         - You need Azure P1 or P2 premium license for this
+        - You can manually assign P1/P2 license to a particular user
+
+    - 
 
