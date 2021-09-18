@@ -992,6 +992,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Register the Assessment machine with Azure migrate by logging onto Azure from the same page, you maybe provided a code
             - Once logged in, choose subscription
             - give appliance name
-            - register - this will register the appliance with the migrat project
+            - register - this will register the appliance with the migrate project
+            - Then connect to the hyperV VM - you will have to use its credentials not of the assessment VM
+                - Under control panel > system and security > windows firewall
+                    - Temporarily turn off the firewall in hyper V and the assessment VM
 
 
