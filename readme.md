@@ -969,7 +969,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - The next command will be to create a new VM switch which can be used by the VMs - Its like creating a NAT which is like a subnet
     - Then next configure gateway for the switch, you have to specify the ip address
 
-- **Step 2: Assessment: Configuring Migrate in the Azure account and assesseng the hyperV VMs with and Assessment VM**
+- **Step 2: Assessment Tool: Configuring Migrate in the Azure account and assesseng the hyperV VMs with and Assessment VM**
     - From the dashboard select Azure Migrate > Servers (from the left pannel migration goals)
         - Slect Add tool
             - Choose resource group and name
@@ -1012,7 +1012,14 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Start discovery to detect all the VMs running on hyperV
         - Generating an Assessment report in Azure after the assessment has been carried out
 
-- **
+- **Step 3: Migration Tool: Performig the actual migration after the Assessment is complete**
+        - From the main dashboard, go to the Azure migrate and select server
+            - Select `Azure Migrate: Server Migration tool`
+            - Click add tool
+            - Then click discover, select yes, Hyper V and select region > create resources
+            - This creates a **Azure site recovery services vault** and can be accessed in Azure from the resources
+                - This will require to download replication provider software (`azuresiterecoveryprovider.exe`) on Hyper V host, it also provides a key to be used to rgister the Hyper V host to the Azure migrate project. Note that you should download this file after logging into the Azure account from the Hyper V. Also download the `key file`
+            - When you will run the **provider file on the hyper V and then also run the key file to register that hyper V with the Recovery Services Vault**
                 
 
 
