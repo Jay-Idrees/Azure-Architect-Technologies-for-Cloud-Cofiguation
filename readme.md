@@ -1002,6 +1002,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Next from the Azure account you will then be able to navigate to **Azure Migrate** and in **Servers**. You can then see **Server Assessment** results. The server discovered will the server on which the server assessment tool is running
                 - When you will see the name of the assessment machines. Any other guest machines on the hyper VM will also be detected if present
                 - You can then generate an assessment by clicking **Assess Servers**
+                - You can access the report by going back to servers (left pannel) from the Azure migrate and click overview - then you will be able to see the assessment report
 
     - So the ultramini summary is as follows:
         - Create Hyper V
