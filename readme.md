@@ -1020,6 +1020,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - This creates a **Azure site recovery services vault** and can be accessed in Azure from the resources
                 - This will require to download replication provider software (`azuresiterecoveryprovider.exe`) on Hyper V host, it also provides a key to be used to rgister the Hyper V host to the Azure migrate project. Note that you should download this file after logging into the Azure account from the Hyper V. Also download the `key file`
             - When you will run the **provider file on the hyper V and then also run the key file to register that hyper V with the Recovery Services Vault**
+            - After the registeration is complete - Create a new virtual network in Azure
+                - Note the Ip address range, **use the same as the NAT network in hyper V**
+                - Also create a subnet (same address range as the NAT network)
                 
 
 
