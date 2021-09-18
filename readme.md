@@ -963,13 +963,13 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - Azure migrate service
 - The goal is learn how to migrate 
 
-- **Step 1:Setting up Hyper V to simulate local premesis**
+- **Step 1:Setting up Hyper V to simulate local premesis** (Micosoft hyper V instructions)[]
     - Create VM and then RDP to it, launch powershell, install hyper V and then restart the machine after installation is complete. Note that here is the size of the VM where you are installing the hyper V is small then the hyper V installation command will not run
     - Powershell command: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All`
-    - The next command will be to create a new VM switch which can be used by the VMs
+    - The next command will be to create a new VM switch which can be used by the VMs - Its like creating a NAT which is like a subnet
     - Then next configure gateway for the switch, you have to specify the ip address
 
-- **Step 2: Configuring Migrate in the Azure account**
+- **Step 2: Assessment: Configuring Migrate in the Azure account and assesseng the hyperV VMs with and Assessment VM**
     - From the dashboard select Azure Migrate > Servers (from the left pannel migration goals)
         - Slect Add tool
             - Choose resource group and name
@@ -997,6 +997,18 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                 - Under control panel > system and security > windows firewall
                     - Temporarily turn off the firewall in hyper V and the assessment VM for private network
             - Add hyper V hosts to the virtual machine from the assessment virtual machine
+                 - On Azure in hyper V, you can get the private ip address and then paste it into thte box where it asks for "provide a list of hyper V hosts"
+                 - Then save and start **discovery** - this will discover all the VMs in the hyper V through the assessment VM
+            - Next from the Azure account you will then be able to navigate to **Azure Migrate** and in **Servers**. You can then see **Server Assessment** results
+
+    - So the ultramini summary is as follows:
+        - Create Hyper V
+        - Download VHD- assessment VM
+        - Register the Assessment VM with migrate project
+        - Start discovery to detect all the VMs running on hyperV
+
+- **
+                
 
 
 
