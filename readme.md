@@ -980,4 +980,18 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                 - select the technology you used for virtulization, in this case you will select the option `yes, with hyper-V`
                 - Download the VHD file with is a virtual machine called Azure migrate appliance 12GB - once downloaded with run it
         - Next on the hyperV VM upload this VM - what this does is create an assessment VM
+        - If there are additional VMs running on the Hyper V, this assessment VM will then assess those VMs and send information to Azure migrate
+    - Then from the hyper V start the newly uploaded assessment VM
+        - Once inside the Assessment VM
+            -Enable remote access - Can be done by right clicking on my computer and then under the remote
+            - Then assign a static ip to the new VM installed
+                - go to control pannel, network and internet > network and sharing center > change adapter settings > ethernet, properties > IPV4, properties - assign ip address based on NAT network e-g `20.0.0.4` you created before and likewise fill in the net mask, also assign the default gateway. 
+                    - Also specify the google DNS server as default, but any DNS of your website will work as well
+    - Once the VM has internet connectivity, the Azure migrate appliance will start to run on IE
+        - COmplete pre-requisites, then the app will run some checks and install any update if necessary
+        - Register the Assessment machine with Azure migrate by logging onto Azure from the same page, you maybe provided a code
+            - Once logged in, choose subscription
+            - give appliance name
+            - register - this will register the appliance with the migrat project
+
 
