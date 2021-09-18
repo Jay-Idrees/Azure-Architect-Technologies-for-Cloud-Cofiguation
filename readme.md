@@ -999,7 +999,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Add hyper V hosts to the virtual machine from the assessment virtual machine
                  - On Azure in hyper V, you can get the private ip address and then paste it into thte box where it asks for "provide a list of hyper V hosts"
                  - Then save and start **discovery** - this will discover all the VMs in the hyper V through the assessment VM
-            - Next from the Azure account you will then be able to navigate to **Azure Migrate** and in **Servers**. You can then see **Server Assessment** results
+            - Next from the Azure account you will then be able to navigate to **Azure Migrate** and in **Servers**. You can then see **Server Assessment** results. The server discovered will the server on which the server assessment tool is running
 
     - So the ultramini summary is as follows:
         - Create Hyper V
