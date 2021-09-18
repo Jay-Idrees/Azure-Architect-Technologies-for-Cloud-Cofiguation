@@ -1010,6 +1010,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Download VHD- assessment VM
         - Register the Assessment VM with migrate project
         - Start discovery to detect all the VMs running on hyperV
+        - Generating an Assessment report in Azure after the assessment has been carried out
 
 - **
                 
