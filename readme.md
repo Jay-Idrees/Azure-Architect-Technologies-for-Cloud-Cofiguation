@@ -995,6 +995,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - register - this will register the appliance with the migrate project
             - Then connect to the hyperV VM - you will have to use its credentials not of the assessment VM
                 - Under control panel > system and security > windows firewall
-                    - Temporarily turn off the firewall in hyper V and the assessment VM
+                    - Temporarily turn off the firewall in hyper V and the assessment VM for private network
+            - Add hyper V hosts to the virtual machine from the assessment virtual machine
+
 
 
