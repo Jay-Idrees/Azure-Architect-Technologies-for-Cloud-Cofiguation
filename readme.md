@@ -1092,6 +1092,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                             - Likewise, you can navigate to the recovery vault and then under manage from the left pannel select **Site recovery infrastructure**
                                 - There you can select **Hyper V hosts** from the left pannel and then select delete
                                 - Finally likewise you can also delete the hyper-V site
+
+## Azure Load Balancer
             
 
 
