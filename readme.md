@@ -1067,6 +1067,15 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                     - Then you will have to create a storage account or link the subscription to a pre-exisitng storage account and create a virtual network (this is the target)
                     - You will also have to create a replication policy - this takes care of replication specifics such as copy frequency, recovery point retention - you can mostly keep defaults
             - **Enable a replication**
+                - Navigate to the Azure site recovery services vault by selecting it from the resource dashboard and then selecting `site recovery` from the left pannel under getting started
+                - Select Replicated items from the left pannel under protected items
+                    - **Replicate** - click it
+                        - Source: On-premesis, yes for performing a migration, check that you want to use Azure site recovery, select hyper V site
+                        - Target: Select storage account and Virtual network if already created
+                                    - Select the post-fail over network - This is where you actually link the network as the target
+                        - virtual machines: check migrate. Once you complete this you will be prompted to select oS etc where you can pick windows. Select the replication policy. Then finally click Replicate
+                        - This process will replicated the VM in the hyper V to a storage account
+                        - When complete, under replicated items from the left pannel of the recovery service resoure you will see the migrate status as "healthy"
 
 
 
