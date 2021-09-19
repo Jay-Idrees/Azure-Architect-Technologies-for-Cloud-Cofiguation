@@ -1036,6 +1036,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                     - You can verfy that the cleanup is complete by going to the virtual machine and you wont see the test migrate VM
                     - Click `stop replication` to complete - this disables the replication
                         - When this step is done, then under replicating machines, you will not see any items
+                    - You can also delete the registration of the hyper V that you registered with the Azure account, as part of the cleanup
+                        - You can delete the hyper V registeration under infrastructure servers
 
 
 
