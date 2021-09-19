@@ -1051,7 +1051,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Steps:
             - Create **Recovery service vault**
                 - Go to dashboard and in resources type recovery and select `backup and site recovery` > create
-                    - Assign resource group and vault name
+                    - Assign resource group and vault name, select region
+                    - Once the resource is created- you can check it out under resources
+                        - From the left pannel, select site recovery and click prepare infrastructure
             - Prepare infrastructure- specigy source/destination
             - Select Hyper V site and servers
             - Install Azure site recovery hyper V provider
