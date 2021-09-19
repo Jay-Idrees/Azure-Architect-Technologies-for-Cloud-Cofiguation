@@ -1042,7 +1042,19 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                     - Likewise, also uninstall `Microsoft Azure Site revovery provider`
                     - Finally from Azure portal, you can delete the project by navigating to Azure Migrate and Servers
                         - Go to all resource, also check hidden resources
-                        - Select the project by name, like "app-project"
+                        - Select the project by name, like "app-project", not that if you do not select show hidden types, you will not be able to see the Azure migrate project
+
+    - **Using Azure Site Recovery Service**
+        - Alternative to migration, used on the local premesis hyper V. It is not the same as Azure migrate, but it can be used to transfer the VM/data to a new 
+        - Steps:
+            - Create `Recovery service vault`
+            - Prepare infrastructure- specigy source/destination
+            - Select Hyper V site and servers
+            - Install Azure site recovery hyper V provider
+            - Register hyper V servier
+            - specify target details
+            - Create and associate a replication policy
+            - Enable a replication
 
 
 
