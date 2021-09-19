@@ -1026,9 +1026,16 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                 - Note the Ip address range, **use the same as the NAT network in hyper V** CDR range could vary
                 - Also create a subnet (same address range as the NAT network), Subnet range should be the same
                 - You can go to migration by selecting `Azure migrate` from the dashboard and then selecting `servers` from the left pannel under `migrating goals`
+                    - Then you can click `overview`, and select `replicating machines` from the left pannel and then click `migrate`
                 - Test migration - it has no public ip address. If you want to test it you will have to assigin a public ip address and an NSG
-
+                    when the test migration is complete you will be able to view the results 
                 - Final migration - go to Azure migrate  and then servers and then select migrate
+            - **Cleanup test migration**
+                - After navigating to migrate as above you can select `test migrate cleanup` type some notes like testing complete
+                    - This deletes the test VM, can take 2-3 min
+                    - You can verfy that the cleanup is complete by going to the virtual machine and you wont see the test migrate VM
+                    - Click `stop replication` to complete - this disables the replication
+                        - When this step is done, then under replicating machines, you will not see any items
 
 
 
