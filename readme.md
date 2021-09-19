@@ -1076,6 +1076,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                         - virtual machines: check migrate. Once you complete this you will be prompted to select oS etc where you can pick windows. Select the replication policy. Then finally click Replicate
                         - This process will replicated the VM in the hyper V to a storage account
                         - When complete, under replicated items from the left pannel of the recovery service resoure you will see the migrate status as "healthy"
+            - **Migrate**
+                - After the replication is complete, you select that health migrate column from above and then you will have options for **planned failover, failover or test failover**
+
 
 
 
