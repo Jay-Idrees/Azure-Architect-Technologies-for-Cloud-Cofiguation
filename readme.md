@@ -1096,9 +1096,10 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 ## Azure Load Balancer
     - Distribution of traffic load onto the virtual machines
     - requires configurations
-        - Backend pool
+        - Backend pool - The pool of VMs behind the load balancer
         - Front-end IP
         - Health probe - Checks the health of VM before directing the users to a particulat VM by the load balancer
+        - Load balancing rules - Rules regarding the listening ports of the VMs, e-g traffic regarding port 80
             
 
 
