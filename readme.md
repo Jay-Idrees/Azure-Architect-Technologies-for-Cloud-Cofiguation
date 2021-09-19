@@ -1098,7 +1098,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - requires configurations
         - Backend pool
         - Front-end IP
-        - Health probe
+        - Health probe - Checks the health of VM before directing the users to a particulat VM by the load balancer
             
 
 
