@@ -1045,7 +1045,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                         - Select the project by name, like "app-project", not that if you do not select show hidden types, you will not be able to see the Azure migrate project
 
     - **Using Azure Site Recovery Service**
-        - Alternative to migration, used on the local premesis hyper V. It is not the same as Azure migrate, but it can be used to transfer the VM/data to a new 
+        - This is an alternative to **Azure migration**, used on the local premesis hyper V. It is not the same as Azure migrate, but it can be used to transfer the VM/data to a new 
         - You need an Azure storage account for replicating the data
         - You will also have to create a target virtual network
         - Steps:
@@ -1053,8 +1053,12 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                 - Go to dashboard and in resources type recovery and select `backup and site recovery` > create
                     - Assign resource group and vault name, select region
                     - Once the resource is created- you can check it out under resources
-                        - From the left pannel, select site recovery and click prepare infrastructure
             - Prepare infrastructure- specigy source/destination
+                - Once you locate the resource, from the left pannel, select site recovery and click prepare infrastructure (this means downloading and installing `Recovery provider` on hyper V)
+                - Log in to the Azure account from the hyper V and navigate to **site recovery** after selecting the recovery vault resource 
+                    - You will have to fill:
+                        - Protection goal: `location: On premesis`, `destination: to Azure`, `performing replication:yes`
+
             - Select Hyper V site and servers
             - Install Azure site recovery hyper V provider
             - Register hyper V servier
