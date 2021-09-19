@@ -1094,6 +1094,11 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                                 - Finally likewise you can also delete the hyper-V site
 
 ## Azure Load Balancer
+    - Distribution of traffic load onto the virtual machines
+    - requires configurations
+        - Backend pool
+        - Front-end IP
+        - Health probe
             
 
 
