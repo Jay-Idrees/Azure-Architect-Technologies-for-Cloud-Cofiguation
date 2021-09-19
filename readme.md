@@ -1078,6 +1078,12 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                         - When complete, under replicated items from the left pannel of the recovery service resoure you will see the migrate status as "healthy"
             - **Migrate**
                 - After the replication is complete, you select that health migrate column from above and then you will have options for **planned failover, failover or test failover**
+                    - Go ahed with a **test failover**
+                        - From the left pannel after you click test failover, select `compute and network`, edit. You can select the size allocation for the VM |save
+                        - go back to overview, you can choose a recovery point and the latest process revovery point assign the network
+                        - Once the **Test migration** is complete, a notification will pop up, you can click it to inspect the results
+                            - Under resources | virtual machines, you will now see a new VM called `Migrate-test` 
+                                - Note that his VM will NOT have a public ip address or NSG rules
 
 
 
