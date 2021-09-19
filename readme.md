@@ -1057,7 +1057,13 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                 - Once you locate the resource, from the left pannel, select site recovery and click prepare infrastructure (this means downloading and installing `Recovery provider` on hyper V)
                 - Log in to the Azure account from the hyper V and navigate to **site recovery** after selecting the recovery vault resource 
                     - You will have to fill:
-                        - Protection goal: `location: On premesis`, `destination: to Azure`, `performing replication:yes`
+                        - Protection goal: `location: On premesis`, `destination: to Azure`, `performing replication:yes`, `machines virtualized?:yes, Hyper V`, `using system center:no`
+                        - Deployment planning: `yes I have done it`
+                        - Source: `Add Hyper V name` e-g SiteA
+                            - Next you have select `add server` to download Microsoft site recovery provider and run it on the hyper V machine
+                                - This will install `Azure Site Recovery Provider agent` then run the wizard. It will ask for the key
+                            - You can download the key file from the link below the recovery provider file where it says **vault registeration key** and then upload the key file into the wizard
+                                - This will connect the hyper V to the recovery services vault on Azure
 
             - Select Hyper V site and servers
             - Install Azure site recovery hyper V provider
