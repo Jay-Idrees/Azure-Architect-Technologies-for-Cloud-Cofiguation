@@ -1088,6 +1088,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                                     - You can assign a public ip after selecting network interface and then selecting ip configuration under setting. Click associate and then create a new ip address
                                     - Then you can RDP to the VM. After logging in you will see `Azure migrate appliance congiguration manager` file on the desktop
                         - **clean-up**: Next navigate to Recovery services vault resource and select replicated items under protected items from the left pannel, click migrate and click **test failover cleanup**
+                            - Next you can clean up the resources: navigate to the recovery servives valut resource, under replicated items, right click the 'migrate' and select **disable replication** select a reason. Once done, on refresh, you will no longer see the replication. 
+                            -
             
 
 
