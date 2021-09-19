@@ -1083,7 +1083,12 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                         - go back to overview, you can choose a recovery point and the latest process revovery point assign the network
                         - Once the **Test migration** is complete, a notification will pop up, you can click it to inspect the results
                             - Under resources | virtual machines, you will now see a new VM called `Migrate-test` 
-                                - Note that his VM will NOT have a public ip address or NSG rules
+                                - Note that his VM will NOT have a **public ip address** or **NSG rules**
+                                - Navigate to the Migrate-test VM and select networking from the left pannel
+                                    - You can assign a public ip after selecting network interface and then selecting ip configuration under setting. Click associate and then create a new ip address
+                                    - Then you can RDP to the VM. After logging in you will see `Azure migrate appliance congiguration manager` file on the desktop
+                        - **clean-up**: Next navigate to Recovery services vault resource and select replicated items under protected items from the left pannel, click migrate and click **test failover cleanup**
+            
 
 
 
