@@ -1036,8 +1036,13 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                     - You can verfy that the cleanup is complete by going to the virtual machine and you wont see the test migrate VM
                     - Click `stop replication` to complete - this disables the replication
                         - When this step is done, then under replicating machines, you will not see any items
-                    - You can also delete the registration of the hyper V that you registered with the Azure account, as part of the cleanup
+                    - You can also **delete the registration of the hyper V** that you registered with the Azure account, as part of the cleanup
                         - You can delete the hyper V registeration under infrastructure servers
+                    - You can also delete the Azure recovery services agent from the hyper V by going to the control pannel and then uninstalling `Microsoft Azure Recovery Services Agent`
+                    - Likewise, also uninstall `Microsoft Azure Site revovery provider`
+                    - Finally from Azure portal, you can delete the project by navigating to Azure Migrate and Servers
+                        - Go to all resource, also check hidden resources
+                        - Select the project by name, like "app-project"
 
 
 
