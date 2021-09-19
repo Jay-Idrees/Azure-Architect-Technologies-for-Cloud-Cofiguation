@@ -1046,8 +1046,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 
     - **Using Azure Site Recovery Service**
         - Alternative to migration, used on the local premesis hyper V. It is not the same as Azure migrate, but it can be used to transfer the VM/data to a new 
+        - You need an Azure storage account for replicating the data
         - Steps:
-            - Create `Recovery service vault`
+            - Create **Recovery service vault**
             - Prepare infrastructure- specigy source/destination
             - Select Hyper V site and servers
             - Install Azure site recovery hyper V provider
