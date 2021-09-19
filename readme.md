@@ -1053,7 +1053,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                 - Go to dashboard and in resources type recovery and select `backup and site recovery` > create
                     - Assign resource group and vault name, select region
                     - Once the resource is created- you can check it out under resources
-            - Prepare infrastructure- specigy source/destination
+            - **Prepare infrastructure**- specify source/destination
                 - Once you locate the resource, from the left pannel, select site recovery and click prepare infrastructure (this means downloading and installing `Recovery provider` on hyper V)
                 - Log in to the Azure account from the hyper V and navigate to **site recovery** after selecting the recovery vault resource 
                     - You will have to fill:
@@ -1064,13 +1064,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                                 - This will install `Azure Site Recovery Provider agent` then run the wizard. It will ask for the key
                             - You can download the key file from the link below the recovery provider file where it says **vault registeration key** and then upload the key file into the wizard
                                 - This will connect the hyper V to the recovery services vault on Azure
-
-            - Select Hyper V site and servers
-            - Install Azure site recovery hyper V provider
-            - Register hyper V servier
-            - specify target details
-            - Create and associate a replication policy
-            - Enable a replication
+                    - Then you will have to create a storage account or link the subscription to a pre-exisitng storage account and create a virtual network (this is the target)
+                    - You will also have to create a replication policy - this takes care of replication specifics such as copy frequency, recovery point retention - you can mostly keep defaults
+            - **Enable a replication**
 
 
 
