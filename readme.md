@@ -1109,8 +1109,16 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Internal (Not exposed to public, for example between web VMs and database VMs)
 
 
-- Exercise:
-    - 
+- **Setting up a Load Balancer**:
+    - Create 2 VMs as part of the same availability set
+    - Install internet information services on both VMs
+    - Place a simple HTML page as home page on the webserver
+    - Create a public ip address
+    - Create a load balancer resource
+        - Configure a load balancer
+        - Assign a public IP address that you created
+        - Create a backend pool of virtual machines
+        - Add a health probe
             
 
 
