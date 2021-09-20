@@ -1121,7 +1121,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Connect to the first VM by RDP
         - Server manager > Add roles and features > intallation types \ role based installation > Server roles \ check webserver/internet information services >> install
             - You can verify that the IIS is installed by pasting the public ip address on your lap top browser (not from inside the VM), if the page displays then yes
-    - Place a simple `HTML page` as home page on the webserver VM
+    - Place a simple `HTML page` as home page on both VMs, this is to help distinguish the to VMs to see if they are workig 
+        - Create a new notepad file and past the only text <h1> This is VM 1 <h1> save the file in `Windows(C): > inetpub > wwwroot` This is where you can place this notepad file - this is a windows system folder that displays the default html page in a browser of that computer. You can name the file `default.html`- whatever you name it. That is what you will have to type in the browser next to the ip address
     - Create a `public ip` address
     - Create a `load balancer resource`
         - Configure a load balancer
