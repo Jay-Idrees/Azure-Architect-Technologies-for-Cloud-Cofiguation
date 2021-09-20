@@ -1103,9 +1103,14 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 - There are 2 `SKUs`, there are categories of load balancer based on features
         - **Basic** (Can place only a single VM behind a load balancer, availability set, scale set)
         - **Standard** - has more features (Can place Multiple virtual machines behind a load balancer, availability set, scale set)
+        - Note that if you are using a load balancer the VMs must be part of the same availability set or a scale set
         - There are 2 types of load balancers: 
             - External (public- exposed to the internet)
             - Internal (Not exposed to public, for example between web VMs and database VMs)
+
+
+- Exercise:
+    - 
             
 
 
