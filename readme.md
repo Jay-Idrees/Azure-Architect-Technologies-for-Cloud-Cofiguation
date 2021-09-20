@@ -1110,15 +1110,21 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 
 
 - **Setting up a Load Balancer**:
-    - Create 2 VMs as part of the same availability set
+    - `Create 2 VMs` as part of the same availability set
+        - Select the image `windows server 2019 datacenter`, select region, size (8GB), administrator credentials etc, **enable port 80**
+        - Create a new availability set and assign it to VM you are creating
+            - Specify fault and update domains, 2 each
+        - Also create a new virtual network while creating a VM
+            - Be sure to **assign a public ip address to the VM** - Note that here even though you are going to assign a public ip to the load balancer, but here you are associating a public ip address to the VM because you want to access internet information services and an HTML page
     - Install internet information services on both VMs
-    - Place a simple HTML page as home page on the webserver
-    - Create a public ip address
-    - Create a load balancer resource
+    - Place a simple `HTML page` as home page on the webserver VM
+    - Create a `public ip` address
+    - Create a `load balancer resource`
         - Configure a load balancer
         - Assign a public IP address that you created
         - Create a backend pool of virtual machines
         - Add a health probe
+        - Create a load balancing role - The rule will define routing and spliting traffic towards the virtual machines
             
 
 
