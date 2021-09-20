@@ -1094,12 +1094,18 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                                 - Finally likewise you can also delete the hyper-V site
 
 ## Azure Load Balancer
-    - Distribution of traffic load onto the virtual machines
+- Distribution of traffic load onto the virtual machines
     - requires configurations
         - Backend pool - The pool of VMs behind the load balancer
         - Front-end IP - This is the public ip address for the internet traffic
         - Health probe - Checks the health of VM before directing the users to a particular VM by the load balancer
         - Load balancing rules - Rules regarding the listening ports of the VMs, e-g traffic regarding port 80
+- There are 2 `SKUs`, there are categories of load balancer based on features
+        - **Basic** (Can place only a single VM behind a load balancer, availability set, scale set)
+        - **Standard** - has more features (Can place Multiple virtual machines behind a load balancer, availability set, scale set)
+        - There are 2 types of load balancers: 
+            - External (public- exposed to the internet)
+            - Internal (Not exposed to public, for example between web VMs and database VMs)
             
 
 
