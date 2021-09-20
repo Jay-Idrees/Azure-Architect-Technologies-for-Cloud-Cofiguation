@@ -1123,6 +1123,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - You can verify that the IIS is installed by pasting the public ip address on your lap top browser (not from inside the VM), if the page displays then yes
     - Place a simple `HTML page` as home page on both VMs, this is to help distinguish the to VMs to see if they are workig 
         - Create a new notepad file and past the only text <h1> This is VM 1 <h1> save the file in `Windows(C): > inetpub > wwwroot` This is where you can place this notepad file - this is a windows system folder that displays the default html page in a browser of that computer. You can name the file `default.html`- whatever you name it. That is what you will have to type in the browser next to the ip address. So in the browser it will be `public ip address/default.html`. Repeat the same for the second VM but in the HTML text you can say "This is VM 2"
+    - Once you have tested that the html pages and the IIS are working in both the virtual machines, next you can **delete the public ip addresses** of both the VMs
+        - You can do this by going the `VM resource || Settings \ Networking -> VM name next to network interface || Settings \ Ip configurations -> ipconfig1 -> Disassociate under Public IP address -> save` - can take 5 min to process
     - Create a `public ip` address
     - Create a `load balancer resource`
         - Configure a load balancer
