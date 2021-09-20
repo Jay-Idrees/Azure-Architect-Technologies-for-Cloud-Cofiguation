@@ -1097,7 +1097,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - Distribution of traffic load onto the virtual machines
     - requires configurations
         - Backend pool - The pool of VMs behind the load balancer
-        - Front-end IP
+        - Front-end IP - This is the public ip address for the internet traffic
         - Health probe - Checks the health of VM before directing the users to a particulat VM by the load balancer
         - Load balancing rules - Rules regarding the listening ports of the VMs, e-g traffic regarding port 80
             
