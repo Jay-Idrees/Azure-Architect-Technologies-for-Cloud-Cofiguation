@@ -1115,7 +1115,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Create a new availability set and assign it to VM you are creating
             - Specify fault and update domains, 2 each
         - Also create a new virtual network while creating a VM
-            - Be sure to **assign a public ip address to the VM** - Note that here even though you are going to assign a public ip to the load balancer, but here you are associating a public ip address to the VM because you want to access internet information services and an HTML page
+            - Be sure to **assign a public ip address to the VM** - Note that here even though you are going to assign a public ip to the load balancer, but here you are associating a public ip address to the VM because you want to access internet information services and an HTML page. However, once the load balancer is created - this VM public ip address can be removed
     - Install internet information services on both VMs
     - Place a simple `HTML page` as home page on the webserver VM
     - Create a `public ip` address
