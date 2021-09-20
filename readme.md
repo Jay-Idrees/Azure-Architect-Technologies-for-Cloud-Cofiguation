@@ -1116,7 +1116,11 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Specify fault and update domains, 2 each
         - Also create a new virtual network while creating a VM
             - Be sure to **assign a public ip address to the VM** - Note that here even though you are going to assign a public ip to the load balancer, but here you are associating a public ip address to the VM because you want to access internet information services and an HTML page. However, once the load balancer is created - this VM public ip address can be removed
+            - When you create the second VM, be sure to include them in the same same availability set, Vnet and 
     - Install internet information services on both VMs
+        - Connect to the first VM by RDP
+        - Server manager > Add roles and features > intallation types \ role based installation > Server roles \ check webserver/internet information services >> install
+            - You can verify that the IIS is installed by pasting the public ip address on your lap top browser (not from inside the VM), if the page displays then yes
     - Place a simple `HTML page` as home page on the webserver VM
     - Create a `public ip` address
     - Create a `load balancer resource`
