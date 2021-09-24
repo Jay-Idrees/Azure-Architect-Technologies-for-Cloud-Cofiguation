@@ -1115,7 +1115,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Create a new availability set and assign it to VM you are creating
             - Specify fault and update domains, 2 each
         - Also create a new virtual network while creating a VM
-            - Be sure to **assign a public ip address to the VM** - Note that here even though you are going to assign a public ip to the load balancer, but here you are associating a public ip address to the VM because you want to access internet information services and an HTML page. However, once the load balancer is created - this VM public ip address can be removed
+            - Be sure to **assign a public Ip address to the VM** - Note that here even though you are going to assign a public ip to the load balancer, but here you are associating a public ip address to the VM because you want to access internet information services and an HTML page. However, once the load balancer is created - this VM public ip address can be removed
             - When you create the second VM, be sure to include them in the same same availability set, Vnet and 
     - Install internet information services on both VMs
         - Connect to the first VM by RDP
@@ -1125,7 +1125,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Create a new notepad file and past the only text <h1> This is VM 1 <h1> save the file in `Windows(C): > inetpub > wwwroot` This is where you can place this notepad file - this is a windows system folder that displays the default html page in a browser of that computer. You can name the file `default.html`- whatever you name it. That is what you will have to type in the browser next to the ip address. So in the browser it will be `public ip address/default.html`. Repeat the same for the second VM but in the HTML text you can say "This is VM 2"
     - Once you have tested that the html pages and the IIS are working in both the virtual machines, next you can **delete the public ip addresses** of both the VMs
         - You can do this by going the `VM resource || Settings \ Networking -> VM name next to network interface || Settings \ Ip configurations -> ipconfig1 -> Disassociate under Public IP address -> save` - can take 5 min to process
-    - Create a `public ip` address
+    - Create a `public ip` address - this is for the load balancer
+        - In general resources search for public ip address, select this `resource -> create | Name, static, choose subscription, resource group, location (must be same as VMs)`
+            - At this time if you go to your 2 VMs you will see that neither will show to be having a public ip address
     - Create a `load balancer resource`
         - Configure a load balancer
         - Assign a public IP address that you created
