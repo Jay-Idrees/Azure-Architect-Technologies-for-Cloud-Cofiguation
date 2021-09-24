@@ -1132,6 +1132,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Configure a load balancer
             - Assign resource group,name, region, SKU(know the difference b/w basic and standard- the basic option allows only one VM in backend pool )
             - In the public ip address, select use existing and specify the one that you just created
+            - Rest leave as is
         - Assign a public IP address that you created
         - Create a backend pool of virtual machines (where you add the VMs that you have previously created)
         - Add a health probe
