@@ -1125,7 +1125,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Create a new notepad file and past the only text <h1> This is VM 1 <h1> save the file in `Windows(C): > inetpub > wwwroot` This is where you can place this notepad file - this is a windows system folder that displays the default html page in a browser of that computer. You can name the file `default.html`- whatever you name it. That is what you will have to type in the browser next to the ip address. So in the browser it will be `public ip address/default.html`. Repeat the same for the second VM but in the HTML text you can say "This is VM 2"
     - Once you have tested that the html pages and the IIS are working in both the virtual machines, next you can **delete the public ip addresses** of both the VMs
         - You can do this by going the `VM resource || Settings \ Networking -> VM name next to network interface || Settings \ Ip configurations -> ipconfig1 -> Disassociate under Public IP address -> save` - can take 5 min to process. Do this for both VMs
-    - Create a `public ip` address - this is for the load balancer
+    - **Create a `public ip` address** - this is for the load balancer
         - In general resources search for public ip address, select this `resource -> create | Name, static, choose subscription, resource group, location (must be same as VMs)`
             - At this time if you go to your 2 VMs you will see that neither will show to be having a public ip address
     - Create a `load balancer resource`
