@@ -1128,8 +1128,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - **Create a `public ip` address** - this is for the load balancer
         - In general resources search for public ip address, select this `resource -> create | Name, static, choose subscription, resource group, location (must be same as VMs)`
             - At this time if you go to your 2 VMs you will see that neither will show to be having a public ip address
-    - Create a `load balancer resource` - You can search it in resources from the main dashboard
-        - Configure a load balancer
+    - **Create a `load balancer resource`** - You can search it in resources from the main dashboard
+        - Creating a load balancer
             - Assign resource group,name, region, SKU(know the difference b/w basic and standard- the basic option allows only one VM in backend pool )
             - In the public ip address, select use existing and specify the one that you just created
             - Rest leave as is
