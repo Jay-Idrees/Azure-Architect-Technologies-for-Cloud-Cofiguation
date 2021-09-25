@@ -1167,7 +1167,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 
 
 - **Creating application gateway**
-- Create 2 VMS and install information services
+- Create 2 VMS and install internet information services
+- Create  Azure application gateway and implement URL pathways routing
+- Add the VMs to the backend pool
 
 
 
