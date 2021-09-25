@@ -1149,6 +1149,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - creating Vnet with two VMs (allow port 80), installing IIS, html pages, then create a load balancer, assign it public ip address to the load balancer, health probe and load balancing rule
         - Key difference to note
             - When dissociating the public ip addresses of the VMs in the network interface card, be sure to select assignment for IP as **static** instead of dynamic under the ` navigate VM || networking || IP configurations ->ipconfig1 -> assignment->static`
+            - When you create a new public ip address for the load balancer, be sure to select **standard** under SKU
             
 
 
