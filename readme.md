@@ -1168,6 +1168,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 
 - **Creating application gateway**
 - Create 2 VMS and install internet information services
+    - Use the standard way, allow port 80
+        - create a new virtual network along with the VM - the ip for the VM should be /16, and for the subnet /24
 - Create  Azure application gateway and implement URL pathways routing
 - Add the VMs to the backend pool
 
