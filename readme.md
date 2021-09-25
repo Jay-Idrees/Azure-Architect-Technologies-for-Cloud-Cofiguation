@@ -1147,6 +1147,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - You can have independent virtual machines, but they must be part of the same Vnet
         - The process is similar to above:
             - creating Vnet with two VMs (allow port 80), installing IIS, html pages, then create a load balancer, assign it public ip address to the load balancer, health probe and load balancing rule
+        - Key difference to note
+            - When dissociating the public ip addresses of the VMs in the network interface card, be sure to select assignment for IP as **static** instead of dynamic under the `IP configurations ->ipconfig1`
             
 
 
