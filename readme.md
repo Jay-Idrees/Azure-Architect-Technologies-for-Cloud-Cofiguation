@@ -1163,7 +1163,12 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
     - Routing rules - Route listner traffic from listner to the backend pool
         - x2 types: - Basic- all requests routed to backend pool directly, path-based - Requests are routed to the backend pool based on URL
                     - Path-based - Requests are routed based on the URL
-    - Backend pools - Can be many things like Network interface cards, VM scale sets, IP addresses, backends such as APP service
+    - Backend pools - Can be many things like Network interface cards, VM scale sets, IP addresses, backends such as App service
+
+
+- **Creating application gateway**
+- Create 2 VMS and install information services
+
 
 
 
