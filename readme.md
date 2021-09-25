@@ -1167,9 +1167,14 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 
 
 - **Creating application gateway**
-- Create 2 VMS and install internet information services
+- Create 2 VMS and install internet information services. One for the purpose of processing videos, the other for processing images
     - Use the standard way, allow port 80
         - create a new virtual network along with the VM - the ip for the VM should be /16, and for the subnet /24
+        - Note that an empty subnet must be created to host the application services
+        - Likewise create the second virtual machine and select the network that you just created
+    - RDP to the VMs
+        - From server dashboard `-> Add roles and features > server roles, check web server IIS` and then install. 
+        - Create a notepad file for html.` C:> inetpub > wwwroot> here create a new folder **videos** > default.html` Now if you go and type the `ip address/videos/default.html` you will be able to see the html page
 - Create  Azure application gateway and implement URL pathways routing
 - Add the VMs to the backend pool
 
