@@ -1138,7 +1138,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - `load balancer || Backend pool -> add, give a name, choose Vnet, associated to: VMs and then add the VMs you prevuously created`
         - Add a **health probe**
             - `load balancer || helath probe -> add, give name, leave TCP, port 80, interval 5s, consecutive failures x2`
-        - Create a load balancing role - The rule will define routing and spliting traffic towards the virtual machines
+        - Add **load balancing rules** - The rule will define routing and spliting traffic towards the virtual machines
             
 
 
