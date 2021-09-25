@@ -1140,6 +1140,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - `load balancer || health probe -> add, give name, leave TCP, port 80, interval 5s, consecutive failures x2`
         - Add **load balancing rules** - The rule will define routing and spliting traffic towards the virtual machines
             - `load balancer || load balancing rule -> add, protocol TCP, port 80, backend port 80, selct pool and health prob by name as you created above`
+            - This rule is essentially directing front-end requests to the load balancer to the backend pool which will also conduct a health probe prior to directing traffic
             
 
 
