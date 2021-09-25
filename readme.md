@@ -1151,7 +1151,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - When dissociating the public ip addresses of the VMs in the network interface card, be sure to select assignment for IP as **static** instead of dynamic under the ` navigate VM || networking || IP configurations ->ipconfig1 -> assignment->static`
             - When you create a new public ip address for the load balancer, be sure to select **standard** under SKU, select the subscription
             - Also select **standard** for the SKU when creating a load balancer
-            - Note that for Standard SKU an NSG will need to be created that has a white list of ips
+            - Note that for Standard SKU an NSG will need to be created that has a white list of ips. In contrast, creation of NSG is optional for basic SKU, but required for standard
+            - Likewise, add backend pool and add the VMs to the pool. Subsequently add a health probe like before
             
 
 
