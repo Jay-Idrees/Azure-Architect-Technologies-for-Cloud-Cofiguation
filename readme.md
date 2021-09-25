@@ -1152,7 +1152,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - When you create a new public ip address for the load balancer, be sure to select **standard** under SKU, select the subscription
             - Also select **standard** for the SKU when creating a load balancer
             - Note that for Standard SKU an NSG will need to be created that has a white list of ips. In contrast, creation of NSG is optional for basic SKU, but required for standard
-            - Likewise, add backend pool and add the VMs to the pool. Subsequently add a health probe like before
+            - Likewise, add backend pool and add the VMs to the pool. Subsequently add a health probe like before as well as the load balancing rule
             
 
 
