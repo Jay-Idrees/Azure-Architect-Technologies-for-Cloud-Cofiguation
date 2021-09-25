@@ -1142,8 +1142,10 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - `load balancer || load balancing rule -> add,give name, protocol TCP, port 80, backend port 80, selct pool and health prob by name as you created above, rest as default`
             - This rule is essentially directing front-end requests to the load balancer to the backend pool which will also conduct a health probe prior to directing traffic
         - You can test whether the loadbalancer is working by pasting the public ip of the load balancer and /default.html, if its working then it will be able to display the html pages from the VMs
+
     - **Setting up the standard load balancer**
         - You can have independent virtual machines, but they must be part of the same Vnet
+        - The process is similar to above
             
 
 
