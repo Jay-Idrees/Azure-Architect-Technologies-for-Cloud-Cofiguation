@@ -1133,7 +1133,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Assign resource group,name, region, SKU(know the difference b/w basic and standard- the basic option allows only one VM in backend pool )
             - In the public ip address, select use existing and specify the one that you just created
             - Rest leave as is
-        - Assign a **public IP address** that you created - This is done above from the first page of creation - Can verify this by navigating to the `load balancer from resources || Front IP configuration` - there you will be able to see the assigned public IP
+        - Assign a **public IP address** that you created - This is done above from the first page of creation - Can verify this by navigating to the `load balancer from resources || Front IP configuration` - there you will be able to see the assigned public IP. Note that once you assign the ip, this ip will also be automaticlly assigned to the VMs that are configured as the backend pool 
         - Add a **backend pool** of virtual machines (where you add the VMs that you have previously created)
             - `load balancer || Backend pool -> add, give a name, choose Vnet, associated to: VMs and then add the VMs you prevuously created`
         - Add a **health probe**
@@ -1141,6 +1141,9 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Add **load balancing rules** - The rule will define routing and spliting traffic towards the virtual machines
             - `load balancer || load balancing rule -> add,give name, protocol TCP, port 80, backend port 80, selct pool and health prob by name as you created above, rest as default`
             - This rule is essentially directing front-end requests to the load balancer to the backend pool which will also conduct a health probe prior to directing traffic
+        - You can test whether the loadbalancer is working by pasting the public ip of the load balancer and /default.html, if its working then it will be able to display the html pages from the VMs
+    - **Setting up the standard load balancer**
+        - You can have independent virtual machines, but they must be part of the same Vnet
             
 
 
