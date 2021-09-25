@@ -1135,7 +1135,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Rest leave as is
         - Assign a **public IP address** that you created - This is done above from the first page of creation - Can verify this by navigating to the `load balancer from resources || Front IP configuration` - there you will be able to see the assigned public IP
         - Add a **backend pool** of virtual machines (where you add the VMs that you have previously created)
-            - `load balancer || Backend pool -> add, give a name, choose Vnet`
+            - `load balancer || Backend pool -> add, give a name, choose Vnet, associated to: VMs and then add the VMs you prevuously created`
         - Add a health probe
         - Create a load balancing role - The rule will define routing and spliting traffic towards the virtual machines
             
