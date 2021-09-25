@@ -1156,6 +1156,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Rest is same as above
             
 
+## Azure Application Gateway
+
 
 
 
