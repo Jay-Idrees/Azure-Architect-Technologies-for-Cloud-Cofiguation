@@ -1145,7 +1145,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 
     - **Setting up the standard load balancer**
         - You can have independent virtual machines, but they must be part of the same Vnet
-        - The process is similar to above
+        - The process is similar to above:
+            - creating Vnet with two VMs, running IIS, html pages, then assigning a public ip address to the load balancer, health probe and load balancing rule
             
 
 
