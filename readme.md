@@ -1176,7 +1176,11 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - From server dashboard `-> Add roles and features > server roles, check web server IIS` and then install. 
         - Create a notepad file for html.` C:> inetpub > wwwroot> here create a new folder **videos** > default.html` Now if you go and type the `ip address/videos/default.html` you will be able to see the html page
         - You can then repeat the same step on the second VM and create the folder `images` instead of videos
-- Create  Azure application gateway and implement URL pathways routing
+- Create Azure application gateway and implement URL pathways routing
+    - Search for this resource by typing **application gateway** from the dashboard
+    - Configurations
+        - Tier Standard V2
+        - You can select autoscaling, this will scale based on the demand, for now you can select no
 - Add the VMs to the backend pool
 
 
