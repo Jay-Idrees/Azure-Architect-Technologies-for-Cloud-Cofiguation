@@ -1205,10 +1205,12 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 
 
 ## Azure traffic manager
-    - DNS based traffic load balancer
-        - Priority - Shifts to the next endpoint after the first one fails
-        - Weighted - Distribute traffic based on weightage
-        - Performance - The traffic is directed based on the closest endpoint
+- DNS based traffic load balancer
+        - **Priority** - Shifts to the next endpoint after the first one fails
+        - **Weighted** - Distribute traffic based on weightage
+        - **Performance** - The traffic is directed based on the closest endpoint
+        - **Geographic** - Traffic directed based on the location
+        - **Multivalue** - The user selects the endpoint
 
 
 
