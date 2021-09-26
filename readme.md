@@ -1191,6 +1191,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
             - Once you are in the `backends` tab click `add backend pool`
                 - Give name e-g `imagepool` or `videopool`
                 - Target type: select virtual machine and then select VM by name. Note that you can check the name of the VM from going to the resources
+    - **Configuration**
+        - This includes creating the **routing rules** that govern when a request comes to the frontend it gets routed to the appropriate backend pool
 - Add the VMs to the backend pool
 
 
