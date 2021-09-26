@@ -1182,7 +1182,8 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - Tier Standard V2
         - You can select autoscaling, this will scale based on the demand, for now you can select no
         - Availability zone, none
-        - Go inside the virtual network resource that you created before and in addition to the default subnet, add a new application subnet /24. Note that this new subnet must be an empty subnet
+        - Go inside the virtual network resource that you created before and in addition to the default subnet, add a new application subnet /24. Note that this new subnet must be an empty subnet. An empty subnet is a requirement for application gateway
+        - Next under the basics tab - add a public ip address (you can assign a private ip address if you want to keep the application gateway as an internal resource)
 - Add the VMs to the backend pool
 
 
