@@ -1211,6 +1211,7 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - **Performance** - The traffic is directed based on the closest endpoint
         - **Geographic** - Traffic directed based on the location
         - **Multivalue** - The user selects the endpoint
+        - **Subnet** - IP addresses are allocated to a specific subnet
 
 
 
