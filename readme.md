@@ -1193,9 +1193,22 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
                 - Target type: select virtual machine and then select VM by name. Note that you can check the name of the VM from going to the resources
     - **Configuration**
         - This includes creating the **routing rules** that govern when a request comes to the frontend it gets routed to the appropriate backend pool
+        - Select add routing rule
+            - Give rule name, listener name
 - Add the VMs to the backend pool
 
+- **Web application firewall**
+    - Its an additional feature that you can add to the azure application gateway
+        - You can create policy and custom rules and then associate them to an application gateway
 
+- Note that the load balancer operates in layer 4, the network layer, while the application gateway operated in layer 7
+
+
+## Azure traffic manager
+    - DNS based traffic load balancer
+        - Priority - Shifts to the next endpoint after the first one fails
+        - Weighted - Distribute traffic based on weightage
+        - Performance - The traffic is directed based on the closest endpoint
 
 
 
