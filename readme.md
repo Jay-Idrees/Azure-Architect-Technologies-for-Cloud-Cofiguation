@@ -1178,12 +1178,19 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - You can then repeat the same step on the second VM and create the folder `images` instead of videos
 - Create Azure application gateway and implement URL pathways routing
     - Search for this resource by typing **application gateway** from the dashboard
-    - Configurations
+    - **Setting up application gateway**
+    - **Basics** tab
         - Tier Standard V2
         - You can select autoscaling, this will scale based on the demand, for now you can select no
         - Availability zone, none
-        - Go inside the virtual network resource that you created before and in addition to the default subnet, add a new application subnet /24. Note that this new subnet must be an empty subnet. An empty subnet is a requirement for application gateway
-        - Next under the basics tab - add a public ip address (you can assign a private ip address if you want to keep the application gateway as an internal resource)
+        - Go inside the virtual network resource that you created before and in addition to the default subnet, **add a new application subnet /24**. Note that this new subnet must be an empty subnet. An empty subnet is a requirement for application gateway
+    - **Frontend** tab    
+        - Next under the `front-end tab` - add a public ip address (you can assign a private ip address if you want to keep the application gateway as an internal resource)
+    - **Backend** tab
+        - Add VMs to the backend pool. Note that there are 2 VMs one for video and the other for images
+            - Once you are in the `backends` tab click `add backend pool`
+                - Give name e-g `imagepool` or `videopool`
+                - Target type: select virtual machine and then select VM by name. Note that you can check the name of the VM from going to the resources
 - Add the VMs to the backend pool
 
 
