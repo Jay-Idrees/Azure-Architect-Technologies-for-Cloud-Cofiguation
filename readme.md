@@ -1249,5 +1249,8 @@ Traffic manager profile from resources
             - Likewise you can add additional backend
                 - you can set the priority to 2 and keep the weight at 100%. This will ensure that if the first app is down, 100% of the traffic will then get directed to the second
             - You can also configure the health probs for backend pool to periodically check the health of endpoints before the traffic is directed
-                - You can specify the path as `/` and the interval to `30s`
+                - You can specify the path as `/` and the interval to `30s`, specify protocol http or https
+            - Add a `Routing rule` - If a user visits the frontend direct them to a specific backend pool
+                - Specify a name 
+                - specify the front end domain that the user visits when this rule will be applied
     
