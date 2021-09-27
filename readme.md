@@ -1212,7 +1212,17 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
         - **Geographic** - Traffic directed based on the location
         - **Multivalue** - The user selects the endpoint
         - **Subnet** - IP addresses are allocated to a specific subnet
+- Using VS code to publish webapps on Azure
 
+Traffic manager profile from resources
+    - You also have to configure the traffic manager to see is the endpoints are healthy
 
+- Real user measurements when using Azure traffic manager - it is based on performance routing method - which is based on least latency
 
+`Circle back to Azure traffic manager using azure webapps 181-185`
 
+## Azure Front Door service
+- Routes traffic based on application performance
+- Features
+    -URL based routing
+    - It inspects the URL and then directs the request to one set of server
