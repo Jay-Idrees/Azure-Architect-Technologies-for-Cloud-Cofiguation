@@ -1226,3 +1226,10 @@ Traffic manager profile from resources
 - Features
     -URL based routing
     - It inspects the URL and then directs the request to one set of server
+- **Setting up Front Door Service**
+    - Search for **Front door** in resources in the main dashboard and click create
+        - **Basics tab**
+            - Choose the resource or create new, and assign the subscription
+        - **Configuration tab**
+            - 
+    
