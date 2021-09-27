@@ -1258,4 +1258,6 @@ Traffic manager profile from resources
             - Once the front door resource is created, go to the resource
                 - paste the front end url into the browser - note that initially from creation when the front end is being created, initially it may give an error page as it will be tesing the endpoints with a health probe
     - In contrast with Azure application gateway, Azure Front door is a combination of azure application gateway and the Azure traffic manager
+        - Front door is a global rwsource while application gateway is a regional source (attached to a virtual network as it requires an empty subnet)
+        - Front door does not require any empty subnet or attachment to a virtual network
     
