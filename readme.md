@@ -1255,4 +1255,7 @@ Traffic manager profile from resources
                 - specify the front end domain that the user visits when this rule will be applied
                 - Then you can specify the path if you select `/*` it means request from any path will be directed to the backend pool
                 - you can specify the protocol
+            - Once the front door resource is created, go to the resource
+                - paste the front end url into the browser - note that initially from creation when the front end is being created, initially it may give an error page as it will be tesing the endpoints with a health probe
+    - In contrast with Azure application gateway, Azure Front door is a combination of azure application gateway and the Azure traffic manager
     
