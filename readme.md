@@ -1248,4 +1248,6 @@ Traffic manager profile from resources
                         - weight - 50% the traffic is distributed equally, if you select 100% all traffic will go to the app you selected
             - Likewise you can add additional backend
                 - you can set the priority to 2 and keep the weight at 100%. This will ensure that if the first app is down, 100% of the traffic will then get directed to the second
+            - You can also configure the health probs for backend pool to periodically check the health of endpoints before the traffic is directed
+                - You can specify the path as `/` and the interval to `30s`
     
