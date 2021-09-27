@@ -1231,8 +1231,17 @@ Traffic manager profile from resources
         - **Basics tab**
             - Choose the resource or create new, and assign the subscription
         - **Configuration tab**
-            - Add a front end host
+            - Add a `front end host`
                 - give a hostname
                 - You can enable session affinity - This allows cookies for a use for subsequent visit
                 - You can enable application firewall - offers centralized protection for web applications
+            - Add a `backend pool` - this is our end point (s)
+                - End points are typically the destination for a user like a service or web application
+                    - Give a backend pool name
+                    - Add a backend pool
+                        - Backend host type
+                        - header
+                        - HTTP port - 80 usually
+                        - HTTPS port - 443 usually
+                        - Priority
     
