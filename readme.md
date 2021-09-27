@@ -1253,4 +1253,6 @@ Traffic manager profile from resources
             - Add a `Routing rule` - If a user visits the frontend direct them to a specific backend pool
                 - Specify a name 
                 - specify the front end domain that the user visits when this rule will be applied
+                - Then you can specify the path if you select `/*` it means request from any path will be directed to the backend pool
+                - you can specify the protocol
     
