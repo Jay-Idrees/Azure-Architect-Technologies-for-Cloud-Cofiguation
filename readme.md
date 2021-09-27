@@ -1260,4 +1260,5 @@ Traffic manager profile from resources
     - In contrast with Azure application gateway, Azure Front door is a combination of azure application gateway and the Azure traffic manager
         - Front door is a global rwsource while application gateway is a regional source (attached to a virtual network as it requires an empty subnet)
         - Front door does not require any empty subnet or attachment to a virtual network
+        - You can use the front door and application level together by placing the application gateway behind the front door
     
