@@ -1239,9 +1239,11 @@ Traffic manager profile from resources
                 - End points are typically the destination for a user like a service or web application
                     - Give a backend pool name
                     - Add a backend pool
-                        - Backend host type
-                        - header
+                        - Backend host type - various options like app service, storage account, application gateway, ip address, in this case you can      choose app service
+                        - backend hostname - you can select the hostname that you previously created while creating the apps
+                        - backend header - specific appliations will now show after you select a particular app
                         - HTTP port - 80 usually
                         - HTTPS port - 443 usually
-                        - Priority
+                        - Priority - 1 will be the first priority
+                        - weight - 50% the traffic is distributed equally, if you select 100% all traffic will go to the app you selected
     
