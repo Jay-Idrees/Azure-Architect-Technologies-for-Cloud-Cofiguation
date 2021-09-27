@@ -1231,5 +1231,8 @@ Traffic manager profile from resources
         - **Basics tab**
             - Choose the resource or create new, and assign the subscription
         - **Configuration tab**
-            - 
+            - Add a front end host
+                - give a hostname
+                - You can enable session affinity - This allows cookies for a use for subsequent visit
+                - You can enable application firewall - offers centralized protection for web applications
     
