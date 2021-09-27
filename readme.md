@@ -1246,4 +1246,6 @@ Traffic manager profile from resources
                         - HTTPS port - 443 usually
                         - Priority - 1 will be the first priority
                         - weight - 50% the traffic is distributed equally, if you select 100% all traffic will go to the app you selected
+            - Likewise you can add additional backend
+                - you can set the priority to 2 and keep the weight at 100%. This will ensure that if the first app is down, 100% of the traffic will then get directed to the second
     
