@@ -1297,6 +1297,8 @@ Traffic manager profile from resources
     - Connecting to the firewall
         - **Creating a route table**
             - The purpose is to design a route rule such that when even a VM wants to access the internet(`0.0.0.0/0`), it is directed to the firewall
-            - Give a name, select a resource group, select a region
+            - Search for the route table from general reources
+            - Give a name, select a resource group, select a region (same as the Vnet)
             - Give a name for a route such as "firewallreoute" Select `yes` for `propagate gateway routes`
-            - Then you can navigate to the resource and `firewallroute || routes > add > route name >
+            - Then you can navigate to the resource and `firewallroute || routes > add > route name, address prefix (0.0.0.0/0), virtual appliance, hop address (private ip of the firwall)` >
+            - Next you have to associate the subnet to the firewall route
