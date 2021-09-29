@@ -1271,4 +1271,5 @@ Traffic manager profile from resources
         - Filter traffic based on domain names (not available with NSG)
         - Can create network filtering rules based on source and destination Ip addresses
         - oversees packets of data and which ones to allow
-        - Built in threat intelligence - You can get alerts or deny service to particular suspicous traffic
+        - Built in threat intelligence - You can get alerts or deny service to particular suspicous traffic - Azure firewall already knows about it
+ - **Setting up a firewall**
