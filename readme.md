@@ -1262,3 +1262,13 @@ Traffic manager profile from resources
         - Front door does not require any empty subnet or attachment to a virtual network
         - You can use the front door and application level together by placing the application gateway behind the front door
     
+## Azure frewall
+    - Placed in front of data centers
+    - Azure has its own managed service - protecting VMs that are part of virtual network
+    - Its different than NSG
+    - Features:
+        - Can deploy across multiple availability zones
+        - Filter traffic based on domain names (not available with NSG)
+        - Can create network filtering rules based on source and destination Ip addresses
+        - oversees packets of data and which ones to allow
+        - Built in threat intelligence - You can get alerts or deny service to particular suspicous traffic
