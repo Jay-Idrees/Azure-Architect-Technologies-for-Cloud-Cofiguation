@@ -1282,3 +1282,13 @@ Traffic manager profile from resources
             - /16 address range
             - SubnetA /24
             - `AzureFirewallSubnet`Note that this name should be exactly so. This is an additional subnet that is being created to host the Azure firewall feature
+            - No public IP
+            - Remainder tabs as is
+    - Once you have created a VM and a Vnet containing an `AzureFirewallSubnet`, create a firewall
+        - search firewall from general resources
+        - assign the resource group you created for the VM above
+        - give name
+        - select firewall tier as standard (premium has more features)
+        - You can select use `classic` rules to manage the firewall
+        - Select the virtual network you selected above
+        - The firewall must have a public ip address, as you did not assign a public ip address previously, you will have to create one now
