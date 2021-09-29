@@ -1305,4 +1305,4 @@ Traffic manager profile from resources
                 - Once you have selected the "firewallroute" resource `|| subnets > associate subnet > select the Vnet and the subnetA(that contains the VM)`
         - **Using the NAT feature available for the Azure firewall**
             - Go to the firewall resource `|| Rules > NAT rule collection > add NAT rule collection`
-                - Givve name, assign priority, select protocol TCP, give sourve IP address (ip of your laptop), the destination is the public ip address of the firewall
+                - Givve name, assign priority, select protocol TCP, give sourve IP address (ip of your laptop), the destination is the public ip address of the firewall, destination ports 4000 (can be any), Network address translation (NAT)- the translated address is the private IP of the VM in Vnet, the translated port will be 3389 as this is the port for RDP. Note that if you have multiple VMs, the destination port will vary
