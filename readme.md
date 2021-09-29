@@ -1276,4 +1276,9 @@ Traffic manager profile from resources
     - Find a new VM from resources
         - Create new resource
         - usual things, give a name. RDP
-        - Do not allow any inbound ports as the communication will be done via private IP addresses
+        - `Do not allow any inbound ports` as the communication will be done via private IP addresses
+        - Along with the VM create a new virtual newtork
+            - give a name
+            - /16 address range
+            - SubnetA /24
+            - `AzureFirewallSubnet`Note that this name should be exactly so. This is an additional subnet that is being created to host the Azure firewall feature
