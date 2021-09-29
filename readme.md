@@ -1296,5 +1296,7 @@ Traffic manager profile from resources
         - Note that the Azure firewall has both a public as well as a private ip address. The private ip is used for any communication between the Vm/Subnet and firewall
     - Connecting to the firewall
         - **Creating a route table**
+            - The purpose is to design a route rule such that when even a VM wants to access the internet(`0.0.0.0/0`), it is directed to the firewall
             - Give a name, select a resource group, select a region
-            - Give a name fore a route such as "firewallreoute" Select `yes` for `propagate gateway routes`
+            - Give a name for a route such as "firewallreoute" Select `yes` for `propagate gateway routes`
+            - Then you can navigate to the resource and `firewallroute || routes > add > route name >
