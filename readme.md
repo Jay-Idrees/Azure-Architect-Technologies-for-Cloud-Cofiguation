@@ -1273,3 +1273,7 @@ Traffic manager profile from resources
         - oversees packets of data and which ones to allow
         - Built in threat intelligence - You can get alerts or deny service to particular suspicous traffic - Azure firewall already knows about it
  - **Setting up a firewall**
+    - Find a new VM from resources
+        - Create new resource
+        - usual things, give a name. RDP
+        - Do not allow any inbound ports as the communication will be done via private IP addresses
