@@ -1303,3 +1303,6 @@ Traffic manager profile from resources
             - Then you can navigate to the resource and `firewallroute || routes > add > route name, address prefix (0.0.0.0/0), virtual appliance, hop address (private ip of the firwall)` >
             - Next you have to associate the subnet to the firewall route
                 - Once you have selected the "firewallroute" resource `|| subnets > associate subnet > select the Vnet and the subnetA(that contains the VM)`
+        - **Using the NAT feature available for the Azure firewall**
+            - Go to the firewall resource `|| Rules > NAT rule collection > add NAT rule collection`
+                - Givve name, assign priority, select protocol TCP, give sourve IP address (ip of your laptop), the destination is the public ip address of the firewall
