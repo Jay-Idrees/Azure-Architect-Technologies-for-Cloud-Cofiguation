@@ -1306,3 +1306,8 @@ Traffic manager profile from resources
         - **Using the NAT feature available for the Azure firewall**
             - Go to the firewall resource `|| Rules > NAT rule collection > add NAT rule collection`
                 - Givve name, assign priority, select protocol TCP, give sourve IP address (ip of your laptop), the destination is the public ip address of the firewall, destination ports 4000 (can be any), Network address translation (NAT)- the translated address is the private IP of the VM in Vnet, the translated port will be 3389 as this is the port for RDP. Note that if you have multiple VMs, the destination port will vary
+        - Next to RDP you will then type in the public IP address of the firewall to get to the VM followed by : and the port number
+        - **Add Rule** to permit opening of a particular website over the internet. 
+            - Select the firewall resource `|| rules > Add NAT rule collection > Application rule collection`
+                - Enter rule name, the source ip address now is the private IP of the VM, give it a name, specify http, https as protocols, and the name of the website you want to give permission
+    
