@@ -1317,4 +1317,5 @@ Traffic manager profile from resources
     - Things that can be under a particular resource include a virtual machine and storage account
     - Roles are basically JSON format based action permissions
         - You can define scopes, data actions
+        - If 2 roles are assigned e-g read and another as contributor, then the permissions of the higher level role will stick for example the contributor
     
