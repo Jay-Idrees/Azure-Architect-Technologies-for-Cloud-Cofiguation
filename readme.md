@@ -1314,4 +1314,6 @@ Traffic manager profile from resources
     ## Role based access control
     - There are built in roles, you can also create your own custom roles
     - Roles can be assigned at the reource level, resource group level, Everything that is included under the resource will inherit the roles
+    - Things that can be under a particular resource include a virtual machine and storage account
+    - Roles are basically JSON format based action permissions
     
