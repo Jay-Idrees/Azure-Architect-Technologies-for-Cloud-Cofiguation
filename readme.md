@@ -1319,5 +1319,8 @@ Traffic manager profile from resources
     - Roles are basically JSON format based action permissions
         - You can define scopes, data actions
         - If 2 roles are assigned e-g read and another as contributor, then the permissions of the higher level role will stick for example the contributor
-    - 
+    - Some examples of built in roles
+        - Owner - Everything including the access to resources
+        - Contributor - Evrything except access to resources
+        - Reader
     
