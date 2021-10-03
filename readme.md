@@ -1310,4 +1310,8 @@ Traffic manager profile from resources
         - **Add Rule** to permit opening of a particular website over the internet. 
             - Select the firewall resource `|| rules > Add NAT rule collection > Application rule collection`
                 - Enter rule name, the source ip address now is the private IP of the VM, give it a name, specify http, https as protocols, and the name of the website you want to give permission
+        
+    ## Role based access control
+    - There are built in roles, you can also create your own custom roles
+    - Roles can be assigned at the reource level, resource group level, Everything that is included under the resource will inherit the roles
     
