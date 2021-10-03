@@ -1323,4 +1323,5 @@ Traffic manager profile from resources
         - Owner - Everything including the access to resources
         - Contributor - Evrything except access to resources
         - Reader
+        - Storage account contributor
     
