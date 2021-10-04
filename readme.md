@@ -1345,3 +1345,11 @@ Traffic manager profile from resources
         - Note that the policy does not remove the machines that are not compliant - you will have to manually fix it
         - However you can select a policy that applies the default antimalware extension if it does not exist
         - You can inspect the VM under || extension to see whether a policy has been applied. You can also delete an applied policy
+
+## Azure Blueprints
+    - Managing the deployment of resources on Azure with code
+    - This can be done for:
+        - ARM templates
+        - Azure policies
+        - Resource groups
+        - Role based access control
