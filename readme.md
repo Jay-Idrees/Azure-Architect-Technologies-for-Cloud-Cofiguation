@@ -1358,3 +1358,5 @@ Traffic manager profile from resources
         - Stages: Defining, publishing and assigning
         - You can also apply locks to the blue print that even a user with owner level access can not change
             - The lock can only be removed by unassigning the blueprint
+- **Creating a blue print**
+    - You can searh it from the general dashboard
