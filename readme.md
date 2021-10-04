@@ -1366,3 +1366,5 @@ Traffic manager profile from resources
     - First you creat a blue print and select artifacts to be included in it. Then you publish the blue print once the artifacts are added and finally you can assign them
         - Assignment is to a subscription. You can also always unassign, however the resources that were initially created when the blue print was first assigned do not get deleted
 
+# Azure web application as service
+    - or Platform as a service (Paas)
