@@ -1344,3 +1344,4 @@ Traffic manager profile from resources
     - You can also check to which VMs the policy is not applied or are (non-compliant)
         - Note that the policy does not remove the machines that are not compliant - you will have to manually fix it
         - However you can select a policy that applies the default antimalware extension if it does not exist
+        - You can inspect the VM under || extension to see whether a policy has been applied. You can also delete an applied policy
