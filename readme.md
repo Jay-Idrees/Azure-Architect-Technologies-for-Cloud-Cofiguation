@@ -1368,3 +1368,5 @@ Traffic manager profile from resources
 
 # Azure web application as service
     - or Platform as a service (Paas)
+    - If an application is developed using .Net, Java, Ruby, Node.js, python - it can be deployed using the Azure app service
+        - Azure app service takes care of all the deployment aspect including deployment of infrastructure, autoscaling and security features
