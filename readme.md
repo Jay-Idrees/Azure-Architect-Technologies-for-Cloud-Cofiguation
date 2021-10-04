@@ -1380,3 +1380,4 @@ Traffic manager profile from resources
         - You give a name. The name is appended with the `.azurewebsite.net`
         - If you have you own domain you can map it instead of the default of `.azurewebsite.net`
         - The web app service manages the entire underlying infrastructure
+        - For having the feature of backup the app service plan should be standard or higher
