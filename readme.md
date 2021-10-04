@@ -1381,3 +1381,11 @@ Traffic manager profile from resources
         - If you have you own domain you can map it instead of the default of `.azurewebsite.net`
         - The web app service manages the entire underlying infrastructure
         - For having the feature of backup the app service plan should be standard or higher
+        - You need a different app service plan if your code is run on linux
+
+## Linknig github with Azure account
+- Under `app services | select your app and then || Deployment center -> select github`
+- Deployment options include: 
+    - App service build service
+        - Picks up the code from github and turns it into an application
+    - github, azure piplines
