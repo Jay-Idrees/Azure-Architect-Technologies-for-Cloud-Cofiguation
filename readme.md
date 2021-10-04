@@ -1360,3 +1360,4 @@ Traffic manager profile from resources
             - The lock can only be removed by unassigning the blueprint
 - **Creating a blue print**
     - You can searh it from the general dashboard
+    - Click create a blue print - you can also pick from a sample
