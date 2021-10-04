@@ -1357,3 +1357,4 @@ Traffic manager profile from resources
         - This is different from ARM templete which is infrastructure as code
         - Stages: Defining, publishing and assigning
         - You can also apply locks to the blue print that even a user with owner level access can not change
+            - The lock can only be removed by unassigning the blueprint
