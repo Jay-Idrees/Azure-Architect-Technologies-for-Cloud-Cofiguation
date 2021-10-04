@@ -1367,8 +1367,8 @@ Traffic manager profile from resources
         - Assignment is to a subscription. You can also always unassign, however the resources that were initially created when the blue print was first assigned do not get deleted
 
 # Azure web application as service
-    - or Platform as a service (Paas)
-    - If an application is developed using .Net, Java, Ruby, Node.js, python - it can be deployed using the Azure app service
+ - or Platform as a service (Paas). Payment options: [Azure App Service](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/)
+ - If an application is developed using .Net, Java, Ruby, Node.js, python - it can be deployed using the Azure app service
         - Azure app service takes care of all the deployment aspect including deployment of infrastructure, autoscaling and security features
-    - You can want full control of your application then you can do it manually by deploying on the VM yourself
-    - Web app should be linked in the app service plan
+- You can want full control of your application then you can do it manually by deploying on the VM yourself
+- Web app should be linked in the app service plan
