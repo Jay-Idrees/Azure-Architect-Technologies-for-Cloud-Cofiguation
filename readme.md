@@ -1325,4 +1325,5 @@ Traffic manager profile from resources
         - Reader
         - Storage account contributor
         - If there is a * after the role, for example in contributer role you can create storage accounts. If you see a * in the end it means that all the permissible actions with that job. If its something like */read, Then you can have access to all the jobs, but the action is limited to read only
-    
+    - **Access control for a VM**
+        - Note that the access is managed in layers. If you give a user access to the VM as a contributor, this user will not have access to the network and the disk, as they are separate resources and if you want to grat the user access to these components as well then you will either have to the user individually at the disk or network level individually by going to these resources or you can grant the user access to the common resource group all these individual layers of resources share
