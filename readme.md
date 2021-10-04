@@ -1355,4 +1355,5 @@ Traffic manager profile from resources
         - Role based access control
     - You create a blue print and then assign it to a subscription or a management group, but it cannot be a part of a resource group
         - This is different from ARM templete which is infrastructure as code
-        - Defining, publishing and assigning
+        - Stages: Defining, publishing and assigning
+        - You can also apply locks to the blue print that even a user with owner level access can not change
