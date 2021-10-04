@@ -1335,3 +1335,6 @@ Traffic manager profile from resources
         - You can clone an existing role
         - You can also start with a JSON
         - You can searh role functions by category like 'compute'
+
+## Azure Policy service
+    - You can apply restrictions on how big the VM can be and that and anti-malware is installed on every machine, or every resource group has a resource in place
