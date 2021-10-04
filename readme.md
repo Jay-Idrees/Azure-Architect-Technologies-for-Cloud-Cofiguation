@@ -1312,7 +1312,7 @@ Traffic manager profile from resources
                 - Enter rule name, the source ip address now is the private IP of the VM, give it a name, specify http, https as protocols, and the name of the website you want to give permission
         
     ## Role based access control
-    - Important reference: (Azure Built-in Roles)[https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles]
+    - Important reference: [Azure Built-in Roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)
     - There are built in roles, you can also create your own custom roles
     - Roles can be assigned at the reource level, resource group level or even a subscription, Everything that is included under the resource will inherit the roles
     - Things that can be under a particular resource include a virtual machine and storage account
