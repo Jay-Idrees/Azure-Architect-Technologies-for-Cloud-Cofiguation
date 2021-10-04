@@ -1378,3 +1378,4 @@ Traffic manager profile from resources
 - **Creating a web application**
     - you can select **Web app** from the main resources page
         - You give a name. The name is appended with the `.azurewebsite.net`
+        - If you have you own domain you can map it instead of the default of `.azurewebsite.net`
