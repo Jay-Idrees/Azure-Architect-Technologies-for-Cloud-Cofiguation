@@ -1324,4 +1324,5 @@ Traffic manager profile from resources
         - Contributor - Evrything except access to resources
         - Reader
         - Storage account contributor
+        - If there is a * after the role, for example in contributer role you can create storage accounts. If you see a * in the end it means that all the permissible actions with that job. If its something like */read, Then you can have access to all the jobs, but the action is limited to read only
     
