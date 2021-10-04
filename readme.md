@@ -1370,3 +1370,5 @@ Traffic manager profile from resources
     - or Platform as a service (Paas)
     - If an application is developed using .Net, Java, Ruby, Node.js, python - it can be deployed using the Azure app service
         - Azure app service takes care of all the deployment aspect including deployment of infrastructure, autoscaling and security features
+    - You can want full control of your application then you can do it manually by deploying on the VM yourself
+    - Web app should be linked in the app service plan
