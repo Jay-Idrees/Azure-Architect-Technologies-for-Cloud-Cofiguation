@@ -1341,4 +1341,5 @@ Traffic manager profile from resources
     - You can access the policies by searching in main dashboard | Policy
     - You can select policy details by category, e-g policies related to computing, which will include policies like limiting the VM size and the installation of anti-malware
     - Like wise you can apply the policy levels at the resource group etc
-    - You can also check to which VMs the policy is not applied
+    - You can also check to which VMs the policy is not applied or are (non-compliant)
+        - Note that the policy does not remove the machines that are not compliant - you will have to manually fix it
