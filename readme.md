@@ -1390,3 +1390,9 @@ Traffic manager profile from resources
         - Picks up the code from github and turns it into an application
     - github, azure piplines
     - If you make changes on github, it automatically gets implement onto Azure via the github connection
+
+## Azure Web Jobs
+- Running background tasks, e-g running scripts in powershell or python etc
+- 2 types: 
+    - Continues - The code contains endless loop, supports remote debugging
+    - Triggered - Based on schedule or is initiaed manually
