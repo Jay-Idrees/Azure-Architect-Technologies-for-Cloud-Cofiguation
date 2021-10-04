@@ -1372,3 +1372,6 @@ Traffic manager profile from resources
         - Azure app service takes care of all the deployment aspect including deployment of infrastructure, autoscaling and security features
 - You can want full control of your application then you can do it manually by deploying on the VM yourself
 - Web app should be linked in the app service plan
+- Examples of plans
+    - Free plan, limitations on CPU minutes/day, number of application and size, abscence of scaling
+    - Basic has unlimied applications and auto scaling features - if overloaded then there can be up to 3 instances of the application - This distributes application load over multiple VMs
