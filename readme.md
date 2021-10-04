@@ -1353,3 +1353,5 @@ Traffic manager profile from resources
         - Azure policies
         - Resource groups
         - Role based access control
+    - You create a blue print and then assign it to a subscription
+        - This is different from ARM templete which is infrastructure as code
