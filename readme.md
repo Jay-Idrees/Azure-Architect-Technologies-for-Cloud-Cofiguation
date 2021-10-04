@@ -1353,6 +1353,7 @@ Traffic manager profile from resources
         - Azure policies
         - Resource groups
         - Role based access control
+    - The above categories can be assigned as "artifacts"
     - You create a blue print and then assign it to a subscription or a management group, but it cannot be a part of a resource group
         - This is different from ARM templete which is infrastructure as code
         - Stages: Defining, publishing and assigning
@@ -1361,3 +1362,7 @@ Traffic manager profile from resources
 - **Creating a blue print**
     - You can searh it from the general dashboard
     - Click create a blue print - you can also pick from a sample
+    - you will have to select a management group. If there is none already, there is always a default tenant group
+    - First you creat a blue print and select artifacts to be included in it. Then you publish the blue print once the artifacts are added and finally you can assign them
+        - Assignment is to a subscription. You can also always unassign, however the resources that were initially created when the blue print was first assigned do not get deleted
+
