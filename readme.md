@@ -1343,3 +1343,4 @@ Traffic manager profile from resources
     - Like wise you can apply the policy levels at the resource group etc
     - You can also check to which VMs the policy is not applied or are (non-compliant)
         - Note that the policy does not remove the machines that are not compliant - you will have to manually fix it
+        - However you can select a policy that applies the default antimalware extension if it does not exist
