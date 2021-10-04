@@ -1389,3 +1389,4 @@ Traffic manager profile from resources
     - App service build service
         - Picks up the code from github and turns it into an application
     - github, azure piplines
+    - If you make changes on github, it automatically gets implement onto Azure via the github connection
