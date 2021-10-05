@@ -1396,3 +1396,11 @@ Traffic manager profile from resources
 - 2 types: 
     - Continues - The code contains endless loop, supports remote debugging
     - Triggered - Based on schedule or is initiaed manually
+- **Uploading a webjob**
+    - You can go to the main dshbord find web jobs and then you an Add one
+    - Type the name
+    - upload the file - note that the file must be in zip format
+    - Under `triggers` you can select scheduled r manual
+    - Under cron expression you can specify the frequency if you have chosen scheduled - how often you want to run the file
+    - Once the webjob has been created, it will appear under webjobs and you can manually run it by clicking run
+
