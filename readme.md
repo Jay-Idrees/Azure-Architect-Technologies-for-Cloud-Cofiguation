@@ -1402,5 +1402,7 @@ Traffic manager profile from resources
     - upload the file - note that the file must be in zip format
     - Under `triggers` you can select scheduled r manual
     - Under cron expression you can specify the frequency if you have chosen scheduled - how often you want to run the file
-    - Once the webjob has been created, it will appear under webjobs and you can manually run it by clicking run
+    - Once the webjob has been created, it will appear under webjobs and you can manually run it by clicking `run`
+    - To check whether the job was run successfully, you can click `logs` it will show the status of success if the job was run successfully
+    
 
