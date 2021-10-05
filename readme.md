@@ -1405,6 +1405,11 @@ Traffic manager profile from resources
     - Once the webjob has been created, it will appear under webjobs and you can manually run it by clicking `run`
     - To check whether the job was run successfully, you can click `logs` it will show the status of success if the job was run successfully
     - You can also run diagnostics to see if the job was run successfully
-    - Under App services, you can also setup app service logs
+    - Under App services, you can also setup app service logs. Options:
+        - Webserver logging
+        - Application logging
+        - Quota (size limit)
+        - Retention period for logs
+        - 
 
 
