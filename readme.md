@@ -1451,6 +1451,7 @@ Traffic manager profile from resources
     - After both have been creted, you can then select the newly created app and select `|| Networking ` to configure linking the database network with the app
     - Add a VM to the network and install SQL server 2019 server image on it. Note that you will not be able to use the default subnet with it as it will be used by the Azure Web app. So you can create a new subnet calling it the database subnet
         - **SQL server settings** You will have the option of SQL server connectivity - you can choose public(internet) or any other option
+    - Note that for the Azure web app to connect to the database server, there has to be some public connection. Ideally, this should be with with public IP to the Vnet and through Vnet a private IP to the database server VM
 
 
 
