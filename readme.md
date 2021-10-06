@@ -1426,6 +1426,7 @@ Traffic manager profile from resources
         - e-g Metric of memory percentage - It will take the metric over the last 10 min and take average and then match it with the threshold
     - There is also a cooling period
         - This is the time during which the load is being distrubuted across the VMs. you can specify the cooling period. During this time no additional upscaling will occur even if the threshold for upscaling is met
+    - You can click `run history` to see how many times the upscaling occured. For example if it ran twice, it will show 2 and which means that there will be 3 VMs
 
 
 
