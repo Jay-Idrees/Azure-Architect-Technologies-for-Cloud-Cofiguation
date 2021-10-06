@@ -1457,6 +1457,12 @@ Traffic manager profile from resources
 - Serveless - enables you to not worry about an underling infrastructure
 - Plans: Consumption (pay for the time the code is run), App service (If you are using a pre-exising web app service, then you can run functions with the same plan) and premium plan options
 - you can search for the Azure functions by typing `function app` in the general resource dashboard
+    - **Creating an Azure function**
+        - Select resource name
+        - Give function name - It will be appended by the Azurewebsites.net
+        - You can publish a code or a docker container
+        - Select the programing language such as Node.JS
+        - Select the Storage account or create new and select the operating system and the plan
 
 
 
