@@ -1463,6 +1463,9 @@ Traffic manager profile from resources
         - You can publish a code or a docker container
         - Select the programing language such as Node.JS
         - Select the Storage account or create new and select the operating system and the plan
+        - This is like creating a mini function app
+        - Once the function app is created you can start developing the functions
+            - Select the app `|| functions under functions > add`
 
 
 
