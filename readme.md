@@ -1454,7 +1454,7 @@ Traffic manager profile from resources
     - Note that for the Azure web app to connect to the database server, there has to be some public connection. Ideally, this should be with with public IP to the Vnet and through Vnet a private IP to the database server VM
 
 ## Azure Functions
-- Serveless - enables you to not worry about an underling infrastructure
+- Serveless - enables you to not worry about an underling infrastructure. Goal is to provide a serverless infrastructure
 - Plans: Consumption (pay for the time the code is run), App service (If you are using a pre-exising web app service, then you can run functions with the same plan) and premium plan options
 - you can search for the Azure functions by typing `function app` in the general resource dashboard
     - **Creating an Azure function**
@@ -1466,6 +1466,9 @@ Traffic manager profile from resources
         - This is like creating a mini function app
         - Once the function app is created you can start developing the functions
             - Select the app `|| functions under functions > add`
+            - Select develope in the portal
+            - Specify trigger type e-g http, which means that the function will triger when an http request is received
+        - You can also click get URL to get the link that you can paste in the browser to run the function
 
 
 
