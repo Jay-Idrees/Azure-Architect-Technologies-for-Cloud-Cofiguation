@@ -1420,5 +1420,12 @@ Traffic manager profile from resources
 - You can also scale up the service plan by selecting `scale up` then you can select auto scale which will permit an increase up to 10 instances compared to 3 instances with the basic plan
 - You can check which plan you currently have by going to the default page of your app under `App service plan` S1 for standard
 - **Custom auto scaling** gives you an option of setting the conditions for autoscaling
+    - You create a scale rule
+    - CPU percentage of app service plan
+    - Other metric options
+        - e-g Metric of memory percentage - It will take the metric over the last 10 min and take average and then match it with the threshold
+    - There is also a cooling period
+        - This is the time during which the load is being distrubuted across the VMs. you can specify the cooling period. During this time no additional upscaling will occur even if the threshold for upscaling is met
+
 
 
