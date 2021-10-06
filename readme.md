@@ -1432,10 +1432,11 @@ Traffic manager profile from resources
 - Seprate slots for production and staging slots
 - Each slot has its own host name
 - Allows you to test both versions independently
-- You can also swap the slots - This minimizes the downtime
+- You can also `swap` the slots - This minimizes the downtime. You can use the swap feature multiple time to go back and forth between the new as well as the old version
 - This feature is available is available in standard app plan or higher
 - You can access that by selecting `App services || Deployment slots > Add slot`
     - What this does is allocats a unique DNS name/host name which makes the new slot independent from an existing one
+    - You can also clone the settings of an exisitng webapp
 
 
 
