@@ -1418,5 +1418,6 @@ Traffic manager profile from resources
     - Create a condition based on CPU usage as to when to expand the number of VMs
 - You can manage the scaling option by going to `App services || Scale out > Instance count`
 - You can also scale up the service plan by selecting `scale up` then you can select auto scale which will permit an increase up to 10 instances compared to 3 instances with the basic plan
+- You can check which plan you currently have by going to the default page of your app under `App service plan` S1 for standard
 
 
