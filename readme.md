@@ -1428,5 +1428,14 @@ Traffic manager profile from resources
         - This is the time during which the load is being distrubuted across the VMs. you can specify the cooling period. During this time no additional upscaling will occur even if the threshold for upscaling is met
     - You can click `run history` to see how many times the upscaling occured. For example if it ran twice, it will show 2 and which means that there will be 3 VMs
 
+## Deployment slots
+- Seprate slots for production and staging slots
+- Each slot has its own host name
+- Allows you to test both versions independently
+- You can also swap the slots - This minimizes the downtime
+- This feature is available is available in standard app plan or higher
+- You can access that by selecting `App services || Deployment slots > Add slot`
+    - What this does is allocats a unique DNS name/host name which makes the new slot independent from an existing one
+
 
 
