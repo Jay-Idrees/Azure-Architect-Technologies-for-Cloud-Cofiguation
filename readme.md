@@ -1487,7 +1487,8 @@ Traffic manager profile from resources
     
 ## Azure Service Bus
 - Message service system (FIFO - first in first out message delivery)
-- Types : Publisher-Consumer messaging Ques, Topic service (e-g subscribers)
+- Types : Publisher-Consumer messaging Ques, Topic service (e-g messages to subscribers)
+- Basic and standard pricing - standard also lets you create topics which basic does not
 - **Creating Service Bus**
     - You can search for `service bus` in the resources
         - When you create a service bus, you also create a name space within which you will create a name que
