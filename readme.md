@@ -1469,6 +1469,7 @@ Traffic manager profile from resources
             - Select develope in the portal
             - Specify trigger type e-g http, which means that the function will triger when an http request is received
         - You can also click get URL to get the link that you can paste in the browser to run the function
+- Azure functions can be useful because they can allow you to compartmalize the code based on individual functional components of the app. For example for an E-comerse app you can create individual Azure functions for adding a product, processing orders, displaying orders and emailing orders etc 
 
 
 
