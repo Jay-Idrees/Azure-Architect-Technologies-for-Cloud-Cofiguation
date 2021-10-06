@@ -1410,6 +1410,12 @@ Traffic manager profile from resources
         - Application logging
         - Quota (size limit)
         - Retention period for logs
-        - 
+    
+## Auto Scaling
+    - Part of standard app service plan and higher
+    - This is a practice to address overload. In basic you can scale up to 3 VMs
+    - Scaling can also happen automatically - included in standard
+    - Create a condition based on CPU usage as to when to expand the number of VMs
+- You can manage the scaling option by going to `App services || Scale out > Instance count`
 
 
