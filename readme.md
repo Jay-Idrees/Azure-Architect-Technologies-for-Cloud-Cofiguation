@@ -1491,6 +1491,7 @@ Traffic manager profile from resources
 - Basic and standard pricing - standard also lets you create topics which basic does not
 - **Creating Service Bus**
     - You can search for `service bus` in the resources
-        - When you create a service bus, you also create a name space within which you will create a name que
+        - When you create a service bus, you also create a `name space` within which you will create a name que
+        - Once the Service bus is created you can go to the resource and for configuration `|| queues, topics under entities`
 
 
