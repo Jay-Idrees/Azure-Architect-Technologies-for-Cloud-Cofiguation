@@ -1485,7 +1485,8 @@ Traffic manager profile from resources
             - you can keep the log analytics off
     - Build workflow (Configuring the trigger of a particular task)
     
-
-
+## Azure Service Bus
+- Message service system (FIFO - first in first out message delivery)
+- Types : Publisher-Consumer messaging Ques, Topic service (e-g subscribers)
 
 
