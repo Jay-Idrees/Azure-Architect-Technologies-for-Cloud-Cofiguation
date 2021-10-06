@@ -1438,7 +1438,7 @@ Traffic manager profile from resources
     - What this does is allocats a unique DNS name/host name which makes the new slot independent from an existing one
     - You can also clone the settings of an exisitng webapp
 - **Application insights** in a feature that can be used to see how the application is running
-    - Select the application from the dashboard and then || Application insights under the settings heading
+    - Select the application from the dashboard and then `|| Application insights` under the settings heading
     - You can turn on application insights after you have deployed the appliation
     - This creates an application insights resource - that is where you can access it. You can also search for it by typing "insights" in the main resource dashboard
     - You can look at charts for the performance
@@ -1447,7 +1447,8 @@ Traffic manager profile from resources
 - Usually this means linkning the database webservers witht he appliation
 - Steps
     - Create a web App and configure it
-    - 
+    - Create a new Virtual network
+    - After both have been creted, you can then select the newly created app and select `|| Networking `
 
 
 
