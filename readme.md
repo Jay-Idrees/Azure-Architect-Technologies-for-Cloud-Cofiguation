@@ -1440,6 +1440,14 @@ Traffic manager profile from resources
 - **Application insights** in a feature that can be used to see how the application is running
     - Select the application from the dashboard and then || Application insights under the settings heading
     - You can turn on application insights after you have deployed the appliation
+    - This creates an application insights resource - that is where you can access it. You can also search for it by typing "insights" in the main resource dashboard
+    - You can look at charts for the performance
+
+## Integration of and Azure Webapp with an Azure virtual network
+- Usually this means linkning the database webservers witht he appliation
+- Steps
+    - Create a web App and configure it
+    - 
 
 
 
