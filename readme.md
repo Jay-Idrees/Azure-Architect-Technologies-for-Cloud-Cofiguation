@@ -1455,7 +1455,7 @@ Traffic manager profile from resources
 
 ## Azure Functions
 - Serveless - enables you to not worry about an underling infrastructure
-- Plans: Consumption, App service and premium plan options
+- Plans: Consumption (pay for the time the code is run), App service (If you are using a pre-exising web app service, then you can run functions with the same plan) and premium plan options
 
 
 
