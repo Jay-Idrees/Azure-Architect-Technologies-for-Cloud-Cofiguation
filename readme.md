@@ -1453,5 +1453,9 @@ Traffic manager profile from resources
         - **SQL server settings** You will have the option of SQL server connectivity - you can choose public(internet) or any other option
     - Note that for the Azure web app to connect to the database server, there has to be some public connection. Ideally, this should be with with public IP to the Vnet and through Vnet a private IP to the database server VM
 
+## Azure Functions
+- Serveless - enables you to not worry about an underling infrastructure
+- Plans: Consumption, App service and premium plan options
+
 
 
