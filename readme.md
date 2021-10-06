@@ -1472,5 +1472,20 @@ Traffic manager profile from resources
 - Azure functions can be useful because they can allow you to compartmalize the code based on individual functional components of the app. For example for an E-comerse app you can create individual Azure functions for adding a product, processing orders, displaying orders and emailing orders etc 
 - It also offers you the benifit of having an application in one programing service (e-g Node.JS) and Azure function in another e-g powershell
 
+## Azure logic app
+- Allows you to schedule, automate and orchestrate tasks
+    - Logic + workflow
+- Offers built in connectors that can connect to platforms such as Office 365
+- There are built in templates that you can use
+- **Event Grid** it is an Azure service that listens to the events from other Azure services
+- Steps:
+    - **Create logic**
+        - Search for `logic app` in general resources
+            - give name, select resource group, select location
+            - you can keep the log analytics off
+    - Build workflow (Configuring the trigger of a particular task)
+    
+
+
 
 
