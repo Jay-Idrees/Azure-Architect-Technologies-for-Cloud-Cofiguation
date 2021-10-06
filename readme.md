@@ -1447,8 +1447,9 @@ Traffic manager profile from resources
 - Usually this means linkning the database webservers witht he appliation
 - Steps
     - Create a web App and configure it
-    - Create a new Virtual network
-    - After both have been creted, you can then select the newly created app and select `|| Networking `
+    - Create a new empty Virtual network
+    - After both have been creted, you can then select the newly created app and select `|| Networking ` to configure linking the database network with the app
+    - Add a VM to the network and install SQL server 2019 server image on it. Note that you will not be able to use the default subnet with it as it will be used by the Azure Web app
 
 
 
