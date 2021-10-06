@@ -1437,6 +1437,7 @@ Traffic manager profile from resources
 - You can access that by selecting `App services || Deployment slots > Add slot`
     - What this does is allocats a unique DNS name/host name which makes the new slot independent from an existing one
     - You can also clone the settings of an exisitng webapp
+- **Application insights** in a feature that can be used to see how the application is running
 
 
 
