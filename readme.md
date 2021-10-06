@@ -1439,6 +1439,7 @@ Traffic manager profile from resources
     - You can also clone the settings of an exisitng webapp
 - **Application insights** in a feature that can be used to see how the application is running
     - Select the application from the dashboard and then || Application insights under the settings heading
+    - You can turn on application insights after you have deployed the appliation
 
 
 
