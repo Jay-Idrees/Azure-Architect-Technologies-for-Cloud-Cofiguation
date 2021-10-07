@@ -1493,5 +1493,16 @@ Traffic manager profile from resources
     - You can search for `service bus` in the resources
         - When you create a service bus, you also create a `name space` within which you will create a name que
         - Once the Service bus is created you can go to the resource and for configuration `|| queues, topics under entities`
+            - Add a queue- various specifications
+                - specify the duration of the message stays - there are various default settings
+            - Likewise you can create a topic and specify the default settings
+                - you can add subscriptions to it
+                - You can create multiple subscriptions to which the users can be subscribed and then you can send messages to multiple subscriptions
 
 
+## Dockers and Containers
+- The flow is like this:
+    - Hyper V -> VM -> Container -> Application
+    - Both the VM and the container have their own OS.
+    - The OS of the container is the bare minimum required to run an application and thus is very much reduced in size (like 150mb vs 1GB of a VM)
+    - This is very effective at reducing memory resources
