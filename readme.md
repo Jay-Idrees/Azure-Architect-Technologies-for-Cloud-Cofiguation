@@ -1507,4 +1507,7 @@ Traffic manager profile from resources
     - The OS of the container is the bare minimum required to run an application and thus is very much reduced in size (like 150mb vs 1GB of a VM)
     - This is very effective at reducing memory resources
     - Docker is the software that hosts the program for running the containers - but a container has its own OS, multiple containers inside docker can haver different OS
-    - Inside the containers you can install 
+    - Inside the containers you can install various 'docker images" or packages
+- **Using Docker**
+    - Create a new linux VM
+    - If you want to use internet on the container then add an inbound security rule in Azure
