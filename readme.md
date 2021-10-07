@@ -1506,3 +1506,5 @@ Traffic manager profile from resources
     - Both the VM and the container have their own OS.
     - The OS of the container is the bare minimum required to run an application and thus is very much reduced in size (like 150mb vs 1GB of a VM)
     - This is very effective at reducing memory resources
+    - Docker is the software that hosts the program for running the containers - but a container has its own OS, multiple containers inside docker can haver different OS
+    - Inside the containers you can install 
