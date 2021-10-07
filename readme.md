@@ -1511,4 +1511,4 @@ Traffic manager profile from resources
     - Inside the containers you can install various 'docker images" or packages
 - **Using Docker**
     - Create a new linux VM
-    - If you want to use internet on the container then add an inbound security rule in Azure
+    - If you want to use internet on the container then add an inbound security rule in Azure VM to allow to keep port 80 open
