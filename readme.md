@@ -1505,10 +1505,15 @@ Traffic manager profile from resources
     - Hyper V -> VM -> Container -> Application
     - Both the VM and the container have their own OS.
     - The OS of the container is the bare minimum required to run an application and thus is very much reduced in size (like 150mb vs 1GB of a VM)
-    - The container OS also has its own port, for example port 80. You can match the port of the container with the port of the VM
+    - The container OS also has its own port, for example port 80. You can map the port of the container with the port of the VM
     - This is very effective at reducing memory resources
     - Docker is the software that hosts the program for running the containers - but a container has its own OS, multiple containers inside docker can haver different OS
     - Inside the containers you can install various 'docker images" or packages
 - **Using Docker**
     - Create a new linux VM
     - If you want to use internet on the container then add an inbound security rule in Azure VM to allow to keep port 80 open
+- **Deploying an application on a container**
+    - 
+- **Azure container registery**
+    - The immage for a container can be captured in the form of code with Azure container registery
+    - Once you create an image on a linux machine, it can be pushed onto Azure container registery and when new VMs are created the image can be downloaded using the Azure CLI commands
