@@ -1518,4 +1518,22 @@ Traffic manager profile from resources
     - The immage for a container can be published in the form of code with Azure container registery
     - Once you create an image on a linux machine, it can be pushed onto Azure container registery and when new VMs are created the image can be downloaded using the Azure CLI commands
         - In general resources find container registery > create
-        - 
+        - Once created, go to the resource and || repositories under services
+        - Run commands on the linux VM 
+- **Azure container instances**
+    - It can have its own ip address and a fully qualified domain name, you can specify ports as well
+    - Search for a new resource Container instance from general resources
+    - You can reference image sources from container registery
+- **Azure web app based on containers**
+    - Create a new webap
+    - Open the app in the new tab by clicking the link from the dashboard of the Azure webap
+
+## Azure Kubernetes
+    - Managing the VMs hosting multiple/high load containers
+    - Master Kuberneters cluster - Install the master on a VM
+    - You create nodes `kubectl`
+    - Functions:
+        - Load balance and distribute network traffic over the conatiners
+        - Restart containers when they fail
+        - Replace or kill containers
+        - Can be used to manage passwords, OAuth tokens and ssh keys
