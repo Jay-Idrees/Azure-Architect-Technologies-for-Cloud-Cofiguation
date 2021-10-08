@@ -1515,5 +1515,7 @@ Traffic manager profile from resources
 - **Deploying an application on a container**
     - 
 - **Azure container registery**
-    - The immage for a container can be captured in the form of code with Azure container registery
+    - The immage for a container can be published in the form of code with Azure container registery
     - Once you create an image on a linux machine, it can be pushed onto Azure container registery and when new VMs are created the image can be downloaded using the Azure CLI commands
+        - In general resources find container registery > create
+        - 
