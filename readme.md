@@ -1540,4 +1540,4 @@ Traffic manager profile from resources
     - Create Kubernetes cluster from resources
     - Alternatively you can also create a cluster using CLI. You also install the `kubectl` tool
     - Service principal - Connecting Azure kubernetes to the Azure container registery - you can do the directly
-- You can deploy the programs in yml files. These files contain code that specifies what you as looking to install. It is look for the image in the docker hub or Azure docker respository and then deploy that image onto the container. You can also manage specific container settings such as specifying thecontainer port
+- You can deploy the programs in yml files. These files contain code that specifies what you as looking to install. It is look for the image in the docker hub or Azure container registery and then deploy that image onto the container. You can also manage specific container settings such as specifying thecontainer port
