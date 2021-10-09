@@ -1548,3 +1548,5 @@ Traffic manager profile from resources
 
 
 # Azure Implementation and Managment of Data Platforms
+- Platform as a service Paas
+- You dont have to worry about backup patching or management of VMs - Paas takes care of it
