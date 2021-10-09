@@ -1551,7 +1551,9 @@ Traffic manager profile from resources
 - Platform as a service Paas
 - You dont have to worry about backup patching or management of VMs, availability solution - Paas takes care of it
 - Single database, management instance, elastic pool (all databases share the resources)
-- **Azure SQL Server**
+- Benifits of the conventional approach
     - You can migrate your on premesis datbase to Azure
-    - You can have a private Ip address like you would have with a VM
-    - 
+     - You can have a private Ip address like you would have with a VM
+- **Azure SQL Server**
+    - 99.99% availability gauranteed
+    - Has built in backup, patching, advanced intelligence and security features
