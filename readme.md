@@ -1529,7 +1529,7 @@ Traffic manager profile from resources
     - Open the app in the new tab by clicking the link from the dashboard of the Azure webap
 
 ## Azure Kubernetes
-    - Managing the VMs hosting multiple/high load containers
+ - Managing the VMs hosting multiple/high load containers
     - Master Kuberneters cluster - Install the master on a VM
     - You create nodes `kubectl`
     - Functions:
@@ -1537,3 +1537,7 @@ Traffic manager profile from resources
         - Restart containers when they fail
         - Replace or kill containers
         - Can be used to manage passwords, OAuth tokens and ssh keys
+    - Create Kubernetes cluster from resources
+    - Alternatively you can also create a cluster using CLI. You also install the `kubectl` tool
+    - Service principal - Connecting Azure kubernetes to the Azure container registery - you can do the directly
+- You can deploy the programs in yml files
