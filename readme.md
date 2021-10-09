@@ -1537,10 +1537,14 @@ Traffic manager profile from resources
         - Restart containers when they fail
         - Replace or kill containers
         - Can be used to manage passwords, OAuth tokens and ssh keys
-    - Create Kubernetes cluster from resources
+    - Create `Kubernetes cluster` from resources
     - Alternatively you can also create a cluster using CLI. You also install the `kubectl` tool
     - Service principal - Connecting Azure kubernetes to the Azure container registery - you can do the directly
 - You can deploy `app programs` in yml files. These files contain code that specifies what you as looking to install. It is look for the image in the docker hub or Azure container registery and then deploy that image onto the container. You can also manage specific container settings such as specifying thecontainer port
 - You can also have specific files where you can simply configure for a `service`, such as a load balancer
 - You can upload the code yml files into the Azure powershell and execute the code
 - You can also fetch information about a container using kuberneties
+- You can delete the services and the deoployment with commands
+
+
+# Azure Implementation and Managment of Data Platforms
