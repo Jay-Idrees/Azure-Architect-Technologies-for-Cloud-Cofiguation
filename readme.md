@@ -1683,6 +1683,7 @@ Traffic manager profile from resources
     - Apache Cacandra
     - Table API - key value pairs
 - **Creating a Cosmos DB account**
+- There are no underlying infrastructure costs, You care charged based on the throuput (request units) you provision and the storage consumed on an hourly basis. The Memory and the CPU are assigned based on the throughput selected
     - Search for cosmos DB from general resources
         - Select resource group
         - Account name
@@ -1691,6 +1692,9 @@ Traffic manager profile from resources
         - account type non-production
         - Rest as is
     - Go to the resource once the deployment is complete
+- Once an account has been created, create a new container from `|| Data Explorer`
+    - Give a name
+    - Then you specify the throughput which is the limit of request units, if you select 400, you will be paying $23.04. Do not confuse this with storage, this falls in the relm of computing
 
 
 
