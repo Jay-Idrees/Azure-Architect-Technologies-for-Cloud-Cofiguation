@@ -1636,6 +1636,7 @@ Traffic manager profile from resources
             - Once logged in, you will see SQL server agent which is part of the SQL managed instance
 - **Elastic/Server side transactions**
     - Data from one trnsaction is stored in multiple databases
+    - The databases can be on the same server, on different servers or on Azure SQL managed instance
 
 
 
