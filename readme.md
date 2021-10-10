@@ -1692,9 +1692,14 @@ Traffic manager profile from resources
         - account type non-production
         - Rest as is
     - Go to the resource once the deployment is complete
-- Once an account has been created, create a new container from `|| Data Explorer`
+- Once an account has been created, **create a new container** from `|| Data Explorer`
     - Give a name
     - Then you specify the throughput which is the limit of request units, if you select 400, you will be paying $23.04. Do not confuse this with storage, this falls in the relm of computing
+- Give your container a name. 
+- Specify partition key, it can be existing variable
+- Then once you create a continer, you can open it into a separate window to configure or look at its contents/items
+    - you can **add a new item** by clicking it
+    - This item can be some data in a json format, which is thus basically data stored in the form of an object in JSON format. It will have an id and a partition key
 
 
 
