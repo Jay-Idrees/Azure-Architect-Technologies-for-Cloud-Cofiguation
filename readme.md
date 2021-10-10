@@ -1711,8 +1711,14 @@ Traffic manager profile from resources
 - Select the Cosmos DB account `|| Replicate data globally` You can select different regions for replication and will be billed accordingly
 - **Consistency levels**
 - The issue arrises if there is data in different regions and multiple live updates are being done across the in one physical region. Thus if queries are made from a different region then the data read maybe old and not representing the change
-    - Strong consistency - Data in the different region cannot be read until the change has been upgraded in the new region - this will have strong consisistency, but can have low performance
-    - Eventual consistency
+    - `Strong consistency` - Data in the different region cannot be read until the change has been upgraded in the new region - this will have strong consisistency, but can have low performance - This option may not be available if the regions of replication are far apart
+    - `Eventual consistency` - No gaurentee on the consistency of data being read - better performance, but sacrifice on the integrity of data
+    - `Bounded Staleness` - more of a hybrid option - you can specify that how many of lag in versions is acceptable for a given time interval
+    - `Session` - Reads can be gauranteed for the same session (usual option selected)
+    - `Consistent prefix` - You never see out of order writes, but there can be a processing delay
+- You can set the default consistency by going the the cosmos Db account resource `|| dafault consistency` You can then select from the options above
+
+- **Cosmos DB A/C based on Table API**
 
 
 
