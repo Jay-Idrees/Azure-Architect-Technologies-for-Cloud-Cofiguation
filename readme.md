@@ -1611,7 +1611,7 @@ Traffic manager profile from resources
 - **Azure SQL managed Instance**
 - Offers additional features
     - 100% compatability
-    - native Vnet implementation
+    - native Vnet implementation - It is launched in its own network
     - Note that this is different from Azure SQL server which is public, but Azure SQL managed instance in more secure, can can have its own Vnet
     - **Creating Azure SQL managed instance**
         - Search SQL managed instance form the main resources and create a new one
@@ -1620,6 +1620,7 @@ Traffic manager profile from resources
         - Specify computer specs
         - You can select locally redundant backup
         - You can get a discount if you already have an SQL server license
+        - More complex password requirements
 
 
     
