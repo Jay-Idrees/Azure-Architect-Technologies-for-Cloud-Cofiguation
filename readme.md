@@ -1657,8 +1657,12 @@ Traffic manager profile from resources
         - Then when you go to the SQL database in reseources, you will not be able to see the new secondary database
             - Open this reseource and then `add firewall > add client ip` - this creates a rule to allow my laptop Ip address to connect to the database
         - Copy the servername (note that this will be tied to the DNS `.database.windows.net`)
-        - Register the secondary database with the SQL database management studio
-    - Setup firewall with the secondary database
+        - Register the secondary database with the SQL database management studio using this name and the credentials
+        - After registering the new one you will then be able to see both the primary as well as secondary database
+        - Insert a new row of data into the primary via right clicking the table and clicking `new query`
+        - Then in the secondary database you will see that the new data was copied
+        - You can stop the secondary replication from the Azure home page - this does not delete the dataabse - this will need to be deleted manually along wit the server from Azure resourses separately
+  
 
 
 
