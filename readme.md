@@ -1564,3 +1564,7 @@ Traffic manager profile from resources
 ## Azure SQL as database service
 - **Deploying an SQL resource**
     - Find SQL database form resources in the main dashboard
+    - **Creating an SQL database**
+        - Assign a resource group
+        - Give a database neame
+        - Select a server - This is managed by Azure
