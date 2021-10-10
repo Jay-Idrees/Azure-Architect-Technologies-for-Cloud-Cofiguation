@@ -1578,3 +1578,9 @@ Traffic manager profile from resources
                 - You can look at the estimated cost per month - for this one it is $380/month
         - Under **networking tab**
             - Default is `no access` - the database is typically behind a firewall
+            - You can add a public Ip address of your laptop by selecting public endpoint
+        - Under additional settings
+            - You can select `sample` if you are using existing. There are also options for backup or starting with a blank database
+
+- **SQL server management studio**
+    - It is a software that you can install on your computer for the management of the SQL database server from your computer. You will have to input the server name and the credentials required to login
