@@ -1571,3 +1571,4 @@ Traffic manager profile from resources
             - `Create a new server`
                 - Provide name and login information
                 - When you will provide a name it will get appended with `.database.windows.net`
+                - the credentials you provide are will be used to log into th databae server
