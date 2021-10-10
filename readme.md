@@ -1568,3 +1568,5 @@ Traffic manager profile from resources
         - Assign a resource group
         - Give a database neame
         - Select a server - This is managed by Azure
+            - `Create a new server`
+                - Provide name and login information
