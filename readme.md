@@ -1569,6 +1569,8 @@ Traffic manager profile from resources
         - Give a database neame
         - Select a server - This is managed by Azure
             - `Create a new server`
-                - Provide name and login information
+                - Provide name and login information, location
                 - When you will provide a name it will get appended with `.database.windows.net`
                 - the credentials you provide are will be used to log into th databae server
+        - Then you can select whether to incluse the database as part of elastic pool (no for now)
+        - Then it can select the size of the database (default selection Gen5, 2 vCores 32 GB)
