@@ -1623,7 +1623,10 @@ Traffic manager profile from resources
         - More complex password requirements
         - Takes about 6 hrs to complete
     - **Connecting to Azure SQL managed instance**
-        - What you do is create a new VM and install SQL server managed studio on it and then connect it to the virtual network
+        - What you do is create a new VM and install SQL server managed studio on it and then connect it to the virtual network of the managed instance
+        - When you create the new VM, be sure that it is part of the Vnet of the managed instance
+        - This new Vm will need its own new subnet which is different from the default subnet that was created from the SQL managed instance
+
 
 
     
