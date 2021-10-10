@@ -1580,7 +1580,8 @@ Traffic manager profile from resources
             - Default is `no access` - the database is typically behind a firewall
             - You can add a public Ip address of your laptop by selecting public endpoint
         - Under additional settings
-            - You can select `sample` if you are using existing (this option creates a default set of tables in the database). There are also options for backup or starting with a blank database
+            - You can select `sample` if you are using existing (this option creates a sample database with a default set of tables in the database). There are also options for backup or starting with a blank database
+        - From the SQL resource page, you can select `set server firewall` to allow access for additional ip addresses
 
 - **SQL server management studio**
     - It is a software that you can install on your computer for the management of the SQL database server from your computer. You will have to input the server name and the credentials required to login
