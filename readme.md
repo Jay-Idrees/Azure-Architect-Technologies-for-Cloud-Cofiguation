@@ -1574,3 +1574,7 @@ Traffic manager profile from resources
                 - the credentials you provide are will be used to log into th databae server
         - Then you can select whether to incluse the database as part of elastic pool (no for now)
         - Then it can select the size of the database (default selection Gen5, 2 vCores 32 GB)
+            - `configure database`
+                - You can look at the estimated cost per month - for this one it is $380/month
+        - Under **networking tab**
+            - Default is `no access` - the database is typically behind a firewall
