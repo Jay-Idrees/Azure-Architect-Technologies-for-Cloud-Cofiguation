@@ -1707,6 +1707,12 @@ Traffic manager profile from resources
     - For example if you select the `partition key` to be `customername` then the logical partitions can be created one each for the different value of the customer name to store data - duplicates of the name will be stored in on partition
     - This helps with speed
     - Note that once you set the partiion key, it cannot be changed. You will have to create a new container if you would want to change the partition key and copy the data. 
+- **Replicating Data**
+- Select the Cosmos DB account `|| Replicate data globally` You can select different regions for replication and will be billed accordingly
+- **Consistency levels**
+- The issue arrises if there is data in different regions and multiple live updates are being done across the in one physical region. Thus if queries are made from a different region then the data read maybe old and not representing the change
+    - Strong consistency - Data in the different region cannot be read until the change has been upgraded in the new region - this will have strong consisistency, but can have low performance
+    - Eventual consistency
 
 
 
