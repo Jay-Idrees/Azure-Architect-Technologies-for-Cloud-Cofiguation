@@ -1701,6 +1701,12 @@ Traffic manager profile from resources
     - you can **add a new item** by clicking it
     - This item can be some data in a json format, which is thus basically data stored in the form of an object in JSON format. It will have an id and a partition key
 - Note that the data in Cosmos DB is split into multiple logical partitions and these logical partitions are stored in different physical partitions
+- These `logical partitions` become important as the data size grows for example if there are millions of items
+    - Each logical partiion can store up to 20Gb of data
+    - The number of logical partitions are decided by the assigned partiion key - which is usually one of the variables in an item
+    - For example if you select the `partition key` to be `customername` then the logical partitions can be created one each for the different value of the customer name to store data - duplicates of the name will be stored in on partition
+    - This helps with speed
+    - Note that once you set the partiion key, it cannot be changed. You will have to create a new container if you would want to change the partition key and copy the data. 
 
 
 
