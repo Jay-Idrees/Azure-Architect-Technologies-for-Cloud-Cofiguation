@@ -1558,7 +1558,7 @@ Traffic manager profile from resources
     - 99.99% availability gauranteed
     - Has built in backup, patching, advanced intelligence and security features
     - Two models : 
-        - **DTU** (Database transaction unit) - Basic, standard and premium
+        - **DTU** (Database transaction unit) - Basic, standard and premium - computing is managed by Azure
         - **vCore-based** - Independently scale and compute storage, choose different tiers, Azure hybrid benifit, cost saving if you have SQL server licenses
             - vCore has `Managed Instance Offer` that makes it easy to migrate from on premesis to Azure server, also permits integration with a virtual network
 ## Azure SQL as database service
@@ -1591,4 +1591,12 @@ Traffic manager profile from resources
     - You can select a pre-created SQL database and `|| query editor`
     - Login with credentials
     - This is where you can enter the code for SQL tables
+
+- **Elastic pool**
+    - You can include SQL databases into an elastic pool
+    - It is for handeling scaling up and down of database DTUs based on the load
+    - Avoids interruption compared to when individual databse is managed individually
+    - Ensures efficient distribution of resources to the databases
+    - Cost- effective
+    - The databases on an elastic pool must be on a single server
     
