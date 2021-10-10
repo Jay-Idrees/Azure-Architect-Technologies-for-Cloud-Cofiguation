@@ -1638,6 +1638,9 @@ Traffic manager profile from resources
     - Data from one trnsaction is stored in multiple databases
     - The databases can be on the same server, on different servers or on Azure SQL managed instance
 
+- **Azure SQL - Actuve geo-replication**
+    - A secondary database created from a primary database which can be located on the same server, but is not managed by Azure SQL managed instance
+
 
 
     
