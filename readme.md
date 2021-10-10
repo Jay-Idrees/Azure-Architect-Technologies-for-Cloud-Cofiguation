@@ -1608,5 +1608,9 @@ Traffic manager profile from resources
             - Once created you can go to the new database created and from the main page click the link next to the server name and then you will be able to see the SQL elastic pool. Once selected, you can click `configure`
                 - Under the databases table you will see the option to `add databases`. You can also remove databases from the elastic pool. 
 - **Azure SQL managed Instance**
+- Offers additional features
+    - 100% compatability
+    - native Vnet implementation
+    - Note that this is different from Azure SQL server which is public, but Azure SQL managed instance in more secure can can have its own Vnet
 
     
