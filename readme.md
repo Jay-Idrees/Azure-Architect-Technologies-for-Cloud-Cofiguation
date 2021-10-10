@@ -1621,6 +1621,9 @@ Traffic manager profile from resources
         - You can select locally redundant backup
         - You can get a discount if you already have an SQL server license
         - More complex password requirements
+        - Takes about 6 hrs to complete
+    - **Connecting to Azure SQL managed instance**
+        - What you do is create a new VM and install SQL server managed studio on it and then connect it to the virtual network
 
 
     
