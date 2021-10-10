@@ -1599,4 +1599,14 @@ Traffic manager profile from resources
     - Ensures efficient distribution of resources to the databases
     - Cost- effective
     - The databases on an elastic pool must be on a single server
+    - eDTU - e for elastic
+        - **Adding databases to elastic pool**
+            - Create a new database along with the server
+            - create a new elastic pool during the creation a new sql database
+            - Configure compute and storage - **configure elastic pool**
+                - select eDTU- basic, standard, premium
+            - Once created you can go to the new database created and from the main page click the link next to the server name and then you will be able to see the SQL elastic pool. Once selected, you can click `configure`
+                - Under the databases table you will see the option to `add databases`. You can also remove databases from the elastic pool. 
+- **Azure SQL managed Instance**
+
     
