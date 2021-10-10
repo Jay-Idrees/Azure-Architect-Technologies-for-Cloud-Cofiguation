@@ -1626,6 +1626,16 @@ Traffic manager profile from resources
         - What you do is create a new VM and install SQL server managed studio on it and then connect it to the virtual network of the managed instance
         - When you create the new VM, be sure that it is part of the Vnet of the managed instance
         - This new Vm will need its own new subnet which is different from the default subnet that was created from the SQL managed instance
+            - While **creating the VM**, `under subnet > manage subnet configuration`
+            - Add a new subnet
+                - Give a name subnetA, leave rest as is
+        - Then rdp into the VM
+            - Install SQL server management studio
+            - Go to the managed instance an copy the host name
+            - Past this information into the SQL server managener studio, and enter the credentials
+            - Once logged in, you will see SQL server agent which is part of the SQL managed instance
+- **Elastic/Server side transactions**
+    - Data from one trnsaction is stored in multiple databases
 
 
 
