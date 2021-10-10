@@ -1687,7 +1687,7 @@ Traffic manager profile from resources
     - Search for cosmos DB from general resources
         - Select resource group
         - Account name
-        - Select API type for example core SQL or MongoDB
+        - Select API type for example core SQL or MongoDB - Note that core SQL here has the benifit of using SQL based commands, but the data is stored in JSON format
         - Free tier account fives 400 request units/s and 5Gb of free space
         - account type non-production
         - Rest as is
