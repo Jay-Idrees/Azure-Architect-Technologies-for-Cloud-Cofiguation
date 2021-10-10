@@ -1638,8 +1638,29 @@ Traffic manager profile from resources
     - Data from one trnsaction is stored in multiple databases
     - The databases can be on the same server, on different servers or on Azure SQL managed instance
 
-- **Azure SQL - Actuve geo-replication**
-    - A secondary database created from a primary database which can be located on the same server, but is not managed by Azure SQL managed instance
+- **Azure SQL - Active geo-replication**
+ - A secondary database created from a primary database which can be located on the same server, but is not managed by Azure SQL managed instance
+    - It is a feature that can be enabled - when it is enabled, it continuesly replicates data from the primary database and creates a secondary database
+    - The geo-replication secondary database is read only
+    - One application is to minimize load on the actual app, by using the secondary database you can minimize queries to the primary database and the application
+    - Another use is when there is failure of the primary database then you can use the secondary
+- **Creating a geo-replication database from the primary**
+    - Create the primary database and link it with the SQL server management studio
+    - Access the primary database through the studio and run a query that creates a table and insert data into it for example
+    - In Azure selecting the primary database homepage `|| geo-replication under settings`
+        - Configure
+            - choose region - does not have to be the same region as the primary
+            - You will have to configure a new target server
+                - Give the name for secondary server, specify login credentials
+            - Elastic pool as none and select the pricing tier
+        - So the configuration will create a new server and then replicate the primary database to a secondary database that is only readable
+        - Then when you go to the SQL database in reseources, you will not be able to see the new secondary database
+            - Open this reseource and then `add firewall > add client ip` - this creates a rule to allow my laptop Ip address to connect to the database
+        - Copy the servername (note that this will be tied to the DNS `.database.windows.net`)
+        - Register the secondary database with the SQL database management studio
+    - Setup firewall with the secondary database
+
+
 
 
 
