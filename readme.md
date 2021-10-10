@@ -1662,9 +1662,35 @@ Traffic manager profile from resources
         - Insert a new row of data into the primary via right clicking the table and clicking `new query`
         - Then in the secondary database you will see that the new data was copied
         - You can stop the secondary replication from the Azure home page - this does not delete the dataabse - this will need to be deleted manually along wit the server from Azure resourses separately
-  
+
+- **Auto-failover groups in Azure SQL server**
+- This feature is more applicable in the case of disaster recovery scenarios
+- This is in addion to the geo-replication
+- This feature is available at the SQL server level and is also included in the Azure SQL managed instance
+- It allows you to replicate multiple databases on a server and the process can be automated
+- Unlike geo-location, the auto-fail over must be performed in a different region
+- **Creating a failover group**
+    - Go to the database resource homepage `|| failover group > create `
+        - give name, condigure settings - this will include creating a new server and selecting the new region, you can select the failover the policy to be automatic. You can select specifc databases 
 
 
+## Azure Cosmos DB
+- Fast response time, hifh scalablity, automatic updates and patching
+- Underlying API
+    - SQL - store in JSON documents
+    - MongoDB -JSON documents
+    - Gremlin API- graph based
+    - Apache Cacandra
+    - Table API - key value pairs
+- **Creating a Cosmos DB account**
+    - Search for cosmos DB from general resources
+        - Select resource group
+        - Account name
+        - Select API type for example core SQL or MongoDB
+        - Free tier account fives 400 request units/s and 5Gb of free space
+        - account type non-production
+        - Rest as is
+    - Go to the resource once the deployment is complete
 
 
 
