@@ -1687,14 +1687,14 @@ Traffic manager profile from resources
     - Search for cosmos DB from general resources
         - Select resource group
         - Account name
-        - Select API type for example core SQL or MongoDB - Note that core SQL here has the benifit of using SQL based commands, but the data is stored in JSON format
+        - Select API type for example core SQL or MongoDB - Note that core SQL here has the benifit of `using SQL based commands, but the data is stored in JSON format`. It also has the added benifit of of using `dot notation` with the command to extract specific objects
         - Free tier account fives 400 request units/s and 5Gb of free space
         - account type non-production
         - Rest as is
     - Go to the resource once the deployment is complete
 - Once an account has been created, **create a new container** from `|| Data Explorer`
     - Give a name
-    - Then you specify the throughput which is the limit of request units, if you select 400, you will be paying $23.04. Do not confuse this with storage, this falls in the relm of computing
+    - Then you specify the **throughput** which is the limit of request units, if you select 400, you will be paying $23.04. Do not confuse this with storage, this falls in the relm of computing
 - Give your container a name. 
 - Specify partition key, it can be existing variable
 - Then once you create a continer, you can open it into a separate window to configure or look at its contents/items
