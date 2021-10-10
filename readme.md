@@ -1557,3 +1557,10 @@ Traffic manager profile from resources
 - **Azure SQL Server**
     - 99.99% availability gauranteed
     - Has built in backup, patching, advanced intelligence and security features
+    - Two models : 
+        - **DTU** (Database transaction unit) - Basic, standard and premium
+        - **vCore-based** - Independently scale and compute storage, choose different tiers, Azure hybrid benifit, cost saving if you have SQL server licenses
+            - vCore has `Managed Instance Offer` that makes it easy to migrate from on premesis to Azure server, also permits integration with a virtual network
+## Azure SQL as database service
+- **Deploying an SQL resource**
+    - Find SQL database form resources in the main dashboard
