@@ -1700,6 +1700,7 @@ Traffic manager profile from resources
 - Then once you create a continer, you can open it into a separate window to configure or look at its contents/items
     - you can **add a new item** by clicking it
     - This item can be some data in a json format, which is thus basically data stored in the form of an object in JSON format. It will have an id and a partition key
+- Note that the data in Cosmos DB is split into multiple logical partitions and these logical partitions are stored in different physical partitions
 
 
 
