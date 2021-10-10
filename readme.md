@@ -1570,3 +1570,4 @@ Traffic manager profile from resources
         - Select a server - This is managed by Azure
             - `Create a new server`
                 - Provide name and login information
+                - When you will provide a name it will get appended with `.database.windows.net`
