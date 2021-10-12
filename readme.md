@@ -1734,5 +1734,12 @@ Traffic manager profile from resources
 - Creting alerts based on metrics concerning CPU usage, disk and network stats
 - Activity logs are created for instance when a VM is created vs when it is stopped etc
 - Alerts can be created based on the activities
+- All logs are stored in a centeral workplace
+- **Azure Monitor**
+    - You can search for monitor service from the main dashboard `|| metrics`
+    - Allows you to review the metrics of various services as part of your subscription
+        - Under resource types you can select the resource whose metrics you want to check for example virtual machines
+        - Then under the subscription the VMs list will appear and from there you can then pick the one whose metrics you want to check
+            - Then you can specify the metric such as % CPU
 
     
