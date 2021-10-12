@@ -1783,4 +1783,16 @@ Traffic manager profile from resources
     - This has a setting of Azure run as account - this gives it an authority to manage Azure resources
     - You creat a powershell playbook and attach it to Azure monitor alert - the script will extract data about the VM from the monitor and then execute the action from the script via the Azure automation account
     - Before running the run books you have to import modules into the account via `|| modules under shared resources`
-    - Then `|| runbooks under process automation` you can create a run book
+    - Then `|| runbooks under process automation` you can create a run book - Paste the script - this runbook will have its own name and can be located in the resources
+    - Then you can create a new alert rule and then select a condition
+        - Create an action group
+        - then as part of the action group creation while creating alert rule you can select notification and/or action -  where you can select runbook and the specify the associated subscription and automation account
+- **Update Management**
+    - This ensures that the `system security updates` are automatically updated using Azure automation
+    - Process:
+        - Update agent is installed on a VM
+        - Sends logs to the Azure log workspace
+        - Azure automation queries the Azure log workspace and determines which updates are missing and then performs those updates
+    - Create 2 VMs one Windows and one Linux, in 2 different locations - Right now these have no extensions
+    - Create Azure automation account, Log analytics workspace
+    - Go to your automation account `|| select update management under update management > Under log analytics workspace select the work space you created`. This will link the automation and the work space accounts
