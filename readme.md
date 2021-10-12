@@ -1874,4 +1874,12 @@ Traffic manager profile from resources
     - You can see the resource of the web app and paste the link in browser and it will show the app
     - ` Monitor || Metrics > Scope > select app service` you can select a metric like - average response time
     - In the metrics you can select Metric name space as app service plan and the metric as CPU percentage - this measures the functionality of the underlying infrastecution running the app. 
-    - Diagnostics: ` web app resource || diagnostic settings > add diagnostic setting` the diagnostics can be foewarded to a storage account, event hub or a workspace. Under the add diagnostic setting you can select the logs you are interested in and the diagnostics
+    - Diagnostics: ` web app resource || diagnostic settings > add diagnostic setting` the diagnostics can be foewarded to a storage account, event hub or a workspace. Under the add diagnostic setting you can select the logs you are interested in and the diagnostics and select the desntination
+    - Once specified you can go to the `workspace resource || logs > queries and type 'AppServiceHTTPLogs'` If will show the logs
+
+## Tags
+    - Different departments in a company - tags organize the resources for departments and also for billing purposes - so the specific departments are billed for specific resources - logically grouping resources
+    - Name value pair (e-g name: department, value HR). You can apply multiple tags per resource
+    - Tags can be added to a resource or at the time when you create a resource - which resources are being used by which departments
+    - You can also directly see all the tags by typing tags in the main search bar and then you will see all the tags selecting individual tags will display all the resources allocated to it
+
