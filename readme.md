@@ -1751,5 +1751,12 @@ Traffic manager profile from resources
         - Uses machine learning to detect change in behaviour
         - `Monitor || Alert > New alert rule .. select a VM to set an alert to as above, select %CPU > Select Dynamic instead of static under Alert logic`
         - It analyzes the underlying CPU usage over a period of time and then detect deviation from the norm - you can select threshold sensitivity from high medium and low. You can also specify exceptions for e-g you can specify a limit of 4 violations in 20 min to triger an alert. This is to control for over triggering
+- **Log Analytics Workspace**
+    - You can direct all kinds of logs to a particular workspace which acts as a central repository for all the logs
+    - Search for the `Log analytics workspace` from the main resources
+        - Give a name, select resource name
+        - Log A workspace can be be in a different region, but if you keep it in different regions, you will have to pay extra for log data transfer, so you can instead same price by selectig it in the same region
+        - Once createed, go to the resource - you can then link other resources like VMs to this work space
+
 
     
