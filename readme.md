@@ -1801,3 +1801,10 @@ Traffic manager profile from resources
         - Select location - the Vms in the location will be listed and you can select them and select `enable` - This installs an update management agent on the VM - Takes time before the information is updated onto the Azure portal, but if you go to the individual VMs || extentions, you will be able to see that the agent has been installed. Likewise, you can go to ` Workspace account || Virtual machines` and it will display which VMs are connected to the workspace. Finally, once the configuration has been processed. You will also note that in ` workspace account || logs` you will see updates
         - Note that if a VM is not actively running you will not be able to implement update management on it
         - You can check the results of update management by going to `Automation account || update management` if will show which VMs are compliant vs which ones are not
+        - After inspecting the update results you can authorize installing the updates by `Automation account || update management > Schedule update deployment` 
+            - Give it a name
+            - You will have to create separate deployment for each type of OS
+            - Select Windows
+            - Choose machines
+            - Specify schedule settings. You can run it one time or set a schedule
+            - Specify maintainance window time
