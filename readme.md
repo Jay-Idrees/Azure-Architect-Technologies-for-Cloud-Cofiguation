@@ -1757,6 +1757,11 @@ Traffic manager profile from resources
         - Give a name, select resource name
         - Log A workspace can be be in a different region, but if you keep it in different regions, you will have to pay extra for log data transfer, so you can instead same price by selectig it in the same region
         - Once createed, go to the resource - you can then link other resources like VMs to this work space
+            - From the workspace resource `|| select Virtual machines under Workspace Data Sources` - This will diaplay all the VMs that are part of this particular subscription
+            - Then if you select a particular VM from the workspace listing there will be an option to `connect` with the workspace
+            - To double check Go to a particular VM resource `|| extensions` is where you can see whether your VM is connected to a workspace - if it is then it will appear as an agent. 
+            - **Manually collecting logs from on premisis VM**
+                - This works by manually downloading an agent, installing it on the target VM and then linking that VM with Azure portal using the agent's workspae ID and the primary key
 
 
     
