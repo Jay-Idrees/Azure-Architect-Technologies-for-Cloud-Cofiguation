@@ -1836,7 +1836,16 @@ Traffic manager profile from resources
         - The data is sent in JSON format to the event hub
         - `Stream analytic resource || query` here you will be able to see the data naked that is being sent to the event hub, especially when you click `raw`
         - So basically, this is a diagnostic tool to inspect the log data
-- **Collecting specific metric logs for Virtual Machines**
+- **Collecting specific metric logs for Virtual Machines/diagnostics**
     - You select the Diagnostics from the VM resource
     - Then you install an agent on the VM
+    - You can look at the logs from inside the VM by going to the event manager
     - The agent will collect the VM specific logs and send it to a storage account
+
+- **Storage account Diagnostics/logs**
+    - How data is being accessed in the storage accounts - the logs are by defaut stored in a $ logs container
+        - Failed requests
+        - Shared access signature/OAuth
+        - Requests by the storage service itself
+        - Anonymous requests
+    - You can set this up by visiting the `storage account resource || diagnostic settings`
