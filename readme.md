@@ -1709,7 +1709,7 @@ Traffic manager profile from resources
     - Note that once you set the partiion key, it cannot be changed. You will have to create a new container if you would want to change the partition key and copy the data. 
 - **Replicating Data**
 - Select the Cosmos DB account `|| Replicate data globally` You can select different regions for replication and will be billed accordingly
-- **Consistency levels**
+- **Consistency Levels**
 - The issue arrises if there is data in different regions and multiple live updates are being done across the in one physical region. Thus if queries are made from a different region then the data read maybe old and not representing the change
     - `Strong consistency` - Data in the different region cannot be read until the change has been upgraded in the new region - this will have strong consisistency, but can have low performance - This option may not be available if the regions of replication are far apart
     - `Eventual consistency` - No gaurentee on the consistency of data being read - better performance, but sacrifice on the integrity of data
@@ -1719,6 +1719,16 @@ Traffic manager profile from resources
 - You can set the default consistency by going the the cosmos Db account resource `|| dafault consistency` You can then select from the options above
 
 - **Cosmos DB A/C based on Table API**
+- Create a new Cosmos DB account from general resources
+    - account name table something
+    - Select `Azure Table` next to API
+    - Go to the account once created `|| Data explorer > new table`
+        - Add entity
+            - Fill in values and the property names(variable name)
+- **Using Graph API with Cosmos DB**
+- Create a new account
+    - API graph API
+    - Once created then you can add vertices - you create nodes
 
 
 
