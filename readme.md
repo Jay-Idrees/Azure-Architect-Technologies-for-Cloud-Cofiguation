@@ -1837,3 +1837,6 @@ Traffic manager profile from resources
         - `Stream analytic resource || query` here you will be able to see the data naked that is being sent to the event hub, especially when you click `raw`
         - So basically, this is a diagnostic tool to inspect the log data
 - **Collecting specific metric logs for Virtual Machines**
+    - You select the Diagnostics from the VM resource
+    - Then you install an agent on the VM
+    - The agent will collect the VM specific logs and send it to a storage account
