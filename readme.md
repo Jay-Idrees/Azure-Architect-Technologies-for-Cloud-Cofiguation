@@ -1730,7 +1730,7 @@ Traffic manager profile from resources
     - API graph API
     - Once created then you can add vertices - you create nodes
 
-## Azure Monitoring and Diagnostics
+# Azure Monitoring and Diagnostics
 - Creting alerts based on metrics concerning CPU usage, disk and network stats
 - Activity logs are created for instance when a VM is created vs when it is stopped etc
 - Alerts can be created based on the activities
@@ -1751,6 +1751,7 @@ Traffic manager profile from resources
         - Uses machine learning to detect change in behaviour
         - `Monitor || Alert > New alert rule .. select a VM to set an alert to as above, select %CPU > Select Dynamic instead of static under Alert logic`
         - It analyzes the underlying CPU usage over a period of time and then detect deviation from the norm - you can select threshold sensitivity from high medium and low. You can also specify exceptions for e-g you can specify a limit of 4 violations in 20 min to triger an alert. This is to control for over triggering
+## Azure Logs
 - **Log Analytics Workspace**
     - You can direct all kinds of logs to a particular workspace which acts as a central repository for all the logs
     - Search for the `Log analytics workspace` from the main resources
@@ -1767,6 +1768,15 @@ Traffic manager profile from resources
                 - Then you can copy the agent file from the mapped drive while accessing the VM and then run it
                     - During the agent setup check: `connect the agent to Azure Log Analytics` and this will prompt you to paste the agent's workspace ID and the primary key to link it to the Azure portal
                     - Note that even though it will not show as connected under the workspace data sources - because you have manually installed it on to the on premisis VM, it will still be sending the logs to Azure
+        - **Sending data to Workspace**
+            - Select the workspace from resources || Agents configuration under settings
+                -options: 
+                    - Windows event logs
+                    - Windows performance counters
+- Quering the logs
+- Sending custom logs to workspace
+- Creating dasboards
+
 
 
     
