@@ -1740,6 +1740,12 @@ Traffic manager profile from resources
     - Allows you to review the metrics of various services as part of your subscription
         - Under resource types you can select the resource whose metrics you want to check for example virtual machines
         - Then under the subscription the VMs list will appear and from there you can then pick the one whose metrics you want to check
-            - Then you can specify the metric such as % CPU
+            - Then you can specify the metric such as % CPU. Then there are options of changing graph format, creating aalert or pinning to dashboard
+    - `|| acticity log` This shows information of all activity logs which can also be downloaded as a CSV file
+    - `|| alerts` click on `new alert rule`
+        - Select the subscription and resource for example VMs. You can create the alert at a resource level or perscription level
+        - Specify the condition like CPU percentage (e-g threshold beyond 85%) or activity log
+        - After specifying the condition, you add an action group - such as sending an email- there are other options as well
+        - Finally asign a rule name. Once created you can always modify it by going to manage aert rules
 
     
