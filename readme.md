@@ -1761,11 +1761,12 @@ Traffic manager profile from resources
             - Then if you select a particular VM from the workspace listing there will be an option to `connect` with the workspace
             - To double check Go to a particular VM resource `|| extensions` is where you can see whether your VM is connected to a workspace - if it is then it will appear as an agent. 
             - **Manually collecting logs from on premisis VM**
-                - This works by manually downloading an agent, installing it on the target VM and then linking that VM with Azure portal using the agent's **workspae ID and the primary key**
+                - This works by manually downloading an agent, installing it on the target VM and then linking that VM with Azure portal using the agent's **workspae ID and the primary key** The secondary key will also work
                 - You can download the agent on your laptop's drive and then also download the RDP file of the VM in the same folder. 
                 - Run the RDP file, under `local resources > more > drives > check the drive where the agent file is` This will map the drive of your laptop to the VM and allow you to run the agent file onto the VM through your local laptop drive. Once this is done connect to the VM with the credentials
                 - Then you can copy the agent file from the mapped drive while accessing the VM and then run it
                     - During the agent setup check: `connect the agent to Azure Log Analytics` and this will prompt you to paste the agent's workspace ID and the primary key to link it to the Azure portal
+                    - Note that even though it will not show as connected under the workspace data sources - because you have manually installed it on to the on premisis VM, it will still be sending the logs to Azure
 
 
     
