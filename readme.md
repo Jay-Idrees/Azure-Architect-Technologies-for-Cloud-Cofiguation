@@ -1794,5 +1794,9 @@ Traffic manager profile from resources
         - Sends logs to the Azure log workspace
         - Azure automation queries the Azure log workspace and determines which updates are missing and then performs those updates
     - Create 2 VMs one Windows and one Linux, in 2 different locations - Right now these have no extensions
-    - Create Azure automation account, Log analytics workspace
+    - **Create Azure automation account and Log analytics workspace and link them as below**
     - Go to your automation account `|| select update management under update management > Under log analytics workspace select the work space you created`. This will link the automation and the work space accounts
+    - This step is critical, as this is where the update management from the automation account will be able to access the log files from the workspace and then determine what updtes need to be performed
+    - Once the accounts are linked. You can go to the `automation account || update management > Add Azure VMs`
+        - Select location - the Vms in the location will be listed and you can select them and select `enable` - This installs an update management agent on the VM
+        - Note that if a VM is not actively running you will not be able to implement update management on it
