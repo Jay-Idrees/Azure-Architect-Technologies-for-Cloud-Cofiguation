@@ -1777,6 +1777,7 @@ Traffic manager profile from resources
 - Sending custom logs to workspace
 - Creating dasboards
 
-
-
-    
+## Azure automation
+- You can run powershell scripts only when an alert is triggered on a virtual machine
+- Create automation account from the main resources
+    - This has a setting of Azure run as account - this gives it an authority to manage Azure resources
