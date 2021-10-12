@@ -1752,6 +1752,10 @@ Traffic manager profile from resources
         - `Monitor || Alert > New alert rule .. select a VM to set an alert to as above, select %CPU > Select Dynamic instead of static under Alert logic`
         - It analyzes the underlying CPU usage over a period of time and then detect deviation from the norm - you can select threshold sensitivity from high medium and low. You can also specify exceptions for e-g you can specify a limit of 4 violations in 20 min to triger an alert. This is to control for over triggering
 ## Azure Logs
+- Can be sent to:
+    - workspace
+    - storage accounts and then transfer to Azure data factory
+    - Azure event hubs and then transfer to Azure SQL database
 - **Log Analytics Workspace**
     - You can direct all kinds of logs to a particular workspace which acts as a central repository for all the logs
     - Search for the `Log analytics workspace` from the main resources
@@ -1795,7 +1799,8 @@ Traffic manager profile from resources
         - Azure automation queries the Azure log workspace and determines which updates are missing and then performs those updates
     - Create 2 VMs one Windows and one Linux, in 2 different locations - Right now these have no extensions
     - **Create Azure automation account and Log analytics workspace and link them as below**
-    - First 5 GB/Mo are free, anything additional has a price per GB. You can freely store the log data for 31 days
+    - ` Pricing` First 5 GB/Mo are free, anything additional has a price per GB. You can freely store the log data for 31 days, extra amount to be paid per GB per month
+    - Likewise you are charged per metric time-series monitored per month
     - Go to your automation account `|| select update management under update management > Under log analytics workspace select the work space you created`. This will link the automation and the work space accounts
     - This step is critical, as this is where the update management from the automation account will be able to access the log files from the workspace and then determine what updtes need to be performed
     - Once the accounts are linked. You can go to the `automation account || update management > Add Azure VMs`
@@ -1809,3 +1814,26 @@ Traffic manager profile from resources
             - Choose machines
             - Specify schedule settings. You can run it one time or set a schedule
             - Specify maintainance window time
+## Azure Diagnostics
+- **Activity logs categories**
+    - Administrative - CRUD operation logs by resource manager
+    - Alerts - logs of alerts
+    - Autoscaling
+    - Security - alerts generated from security center
+    - Other - Sevice heath, recommendations, Policy
+- **Activity logs diagnostics**
+    - `Monitor || Activity log`
+        - Apply subscription, you can select where to sen the activity logs to : workspace, storage account or event hub
+        - 
+- **Event hub** - Data ingestion servie
+    - Search for event hub in general resources
+        - Create name space
+        - You can specify the event hub to be the recepient of the logs by visiting `Monitor || Activity log >diagnostic settings > stream to an event hub`
+            - Here you can then selet the event hub that you created as a resource
+    - **Azure Stream Analytics Job** - Processes all the streams of data that enter Azure
+        - Choose resource group
+        - ` Stream analytics job resource || inputs under job topology > Add a stream input > event hub` and then fill in the event hub details
+        - The data is sent in JSON format to the event hub
+        - `Stream analytic resource || query` here you will be able to see the data naked that is being sent to the event hub, especially when you click `raw`
+        - So basically, this is a diagnostic tool to inspect the log data
+- **Collecting specific metric logs for Virtual Machines**
