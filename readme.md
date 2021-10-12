@@ -1740,12 +1740,16 @@ Traffic manager profile from resources
     - Allows you to review the metrics of various services as part of your subscription
         - Under resource types you can select the resource whose metrics you want to check for example virtual machines
         - Then under the subscription the VMs list will appear and from there you can then pick the one whose metrics you want to check
-            - Then you can specify the metric such as % CPU. Then there are options of changing graph format, creating aalert or pinning to dashboard
+            - Then you can specify the metric such as % CPU. Then there are options of changing graph format, **creating aalert** or pinning to dashboard
     - `|| acticity log` This shows information of all activity logs which can also be downloaded as a CSV file
     - `|| alerts` click on `new alert rule`
         - Select the subscription and resource for example VMs. You can create the alert at a resource level or perscription level
         - Specify the condition like CPU percentage (e-g threshold beyond 85%) or activity log
         - After specifying the condition, you add an action group - such as sending an email- there are other options as well
         - Finally asign a rule name. Once created you can always modify it by going to manage aert rules
+    - **Dynamic alerts** this is different from static (above example)
+        - Uses machine learning to detect change in behaviour
+        - `Monitor || Alert > New alert rule .. select a VM to set an alert to as above, select %CPU > Select Dynamic instead of static under Alert logic`
+        - It analyzes the underlying CPU usage over a period of time and then detect deviation from the norm - you can select threshold sensitivity from high medium and low. You can also specify exceptions for e-g you can specify a limit of 4 violations in 20 min to triger an alert. This is to control for over triggering
 
     
