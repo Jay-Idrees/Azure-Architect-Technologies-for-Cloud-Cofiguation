@@ -1730,6 +1730,9 @@ Traffic manager profile from resources
     - API graph API
     - Once created then you can add vertices - you create nodes
 
-
+## Azure Monitoring and Diagnostics
+- Creting alerts based on metrics concerning CPU usage, disk and network stats
+- Activity logs are created for instance when a VM is created vs when it is stopped etc
+- Alerts can be created based on the activities
 
     
