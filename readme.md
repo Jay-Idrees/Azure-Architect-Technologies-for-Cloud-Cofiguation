@@ -1782,3 +1782,5 @@ Traffic manager profile from resources
 - Create an **Azure automation account** from the main resources
     - This has a setting of Azure run as account - this gives it an authority to manage Azure resources
     - You creat a powershell playbook and attach it to Azure monitor alert - the script will extract data about the VM from the monitor and then execute the action from the script via the Azure automation account
+    - Before running the run books you have to import modules into the account via `|| modules under shared resources`
+    - Then `|| runbooks under process automation` you can create a run book
