@@ -1779,5 +1779,6 @@ Traffic manager profile from resources
 
 ## Azure automation
 - You can run powershell scripts only when an alert is triggered on a virtual machine
-- Create automation account from the main resources
+- Create an **Azure automation account** from the main resources
     - This has a setting of Azure run as account - this gives it an authority to manage Azure resources
+    - You creat a powershell playbook and attach it to Azure monitor alert - the script will extract data about the VM from the monitor and then execute the action from the script via the Azure automation account
