@@ -1798,5 +1798,5 @@ Traffic manager profile from resources
     - Go to your automation account `|| select update management under update management > Under log analytics workspace select the work space you created`. This will link the automation and the work space accounts
     - This step is critical, as this is where the update management from the automation account will be able to access the log files from the workspace and then determine what updtes need to be performed
     - Once the accounts are linked. You can go to the `automation account || update management > Add Azure VMs`
-        - Select location - the Vms in the location will be listed and you can select them and select `enable` - This installs an update management agent on the VM
+        - Select location - the Vms in the location will be listed and you can select them and select `enable` - This installs an update management agent on the VM - Takes time before the information is updated onto the Azure portal, but if you go to the individual VMs || extentions, you will be able to see that the agent has been installed
         - Note that if a VM is not actively running you will not be able to implement update management on it
