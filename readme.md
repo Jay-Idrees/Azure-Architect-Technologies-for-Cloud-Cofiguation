@@ -1849,3 +1849,29 @@ Traffic manager profile from resources
         - Requests by the storage service itself
         - Anonymous requests
     - You can set this up by visiting the `storage account resource || diagnostic settings`
+    - The diagnostic accounts data is stored in the storage account itself
+    - You can look at the storage log data through the `Azure Storage Explorer` - it is stored in the tables. If your storage account is linked to geo-redundant storage, then you will also have secondary data logs
+
+- **Azure Function App metrics logs**
+    - Response time
+    - Average memory working set
+    - Data in
+    - Data out
+    - Execution count - number of times the function was execute
+    - Execution units - The amount of MB/ms used
+- Create an Azure function app
+    - ` Function app rsource || functions > create a function`
+    - `Function resource || code+test`
+    - `Monitor || Metric > scope > app services under resource types`
+    - Once the logs are generated documenting the logistics of function usage, these can be sent to a storage account or event hub or log analytics workspace or all three of them at once
+    - ` function resource || diagnostic settings > Add diagnostic setting` for configuring where to send and retention etc
+    - You can look at the app function logs by visiting ` workspace resource || logs > new query ` and then scrolling to look for `function app logs`
+    - In the query box you can type `AzureMetrics | where Resource =='function app name'` and then hit run - you can direct these to where you want such as the storage table, workspace or hub
+
+- **Azure Web app logs/metrics/diagnostics**
+    - Some metrics: CPU percentage, Memory percentage, data in, data out, other app specific metrics like response time, average memory working set
+    - Create a new webapp - You can do this using visiual studio - if its linked with Azure account, it will publish the app in Azure portal
+    - You can see the resource of the web app and paste the link in browser and it will show the app
+    - ` Monitor || Metrics > Scope > select app service` you can select a metric like - average response time
+    - In the metrics you can select Metric name space as app service plan and the metric as CPU percentage - this measures the functionality of the underlying infrastecution running the app. 
+    - Diagnostics: ` web app resource || diagnostic settings > add diagnostic setting` the diagnostics can be foewarded to a storage account, event hub or a workspace. Under the add diagnostic setting you can select the logs you are interested in and the diagnostics
