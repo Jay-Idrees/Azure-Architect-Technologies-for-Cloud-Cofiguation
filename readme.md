@@ -1882,4 +1882,11 @@ Traffic manager profile from resources
     - Name value pair (e-g name: department, value HR). You can apply multiple tags per resource
     - Tags can be added to a resource or at the time when you create a resource - which resources are being used by which departments
     - You can also directly see all the tags by typing tags in the main search bar and then you will see all the tags selecting individual tags will display all the resources allocated to it
+ - You can go to `cost management+billing > pay as you go cost analysis > cost analysis ` and you can see information by tags. You can select a particular department tag to see the cost for that department
+
+ ## Costing
+ - Cost analysis by subscription - it can also provide forcast of costs. You can also select cost based on previous time period. you can also download invoices and reports of cost analysis
+ - By tags
+ - Azure advisor - It gives recommendations on potential cost savings. `Advisor || overview`
+    - It provides recommendations in categories -security, reliability, operational excellence, performance
 
