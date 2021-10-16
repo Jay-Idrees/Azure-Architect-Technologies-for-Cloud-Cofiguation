@@ -1366,6 +1366,10 @@ Traffic manager profile from resources
     - First you creat a blue print and select artifacts to be included in it. Then you publish the blue print once the artifacts are added and finally you can assign them
         - Assignment is to a subscription. You can also always unassign, however the resources that were initially created when the blue print was first assigned do not get deleted
 
+
+## Azure key vault
+- A cloud service to store passwords, encryption keys, cetificates and other secrets
+
 # Azure web application as service
  - or Platform as a service (Paas). Payment options: [Azure App Service](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/)
  - If an application is developed using .Net, Java, Ruby, Node.js, python - it can be deployed using the Azure app service
