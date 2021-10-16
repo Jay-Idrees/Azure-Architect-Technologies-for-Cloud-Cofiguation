@@ -1397,7 +1397,7 @@ Traffic manager profile from resources
                         - Then You can configure this appliation object to gain access to the Key vault
                             - Go to `Azure active directory from main resources || app registerations > new registeration`
                                 - Give an app name
-                                - When you create this application for registeration, you create a bunch of specific ids which are specically generated along with the app
+                                - When you create this application for registeration, you create a bunch of specific ids which are specically generated along with the app ( Client id, tenant id, object id)
                                 - You can turn these ids into environment variables in windows of the workstation that will run the .net program to link with the `app object in azure active directory`
 
 ## Disk encryption
