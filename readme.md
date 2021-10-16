@@ -1368,7 +1368,14 @@ Traffic manager profile from resources
 
 
 ## Azure key vault
-- A cloud service to store passwords, encryption keys, cetificates and other secrets
+- A cloud service to store passwords, encryption keys, cetificates and other secrets e-g about databases
+- **Creating a key vault**
+    - Search for key vault in general resources
+        - Asign resource group, give name
+        - Specify the time you want to keep the deleted the vaults
+        - You can have disk encryption
+        - You can add users to allow them to manage vault - you can further manage what they can actually manage
+        - It will automatically add the admin account
 
 # Azure web application as service
  - or Platform as a service (Paas). Payment options: [Azure App Service](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/)
