@@ -1404,6 +1404,9 @@ Traffic manager profile from resources
                                 - You can turn these ids into environment variables in windows of the workstation that will run the .net program to link with the `app object in azure active directory`
                                     - On the workstation
                                         - ` control pannel > system and security > system || advanced system settings > environment variables > new (to add new variables)`
+                        - Once the environment variable are created you can go to the key vault resource > Add access policy
+                            - Under `select principal` select the newapp app object from the azure active directory
+                    
 
 ## Disk encryption
 - Encrypting the disks attached to the VMs - When the data is stored in the Azure datacenter - it is encrypted
