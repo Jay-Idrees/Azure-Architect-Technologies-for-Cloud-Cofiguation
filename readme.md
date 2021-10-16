@@ -1397,10 +1397,13 @@ Traffic manager profile from resources
                         - Then You can configure this appliation object to gain access to the Key vault
                             - Go to `Azure active directory from main resources || app registerations > new registeration`
                                 - Give an app name
-                                - When you create this application for registeration, you create a bunch of specific ids which are specically generated along with the app ( Client id, tenant id, object id)
+                                - When you create this application for registeration, you create a bunch of specific ids which are specically generated along with the app ( Client id, tenant id, client secret (see below))
                                 - you will also create a new secret inside the application object - note that this is not the same as the secret created in the key vault (e-g dbpassword)
                                     - `Azure Active directory || application registeration || new app(the app object you created) > new client secret`
+                                        - set the name and expiration date for this secret - it will generate a new unique value - store this value as an environment variable
                                 - You can turn these ids into environment variables in windows of the workstation that will run the .net program to link with the `app object in azure active directory`
+                                    - On the workstation
+                                        - ` control pannel > system and security > system || advanced system settings > environment variables > new (to add new variables)`
 
 ## Disk encryption
 - Encrypting the disks attached to the VMs - When the data is stored in the Azure datacenter - it is encrypted
