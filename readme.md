@@ -1369,6 +1369,11 @@ Traffic manager profile from resources
 
 ## Azure key vault
 - A cloud service to store passwords, encryption keys, cetificates and other secrets e-g about databases
+- The programs can directly access the key vault for password
+    - You can design a .net program that does that. It will need:
+        - Vault URL
+        - The secret name (whcih for example can be a name of the password)
+        - A secret value - Some way of authorizing a local machine to access the key vault (This can be done using the Azure active directory)
 - **Creating a key vault**
     - Search for key vault in general resources
         - Asign resource group, give name
@@ -1378,6 +1383,14 @@ Traffic manager profile from resources
         - It will automatically add the admin account
         - Once created you can find it in the resources by its name and you will see all the options under `|| settings`
             - keys, secrets, certificates, networking, security, properties, locks
+        - **Creating a secret**
+            - `settings || secret`
+
+## Disk encryption
+- Encrypting the disks attached to the VMs - When the data is stored in the Azure datacenter - it is encrypted
+- SSE (Server side encryption) - when enabled encryptes the data automatically, but you can also use your own encryption key stored in the Azure Key Vault
+
+
 
 # Azure web application as service
  - or Platform as a service (Paas). Payment options: [Azure App Service](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/)
