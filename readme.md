@@ -1886,7 +1886,7 @@ Traffic manager profile from resources
 
  ## Costing
  - Cost analysis by subscription - it can also provide forcast of costs.You can also select cost based on previous time period. you can also download invoices and reports of cost analysis
- - By tags
+ - By tags you can also look at the costs
  - Azure advisor - It gives recommendations on potential cost savings. `Advisor || overview`
     - It provides recommendations in categories -security, reliability, operational excellence, performance
 
