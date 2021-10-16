@@ -1392,6 +1392,8 @@ Traffic manager profile from resources
 - **reating a disk encryption using Key vault**
     - Create a VM, including attaching a new disk. Here the defaut encryption will automatically be selected or `platform managed (encryption at rest)`. Other options include `Customer managed + platform managed` or `customer managed alone`
     - Once created, you can go to the resource and specifically get to the disk resource through the VM resource name `|| disks under settings`
+        - Note that there are two types of disks: OS level and the data disks
+        - Slect the disk type and then `|| encryption` under the settings
 
 
 
