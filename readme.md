@@ -1391,6 +1391,11 @@ Traffic manager profile from resources
             - You can use a .net program to which you can feed the URL of the key vault - which you can get from the resource homepage
             - Also the name of the password as created in the key vault new secret e-g `dbpassword`
             - Adding this to the program alone wont be sufficient - The key valult must also be condigured to recognize the program before granting access
+                - **Authorizing the program to access the key vault secrets**
+                    - Use Azure active directory
+                        - You can define an application object (which in this case is our .net program and its workstation)
+                        - Then You can configure this appliation object to gain access to the Key vault
+                            - Go to `Azure active directory from main resources || app registerations > new registeration`
 
 ## Disk encryption
 - Encrypting the disks attached to the VMs - When the data is stored in the Azure datacenter - it is encrypted
