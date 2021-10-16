@@ -1376,6 +1376,8 @@ Traffic manager profile from resources
         - You can have disk encryption
         - You can add users to allow them to manage vault - you can further manage what they can actually manage
         - It will automatically add the admin account
+        - Once created you can find it in the resources by its name and you will see all the options under `|| settings`
+            - keys, secrets, certificates, networking, security, properties, locks
 
 # Azure web application as service
  - or Platform as a service (Paas). Payment options: [Azure App Service](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/)
