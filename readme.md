@@ -1387,7 +1387,7 @@ Traffic manager profile from resources
             - `keyvault resource || secrets under settings > create a new secret`
                 - Give a name such as `dbpassword`
                 - Give a value for example `password`
-        - **Creating a program**
+        - **Creating a program to fetch password values from the vault**
             - You can use a .net program to which you can feed the URL of the key vault - which you can get from the resource homepage
             - Also the name of the password as created in the key vault new secret e-g `dbpassword`
             - Adding this to the program alone wont be sufficient - The key valult must also be condigured to recognize the program before granting access
