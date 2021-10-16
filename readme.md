@@ -1400,6 +1400,7 @@ Traffic manager profile from resources
                 - Select the resource, give name, select customer managed key under encryption type, choose the key from key vault
                 - This link with automatically create an access application in the key vault - you can visit the `key vault resource || access policies` to confirm
                 - You will also have to check mark `Azure Disk encryption for volume encryption` in the `Key vault resource || access policies` under settings
+                - Then in the` VM resource || disk settings > select os and data disks under disks to encrpt > select key vault, key and version`
                 - Example of server side encryption is bitlocker
             - **Assigining the disk encryption set to the VM disk**
                 - Visit the VM resource || Disks || encryption under settings
