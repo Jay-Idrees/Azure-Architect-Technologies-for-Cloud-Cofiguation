@@ -1399,7 +1399,9 @@ Traffic manager profile from resources
             - Create a new resource `Disk encryption sets` - Link this to the key vault and then link this to the disk encryption
                 - Select the resource, give name, select customer managed key under encryption type, choose the key from key vault
                 - This link with automatically create an access application in the key vault - you can visit the `key vault resource || access policies` to confirm
-            - **Assigining the disk encryption set to the 
+            - **Assigining the disk encryption set to the VM disk**
+                - Visit the VM resource || Disks || encryption under settings
+                    - Under encryption type select `customer managed key` and then select the encryption set you created above
 
 
 
