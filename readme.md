@@ -1394,6 +1394,11 @@ Traffic manager profile from resources
     - Once created, you can go to the resource and specifically get to the disk resource through the VM resource name `|| disks under settings`
         - Note that there are two types of disks: OS level and the data disks
         - Slect the disk type and then `|| encryption` under the settings
+            - The encryption setting can only be changed if the VM is stopped
+            - Go to the `key valult resource || key` and create a new key
+            - Create a new resource `Disk encryption sets` - Link this to the key vault and then link this to the disk encryption
+                - Select the resource, give name, select customer managed key under encryption type, choose the key from key vault
+                - This link with automatically create an access application in the key vault - you can visit the `key vault resource || access policies` to confirm
 
 
 
