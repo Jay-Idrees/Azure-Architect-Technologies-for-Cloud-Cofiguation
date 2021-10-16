@@ -1382,9 +1382,15 @@ Traffic manager profile from resources
         - You can add users to allow them to manage vault - you can further manage what they can actually manage
         - It will automatically add the admin account
         - Once created you can find it in the resources by its name and you will see all the options under `|| settings`
-            - keys, secrets, certificates, networking, security, properties, locks
+            - `keys, secrets, certificates, networking, security, properties, locks`
         - **Creating a secret**
-            - `settings || secret`
+            - `keyvault resource || secrets under settings > create a new secret`
+                - Give a name such as `dbpassword`
+                - Give a value for example `password`
+        - **Creating a program**
+            - You can use a .net program to which you can feed the URL of the key vault - which you can get from the resource homepage
+            - Also the name of the password as created in the key vault new secret e-g `dbpassword`
+            - Adding this to the program alone wont be sufficient - The key valult must also be condigured to recognize the program before granting access
 
 ## Disk encryption
 - Encrypting the disks attached to the VMs - When the data is stored in the Azure datacenter - it is encrypted
