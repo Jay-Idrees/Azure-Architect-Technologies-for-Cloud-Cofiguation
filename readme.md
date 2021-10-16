@@ -1390,7 +1390,7 @@ Traffic manager profile from resources
 - Encrypting the disks attached to the VMs - When the data is stored in the Azure datacenter - it is encrypted
 - SSE (Server side encryption) - when enabled encryptes the data automatically, but you can also use your own encryption key stored in the Azure Key Vault
 - **reating a disk encryption using Key vault**
-    - Create a VM, including attaching a new disk. Here the defaut encryption will automatically be selected or platform managed (encryption at rest). Other options include Customer managed + platform managed or customer managed alone
+    - Create a VM, including attaching a new disk. Here the defaut encryption will automatically be selected or `platform managed (encryption at rest)`. Other options include `Customer managed + platform managed` or `customer managed alone`
 
 
 
