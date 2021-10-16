@@ -1391,6 +1391,7 @@ Traffic manager profile from resources
 - SSE (Server side encryption) - when enabled encryptes the data automatically, but you can also use your own encryption key stored in the Azure Key Vault
 - **reating a disk encryption using Key vault**
     - Create a VM, including attaching a new disk. Here the defaut encryption will automatically be selected or `platform managed (encryption at rest)`. Other options include `Customer managed + platform managed` or `customer managed alone`
+    - Once created, you can go to the resource and specifically get to the disk resource through the VM resource name `|| disks under settings`
 
 
 
