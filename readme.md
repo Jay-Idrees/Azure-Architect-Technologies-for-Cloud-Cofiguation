@@ -1406,6 +1406,7 @@ Traffic manager profile from resources
                                         - ` control pannel > system and security > system || advanced system settings > environment variables > new (to add new variables)`
                         - Once the environment variable are created you can go to the key vault resource > Add access policy
                             - Under `select principal` select the newapp app object from the azure active directory
+                            - Allocate permissions as part of the policy - for example you can only checkmark `Get` and `list`
                     
 
 ## Disk encryption
