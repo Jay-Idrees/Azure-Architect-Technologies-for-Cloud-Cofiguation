@@ -1432,6 +1432,12 @@ Traffic manager profile from resources
                     - You can apply disk encryption to both managed and non-managed disks - the non-managed ones are the ones with storage account
 
 
+## Azure Key Vault Firewall setup
+- By default the key vault is public, must be made secure with firewall settings
+- `Key vault resource || Networking under settings`
+    - Select privat endoint and selected networks
+    
+
 
 # Azure web application as service
  - or Platform as a service (Paas). Payment options: [Azure App Service](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/)
