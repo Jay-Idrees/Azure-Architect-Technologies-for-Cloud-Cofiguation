@@ -1436,13 +1436,20 @@ Traffic manager profile from resources
 - By default the key vault is public, must be made secure with firewall settings
 - `Key vault resource || Networking under settings`
     - Select privat endoint and selected networks
-    
+     - Click `add existing virtual network`, choose the network and subscription, choose the default subet
+     - By doing so you are ensuring that you only the vurtual network has access to the Key vault
+     - **Setup service endpoint**
+        - Go to the VM or the network resource || Service endpoints > click add
+            - Choose `microsoft.keyvault` and choose the subnet as default
+            - Creation of the service endpoint should be performed before adding an existing network
+
 
 
 # Azure web application as service
  - or Platform as a service (Paas). Payment options: [Azure App Service](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/)
  - If an application is developed using .Net, Java, Ruby, Node.js, python - it can be deployed using the Azure app service
         - Azure app service takes care of all the deployment aspect including deployment of infrastructure, autoscaling and security features
+
 - You can want full control of your application then you can do it manually by deploying on the VM yourself
 - Web app should be linked in the app service plan
 - Examples of plans
