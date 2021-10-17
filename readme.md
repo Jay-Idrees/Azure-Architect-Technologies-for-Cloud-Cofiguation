@@ -1443,6 +1443,8 @@ Traffic manager profile from resources
             - Choose `microsoft.keyvault` and choose the subnet as default
             - Creation of the service endpoint should be performed before adding an existing network
     - When these steps are completed, you will not be able to run the application to access the key vault from your remote laptop, but you will be able to run the application from within the VM as the VM is now part of the network that can access Key Vault
+    
+## Managed Identity
 
 
 
