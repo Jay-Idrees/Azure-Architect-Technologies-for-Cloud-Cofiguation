@@ -1435,7 +1435,7 @@ Traffic manager profile from resources
 ## Azure Key Vault Firewall setup
 - By default the key vault is public, must be made secure with firewall settings
 - `Key vault resource || Networking under settings`
-    - Select privat endoint and selected networks
+    - Select private endpoint and selected networks
      - Click `add existing virtual network`, choose the network and subscription, choose the default subet
      - By doing so you are ensuring that you only the vurtual network has access to the Key vault
      - **Setup service endpoint**
@@ -1443,10 +1443,17 @@ Traffic manager profile from resources
             - Choose `microsoft.keyvault` and choose the subnet as default
             - Creation of the service endpoint should be performed before adding an existing network
     - When these steps are completed, you will not be able to run the application to access the key vault from your remote laptop, but you will be able to run the application from within the VM as the VM is now part of the network that can access Key Vault
-    
+
 ## Managed Identity
+- This is if your computer is actually a VM within the Azure network and trying to access the Key Vault - there is an opportunity of an additional layer of protection
+- What you can then do is connect you remote laptop to this VM via an authentication token inside the Azure network that is linked to managed identity
+- You will first create a VM and then create a managed identity for that VM
+- You can set this up by going to the `VM resource || identity > Under system assigned turn the status to on > save >yes`
+    - The above action is giving this particular VM an identity in Azure active directory (which is like creating a username). It will have a unique object id
 
-
+- Next go to the `Key vault resource || Access policies > Add access policy`
+    - You can select list and GET under `secret permissions`
+    - Under `select principal` you can type the VM name and its id will show up - select it and then save it
 
 # Azure web application as service
  - or Platform as a service (Paas). Payment options: [Azure App Service](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/)
